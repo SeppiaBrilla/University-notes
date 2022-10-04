@@ -1,0 +1,1 @@
+A square linear system is a [[Linear systems]] where $n = m$ 

@@ -1,0 +1,136 @@
+{
+  "main": {
+    "id": "86559cb8e52e0df1",
+    "type": "split",
+    "children": [
+      {
+        "id": "0961b0650f8cb0d2",
+        "type": "leaf",
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "730fcc81948e6364",
+    "type": "split",
+    "children": [
+      {
+        "id": "7251ceb500504e53",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69448e5ded82b04e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "311407f94b79c5e1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bd152582b20abd78",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 213.5
+  },
+  "right": {
+    "id": "c52b9cb584b24dd4",
+    "type": "split",
+    "children": [
+      {
+        "id": "dc06b7941a1353a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "63b883eae4998800",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9053cb3ec2e5b7bc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "debcee2c5a387e48",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "7ffc25f2ca9be32e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "0961b0650f8cb0d2",
+  "lastOpenFiles": [
+    "Statistical and Mathematical Methods for Artificial Intelligence/Errors/Relative error.md",
+    "Statistical and Mathematical Methods for Artificial Intelligence/Floating-Points/Machine precision.md",
+    "Statistical and Mathematical Methods for Artificial Intelligence/Floating-Points/Standard IEEE.md",
+    "Statistical and Mathematical Methods for Artificial Intelligence/Floating-Points/Floating-Point number.md",
+    "Statistical and Mathematical Methods for Artificial Intelligence/Floating-Points/Rounding rules.md",
+    "Statistical and Mathematical Methods for Artificial Intelligence/Floating-Points/Normalized Floating-Point number.md",
+    "Statistical and Mathematical Methods for Artificial Intelligence/Errors/Absolute error.md",
+    "Statistical and Mathematical Methods for Artificial Intelligence/Errors/Accuracy.md",
+    "Statistical and Mathematical Methods for Artificial Intelligence/Errors/Approximation of x.md",
+    "Statistical and Mathematical Methods for Artificial Intelligence/Errors/Truncation error.md"
+  ]
+}
