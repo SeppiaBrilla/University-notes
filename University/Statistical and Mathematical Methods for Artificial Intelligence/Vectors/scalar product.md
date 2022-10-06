@@ -1,1 +1,0 @@
-the scalar product is another name of the [[Dot product]]

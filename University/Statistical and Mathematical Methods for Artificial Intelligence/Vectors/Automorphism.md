@@ -1,1 +1,0 @@
-A [[linear mapping]] is an Automorphism if it is an [[isomorphism]]

@@ -1,1 +1,0 @@
-a permutation matrix is the [[identity matrix]] with some permutated rows

@@ -1,29 +1,33 @@
 {
   "main": {
-    "id": "86559cb8e52e0df1",
+    "id": "49139cdef6599898",
     "type": "split",
     "children": [
       {
-        "id": "0961b0650f8cb0d2",
+        "id": "80dc3117dad07eca",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/SVD.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "730fcc81948e6364",
+    "id": "96c2bb72f64e06c2",
     "type": "split",
     "children": [
       {
-        "id": "7251ceb500504e53",
+        "id": "d9bbac650827f561",
         "type": "tabs",
         "children": [
           {
-            "id": "69448e5ded82b04e",
+            "id": "c55095759823b1e1",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -31,7 +35,7 @@
             }
           },
           {
-            "id": "311407f94b79c5e1",
+            "id": "9f279dc1b67289a3",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -46,7 +50,7 @@
             }
           },
           {
-            "id": "bd152582b20abd78",
+            "id": "76b871f2bdba1862",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -57,22 +61,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 213.5
+    "width": 300
   },
   "right": {
-    "id": "c52b9cb584b24dd4",
+    "id": "bf341c46678b1425",
     "type": "split",
     "children": [
       {
-        "id": "dc06b7941a1353a9",
+        "id": "c21e46ad55c32f4b",
         "type": "tabs",
         "children": [
           {
-            "id": "63b883eae4998800",
+            "id": "b5c1f3fe75b2f70f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/SVD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,18 +89,19 @@
             }
           },
           {
-            "id": "9053cb3ec2e5b7bc",
+            "id": "6d7ae22b6c59eddd",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/SVD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "debcee2c5a387e48",
+            "id": "936748953f9306b5",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -106,11 +112,13 @@
             }
           },
           {
-            "id": "7ffc25f2ca9be32e",
+            "id": "0bd5caaeada56a43",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/SVD.md"
+              }
             }
           }
         ]
@@ -120,17 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0961b0650f8cb0d2",
+  "active": "80dc3117dad07eca",
   "lastOpenFiles": [
-    "Statistical and Mathematical Methods for Artificial Intelligence/Errors/Relative error.md",
-    "Statistical and Mathematical Methods for Artificial Intelligence/Floating-Points/Machine precision.md",
-    "Statistical and Mathematical Methods for Artificial Intelligence/Floating-Points/Standard IEEE.md",
-    "Statistical and Mathematical Methods for Artificial Intelligence/Floating-Points/Floating-Point number.md",
-    "Statistical and Mathematical Methods for Artificial Intelligence/Floating-Points/Rounding rules.md",
-    "Statistical and Mathematical Methods for Artificial Intelligence/Floating-Points/Normalized Floating-Point number.md",
-    "Statistical and Mathematical Methods for Artificial Intelligence/Errors/Absolute error.md",
-    "Statistical and Mathematical Methods for Artificial Intelligence/Errors/Accuracy.md",
-    "Statistical and Mathematical Methods for Artificial Intelligence/Errors/Approximation of x.md",
-    "Statistical and Mathematical Methods for Artificial Intelligence/Errors/Truncation error.md"
+    "Statistical and Mathematical Methods for Artificial Intelligence/Vectors/projection in practice (multi dimensions).md",
+    "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/SVD.md",
+    "Statistical and Mathematical Methods for Artificial Intelligence/fourier transform.md",
+    "University/Statistical and Mathematical Methods for Artificial Intelligence/Vectors/projection in practice (multi dimensions).md",
+    "projecton matrix.md",
+    "University/Statistical and Mathematical Methods for Artificial Intelligence/Floating-Points/Machine precision.md",
+    "University/Statistical and Mathematical Methods for Artificial Intelligence/Floating-Points/Floating-Point number.md",
+    "University/Statistical and Mathematical Methods for Artificial Intelligence/Linear system solution/Square linear system.md",
+    "University/Statistical and Mathematical Methods for Artificial Intelligence/Linear system solution/solution of square system with iterative methods.md",
+    "University/Statistical and Mathematical Methods for Artificial Intelligence/Linear system solution/solution of square system with direct methods.md"
   ]
 }

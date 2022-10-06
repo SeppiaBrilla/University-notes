@@ -1,1 +1,0 @@
-Any linear system can be written as $Ax = b$ where $A$ is a matrix of size $m \times n$, $x$ is a column vector of length $n$ and $b$ is a column vector of length $m$. $x$ represents the "*unknown solution*" and $b$ represents a given vector.
