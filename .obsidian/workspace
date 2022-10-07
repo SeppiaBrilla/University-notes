@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/SVD.md",
+            "file": "Statistical and Mathematical Methods for Artificial Intelligence/Errors/Accuracy.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/SVD.md",
+                "file": "Statistical and Mathematical Methods for Artificial Intelligence/Errors/Accuracy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/SVD.md",
+                "file": "Statistical and Mathematical Methods for Artificial Intelligence/Errors/Accuracy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/SVD.md"
+                "file": "Statistical and Mathematical Methods for Artificial Intelligence/Errors/Accuracy.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "80dc3117dad07eca",
   "lastOpenFiles": [
-    "Statistical and Mathematical Methods for Artificial Intelligence/Vectors/projection in practice (multi dimensions).md",
+    "Statistical and Mathematical Methods for Artificial Intelligence/Vectors/distance between tow vectors.md",
+    "Statistical and Mathematical Methods for Artificial Intelligence/Errors/Approximation of x.md",
+    "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/Pseudo-inverse of a matrix.md",
     "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/SVD.md",
-    "Statistical and Mathematical Methods for Artificial Intelligence/fourier transform.md",
-    "University/Statistical and Mathematical Methods for Artificial Intelligence/Vectors/projection in practice (multi dimensions).md",
-    "projecton matrix.md",
-    "University/Statistical and Mathematical Methods for Artificial Intelligence/Floating-Points/Machine precision.md",
-    "University/Statistical and Mathematical Methods for Artificial Intelligence/Floating-Points/Floating-Point number.md",
-    "University/Statistical and Mathematical Methods for Artificial Intelligence/Linear system solution/Square linear system.md",
-    "University/Statistical and Mathematical Methods for Artificial Intelligence/Linear system solution/solution of square system with iterative methods.md",
-    "University/Statistical and Mathematical Methods for Artificial Intelligence/Linear system solution/solution of square system with direct methods.md"
+    "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/Transformation Matrix.md",
+    "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/Rank of a matrix.md",
+    "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/permutation matrix.md",
+    "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/Orthonormal basis.md",
+    "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/Orthogonal Matrix.md",
+    "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/identity matrix.md"
   ]
 }
