@@ -30,3 +30,12 @@ AA^T =& \; (U * \Sigma * V^T) * (U * \Sigma * V^T)^T \\
 AA^TU= U*\Sigma^2
 \end{aligned}
 $$
+
+We can define the "_compression factor_" of SVD as:
+$$
+\begin{aligned}
+	c = \frac{k(m + n)}{n + n}\\\\
+	c = \frac{n + n}{k(m + n)}
+\end{aligned}
+$$
+Where k is the number of dyad we want to keep and m, n are the dimensions of the matrix
