@@ -48,3 +48,6 @@ Implementation:
 	 Now we can compute $W$ a matrix containing all the egenvectors of $L^{-1}S_bL$
 	 and then keep only the first k elements of it ($W_k \in \mathbb{R}^{d \times k}$).
 	Finally $Q = L^{-T}W$ and $Q^T$ will be the projection matrix of LDA 
+
+
+ 
