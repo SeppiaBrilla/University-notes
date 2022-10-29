@@ -1,0 +1,3 @@
+A random variable $x$ is a function or that assign a value to an event in a sample space:
+$x: \Omega \rightarrow \mathbb{R}$. A random variable is __descrete__ if it has countable values or __continue__ otherwise. The possible values of a random variable are called __Target space__  ($T$
+)  

@@ -1,0 +1,1 @@
+the probability is a function $P: \Omega \rightarrow [0,1]$ ([[Sample space]]) that assign a value between 0 and one to an [[events|event]] of a [[Sample space]]. The sum of all the probability of the elements of a [[Sample space]] is always 1

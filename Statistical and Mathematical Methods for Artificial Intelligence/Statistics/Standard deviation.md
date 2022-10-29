@@ -1,0 +1,1 @@
+$\sigma = \sqrt{\sigma^2}$ ([[variance for discrete random variables]], [[variance for probaility density functions]], [[Expected value]], [[Statistic]])

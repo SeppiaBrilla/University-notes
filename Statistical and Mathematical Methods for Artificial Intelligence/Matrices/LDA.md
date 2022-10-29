@@ -36,9 +36,9 @@ Implementation:
 	$$
 	\max_q q^tS_wq \; s.t. \; q^tS_bq = 1
 	$$
-	$S_w$ is symmetrical ($S_W^T = (X_wX_w^T)^T = (X_wX_w^T) = S_w$) so, if it is positive definite, we can compute the Cholesky decomposition: $S_W = LL^T$.
+	$S_w$ is symmetrical ($S_W^T = (X_wX_w^T)^T = (X_wX_w^T) = S_w$) so, if it is [[positive definite]], we can compute the Cholesky decomposition: $S_W = LL^T$.
 	Where $L \in \mathbb{R}^{d \times d}$ is a lower triangular matrix. 
-	If $S_w$ is not positive definite we can make it positive definite by doing:
+	If $S_w$ is not [[positive definite]] we can make it [[positive definite]] by doing:
 	$$
 	\begin{align}
 	&S_w = S_w + \epsilon I\\

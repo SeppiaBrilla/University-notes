@@ -16,7 +16,7 @@ Two examples of iterative methods are:
     x_{k+1} = x_k + a_k\boldsymbol{p}_k
   $$
     where $a_k \in \mathbb{R}$, $\boldsymbol{p}_k$ is a vector called *direction*.
-    If $A$ is symmetric and positive definite and the vector $\boldsymbol{p}_k$ have the *conjuancy* property, (i.e. $\boldsymbol{p}_k^T A\boldsymbol{p}_k = 0 \; if \; i \neq k$ ) then the method is called *Conjungate gradients*.
+    If $A$ is symmetric and [[positive definite]] and the vector $\boldsymbol{p}_k$ have the *conjuancy* property, (i.e. $\boldsymbol{p}_k^T A\boldsymbol{p}_k = 0 \; if \; i \neq k$ ) then the method is called *Conjungate gradients*.
 
 All those methods require a matrix-vector multiplication per iteration. Hence the complexity is up to $O(n^2)$ per iteration.
 The stopping criteria ($k^*$ value) for iterative methods are:
