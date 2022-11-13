@@ -6,7 +6,7 @@ Demonstration:
 let $\Delta b$ be a change in the result $b$ such as the $b$ in our data is $b = b + \Delta b$,
 the system becomes $A(x + \Delta x) = b + \Delta b$ with $\Delta x$ [[Inherent error]].
 let's subtract $Ax = b$ to the "new" system: 
-$Ax + A \delta x - Ax = b + \Delta b - b \Rightarrow A \Delta x = \Delta b \Rightarrow \Delta x = A^{-1} \Delta b$.
+$Ax + A \Delta x - Ax = b + \Delta b - b \Rightarrow A \Delta x = \Delta b \Rightarrow \Delta x = A^{-1} \Delta b$.
 Then we have:
 $||\Delta x|| = ||A^{-1} \Delta b|| \leq ||A^{-1}|| ||\Delta b||$ 
 And:

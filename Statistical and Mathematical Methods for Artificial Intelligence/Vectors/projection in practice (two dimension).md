@@ -6,7 +6,7 @@ It follows that the segment $\phi_U(x) - x$ is [[orthogonality|orthogonal]] to $
 That means that: $<\phi_U(x),x> = 0$ ([[Dot product]]).
 The [[projection]] $\phi_U(x)$ is an element of $U$ and, therefore a multiple of the basis vector $b \in U$. Therefore: $\phi_U(x) = \lambda b$ for some $\lambda \in \mathbb{R}$.
 
-The [[projection matrix]] for two dimensions is:
+The [[projection matrices|projection matrix]] for two dimensions is:
 $$
 P_\phi = \frac{bb^T}{b^Tb}  \; b\in U
 $$

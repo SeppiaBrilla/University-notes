@@ -1,4 +1,3 @@
-
 The gradient of $f(x_1, x_2)$ where $f: \mathbb{R}^2 \rightarrow \mathbb{R}$ and $x_1, x_2: \mathbb{R} \rightarrow \mathbb{R}$ is defined as:
 $$
 \frac{\nabla f}{\nabla t} =
@@ -30,7 +29,7 @@ $$
 \end{bmatrix}
 $$
 
-The gradient of a function $f(x)$ where $f: \mathbb{R}^n \rightarrow \mathbb{R}^m$ and $x = (x1,\dots,x_n) \in \mathbb{R}^n$ can be performed as:
+The gradient of. a function $f(x)$ where $f: \mathbb{R}^n \rightarrow \mathbb{R}^m$ and $x = (x1,\dots,x_n) \in \mathbb{R}^n$ can be performed as:
 $$
 \begin{align}
 \frac{\partial f}{\partial x_i} &= 

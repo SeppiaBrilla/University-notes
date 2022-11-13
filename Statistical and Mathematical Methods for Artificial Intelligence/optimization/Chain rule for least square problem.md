@@ -1,4 +1,4 @@
- We can use the [[The chain rule for functions of vectors|chain rule]] to solve the [[linear least-squares problem]].
+We can use the [[The chain rule for functions of vectors|chain rule]] to solve the [[linear least-squares problem]].
 To solve the $\min ||Ax - b||^2_2$ (renamed as $||\Phi \theta - y||^2_2$) we can identify two functions:
 $e = \Phi \theta - y$ and $L = ||e||^2_2$ where the argument for g is $\phi$ and use the chain rule for $L \circ e$.
 $$

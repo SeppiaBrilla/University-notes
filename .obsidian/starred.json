@@ -1,0 +1,219 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "title": "Absolute error",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Errors/Absolute error.md"
+    },
+    {
+      "type": "file",
+      "title": "Relative error",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Errors/Relative error.md"
+    },
+    {
+      "type": "file",
+      "title": "Scientific representation",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Errors/Scientific representation.md"
+    },
+    {
+      "type": "file",
+      "title": "Floating-Point number",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Floating-Points/Floating-Point number.md"
+    },
+    {
+      "type": "file",
+      "title": "Machine precision",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Floating-Points/Machine precision.md"
+    },
+    {
+      "type": "file",
+      "title": "Norm",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/Norm.md"
+    },
+    {
+      "type": "file",
+      "title": "Orthogonal Matrix",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/Orthogonal Matrix.md"
+    },
+    {
+      "type": "file",
+      "title": "positive definite",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/positive definite.md"
+    },
+    {
+      "type": "file",
+      "title": "cholesky factorization for linear least-sqare problem",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Linear system solution/cholesky factorization for linear least-sqare problem.md"
+    },
+    {
+      "type": "file",
+      "title": "Rank of a matrix",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/Rank of a matrix.md"
+    },
+    {
+      "type": "file",
+      "title": "solution of square system with direct methods",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Linear system solution/solution of square system with direct methods.md"
+    },
+    {
+      "type": "file",
+      "title": "Condition number",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/Condition number.md"
+    },
+    {
+      "type": "file",
+      "title": "linear mapping",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Vectors/linear mapping.md"
+    },
+    {
+      "type": "file",
+      "title": "projection",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Vectors/projection.md"
+    },
+    {
+      "type": "file",
+      "title": "SVD",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Matrices/SVD.md"
+    },
+    {
+      "type": "file",
+      "title": "Partial derivative",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Vector Calculus/Partial derivative.md"
+    },
+    {
+      "type": "file",
+      "title": "Gradient",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Vector Calculus/Gradient.md"
+    },
+    {
+      "type": "file",
+      "title": "square gradient",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Vector Calculus/square gradient.md"
+    },
+    {
+      "type": "file",
+      "title": "The chain rule for functions of vectors",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Vectors/The chain rule for functions of vectors.md"
+    },
+    {
+      "type": "file",
+      "title": "Automatic differentiation",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/optimization/Automatic differentiation.md"
+    },
+    {
+      "type": "file",
+      "title": "Local minimum",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/optimization/Local minimum.md"
+    },
+    {
+      "type": "file",
+      "title": "Optimality conditions for the existance of minimums",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/optimization/Optimality conditions for the existance of minimums.md"
+    },
+    {
+      "type": "file",
+      "title": "Iterative algorithms",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/optimization/Iterative algorithms.md"
+    },
+    {
+      "type": "file",
+      "title": "Gradient method",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/optimization/Gradient method.md"
+    },
+    {
+      "type": "file",
+      "title": "Sample space",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Statistics/Sample space.md"
+    },
+    {
+      "type": "file",
+      "title": "Random variable",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Statistics/Random variable.md"
+    },
+    {
+      "type": "file",
+      "title": "events",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Statistics/events.md"
+    },
+    {
+      "type": "file",
+      "title": "Probability",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Statistics/Probability.md"
+    },
+    {
+      "type": "file",
+      "title": "Probability density function",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Statistics/Probability density function.md"
+    },
+    {
+      "type": "file",
+      "title": "Probability mass functions",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Statistics/Probability mass functions.md"
+    },
+    {
+      "type": "file",
+      "title": "Poisson distribution",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Statistics/Poisson distribution.md"
+    },
+    {
+      "type": "file",
+      "title": "Gaussian (normal) distribution",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Statistics/Gaussian (normal) distribution.md"
+    },
+    {
+      "type": "file",
+      "title": "multivariate random variable",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Statistics/multivariate random variable.md"
+    },
+    {
+      "type": "file",
+      "title": "Bayes theorem",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Statistics/Bayes theorem.md"
+    },
+    {
+      "type": "file",
+      "title": "Sum rule",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Statistics/Sum rule.md"
+    },
+    {
+      "type": "file",
+      "title": "Product rule",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Statistics/Product rule.md"
+    },
+    {
+      "type": "file",
+      "title": "Statistic",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Statistics/Statistic.md"
+    },
+    {
+      "type": "file",
+      "title": "statistical indipendence",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Statistics/statistical indipendence.md"
+    },
+    {
+      "type": "file",
+      "title": "Define a model for learning process in AI",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Statistics/Define a model for learning process in AI.md"
+    },
+    {
+      "type": "file",
+      "title": "MAP for non linear functions",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Statistics/MAP for non linear functions.md"
+    },
+    {
+      "type": "file",
+      "title": "MAP (maximum a posteriori)",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Statistics/MAP (maximum a posteriori).md"
+    },
+    {
+      "type": "file",
+      "title": "MLE for non linear functions",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Statistics/MLE for non linear functions.md"
+    },
+    {
+      "type": "file",
+      "title": "Maximum likelihood estimation",
+      "path": "Statistical and Mathematical Methods for Artificial Intelligence/Statistics/Maximum likelihood estimation.md"
+    }
+  ]
+}
