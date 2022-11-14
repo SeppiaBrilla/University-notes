@@ -21,7 +21,7 @@ and the gradient is computed as:
 $$
 \frac{\nabla f}{\nabla (s,t)} = \frac{\partial f}{\partial x}\frac{\partial x}{\partial (s,t)} = 
 \begin{bmatrix}
-\frac{\partial f}{\partial x_1} \frac{\partial f}{partial x_2}
+\frac{\partial f}{\partial x_1} \frac{\partial f}{\partial x_2}
 \end{bmatrix}
 \begin{bmatrix}
 \frac{\partial x_1}{\partial s} & \frac{\partial x_1}{\partial t} \\
@@ -29,7 +29,7 @@ $$
 \end{bmatrix}
 $$
 
-The gradient of. a function $f(x)$ where $f: \mathbb{R}^n \rightarrow \mathbb{R}^m$ and $x = (x1,\dots,x_n) \in \mathbb{R}^n$ can be performed as:
+The gradient of. a function $f(x)$ where $f: \mathbb{R}^n \rightarrow \mathbb{R}^m$ and $x = (x1,\dots,x_n) \in \mathbb{R}^n$ can be performed as (also known as the Jacobian):
 $$
 \begin{align}
 \frac{\partial f}{\partial x_i} &= 

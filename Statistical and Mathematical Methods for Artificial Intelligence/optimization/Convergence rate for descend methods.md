@@ -1,11 +1,10 @@
 an [[Iterative algorithms]] has convergence rate $q$ if:
 $$
 \begin{align}
-&\frac{||x_{k+1} - x^*||}{||X_k - x^*||^q} < c \\
+&\frac{||x_{k+1} - x^*||}{||x_k - x^*||^q} < c \\
 &\Updownarrow\\
 &\frac{||e_{k+1}||}{||e_k||^q} \\
 &\Rightarrow ||e_{k+1}|| < c||e_k||^q 
-
 \end{align}
 $$
 
