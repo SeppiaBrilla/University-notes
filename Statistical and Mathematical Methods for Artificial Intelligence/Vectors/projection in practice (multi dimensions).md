@@ -1,10 +1,10 @@
-The multi dimensional case of the projection is very similar to the two dimension case ([[projection in practice (two dimension)|see here]]).
+The multi dimensional case of the projection is very similar to the two dimension case  ([[projection in practice (two dimension)|see here]]).
 The main difference is, of course, the basis vectors that produces $U$.
 Therefore:
 $$
 \phi_U(x) = \sum^{m}_{i=1}\lambda_Ib_i = B\lambda
 $$
-	Where: $B \in \mathbb{R}^{n \times m}= [b_1, ..., b_m]$ and $\lambda \in \mathbb{R}^m = [\lambda_1, ..., \lambda_m]$   
+Where: $B \in \mathbb{R}^{n \times m}= [b_1, ..., b_m]$ and $\lambda \in \mathbb{R}^m = [\lambda_1, ..., \lambda_m]$   
 In this case $\phi_U(x)$ must be orthogonal to every element of $B$:
 $$
 \begin{aligned}
