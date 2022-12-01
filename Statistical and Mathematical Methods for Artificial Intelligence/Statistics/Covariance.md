@@ -7,4 +7,4 @@ $$
 cov[x,x] = \mathbb{E}[x * x] - \mathbb{E}[x] * \mathbb{E}[x] = V_x[x] 
 $$
 
-In the case of [[multivariate random variable]] the covariance is a matrix of size $d \times d$ where $d$ is the dimension of the variable and it is symmetric and [[positive definite]]
+In the case of [[multivariate random variable]] the covariance is a matrix of size $d \times d$ where $d$ is the dimension of the variable and it is symmetric and [[positive definite]] 

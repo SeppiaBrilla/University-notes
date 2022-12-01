@@ -28,3 +28,5 @@ $$
 \min_\sigma ||y - \Phi(x)\sigma||
 $$
 and in order to do so we can use several methods like [[Gradient method]] or [[Normal equations]]
+
+(See also [[Maximum likelihood estimation]])
