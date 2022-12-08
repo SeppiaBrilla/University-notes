@@ -1,0 +1,1 @@
+Use domain knowlend and apply rules using some kind of [[Euristics]]

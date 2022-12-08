@@ -1,0 +1,1 @@
+The solution space contains all the possible sequence of actions that an agent can perform.

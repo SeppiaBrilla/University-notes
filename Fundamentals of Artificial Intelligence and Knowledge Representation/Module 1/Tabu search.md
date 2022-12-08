@@ -1,0 +1,2 @@
+It is a set of [[Meta heuristics]] rules to improve [[Iterative improvement - hill climbing]] search. It adds a Tabu list that keeps track of visited solutions and forbids them. This escape local minima and cycling.
+Often is inefficent to store the full solution so we store the moves made but this could cut good solutions not yet visited. In order to prevent that we can implement an _Aspiration criteria_ (E.G. accept forbidden moves toward solution better to the current one).

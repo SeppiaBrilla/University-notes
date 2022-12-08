@@ -1,0 +1,2 @@
+Is a [[Depth first]] variant [[Non informed strategies]] for searchig a solution to a given problem.
+The main difference is that includes a maximum deep as a parameter. The algorithm stops the [[Depth first]] strategy at that given depth

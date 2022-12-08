@@ -1,0 +1,3 @@
+A* is a special case of [[Best-First]] algorithm and work kinda in the same way as [[Greedy search]] but, instead of considering only the distance from the current node to the given goal it consider also the distance from the starting node and compute the desiderability as the sum of the two distances.
+A* does not guarantee to find the optimal solution (ite depends on the [[Euristics]]). If H(n) is the true distance between the current node and the goal A* converge to the optimal solution if an heuristic function H' that forall n H'(n) < H(n) has been choosen.
+If H' = 0 A* is equal to [[Breadth-first]].
