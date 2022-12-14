@@ -1,0 +1,1 @@
+is it modeled through [[preconditions]] [[postconditions]]

@@ -1,0 +1,2 @@
+theta_p, theta_g and w are parameters that should be carefully choose  as they strongly influence the efficencyA propagation algorithm is a search method that exploit constraints to prevent failures rather then recover from them.
+This kind of methods prune the search tree a priori by the eilimiation of all subtrees that lead to a failure limiting the backtracking.
