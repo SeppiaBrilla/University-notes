@@ -1,4 +1,4 @@
-theta_p, theta_g and w are parameters that should be carefully choose  as they strongly influence the efficencyis a [[Consistency tecnique]] to find arc consistency.
+is a [[Consistency tecnique]] to find arc consistency.
 It uses a queue of arcs and cycles untill is empty. At each step, if the values of a variable are reduced, all the arcs from and to it will be enqueued.
 
 ### pseudocode

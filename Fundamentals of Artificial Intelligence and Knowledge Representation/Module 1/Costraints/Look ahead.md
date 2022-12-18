@@ -1,4 +1,4 @@
-theta_p, theta_g and w are parameters that should be carefully choose  as they strongly influence the efficencyIs a type of [[Propagation algorithms]] for [[Constraint satisfaction problem|CSP]].
+Is a type of [[Propagation algorithms]] for [[Constraint satisfaction problem|CSP]].
 It is very similar to [[Forward checking]] but, if [[Forward checking]] updates the possible values only by deleting the one incompatible with the current choice, Look ahead update the values of each variable also by looking at the updated value of the previous one.
 There are two look ahead implementations:
 

@@ -1,2 +1,2 @@
-theta_p, theta_g and w are parameters that should be carefully choose  as they strongly influence the efficencyIs a type of [[Propagation algorithms]] for [[Constraint satisfaction problem|CSP]].
+Is a type of [[Propagation algorithms]] for [[Constraint satisfaction problem|CSP]].
 At each assigment of variable ($x_i$) the algorithm propagates the cnostraints involving $x_i$ to all furher variable not yet instantiated. The main idea is that, since each assigment impacts the possible value of other variables, we can use this knwledge to prune the values (and so avoid checking them) that will be inconsisten after that assignement. 

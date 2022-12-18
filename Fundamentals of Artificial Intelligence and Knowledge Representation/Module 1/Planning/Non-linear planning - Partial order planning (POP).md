@@ -57,7 +57,7 @@ def resolveThreats(plan):
 
 ## Modal truth criterion
 
-Often __promotion__ and __demotion__ are not enough to ensure the completeness of the planner and we have to use other methods to resolve conflicts. MTC:
+Often __promotion__ and __demotion__ are not enough to ensure the completeness of the planner and we have to use other methods to resolve conflicts. MTC is a construction process that guarantees planner compleateness:
 - __Establishment__: open goal achievement by means of: (1) a new action to be inserted in the plan, (2) an ordering constraint with action already in the plan or simply (3) of a variable assignment.
 - __Promotion__: as before
 - __Demotion__: as before
