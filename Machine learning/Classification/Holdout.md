@@ -1,0 +1,2 @@
+A tipical value of the training / test split ratio is 2 / 1.
+The test set is used to obtain an estimation of the performance with the new data and so should be as representative as possible to the dataset
