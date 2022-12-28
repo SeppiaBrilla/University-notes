@@ -1,0 +1,1 @@
+It computes the classification by searching the k (input parameter) nearest example on the training data, then, it outputs the result as the most repeated class found in the neighbourhood. Another important parameter is the function used to compute the distance between nodes.

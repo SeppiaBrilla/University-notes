@@ -1,0 +1,1 @@
+It is a method to get indipendent [[Classification|classifiers]]: train the classifier with a sample dataset created from the original trainset by picking elements with replacement and a uniform probability distribution.

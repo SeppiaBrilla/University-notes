@@ -1,0 +1,1 @@
+Exactly like [[Linear regression]] but with a multivariate function.

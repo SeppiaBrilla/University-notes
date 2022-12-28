@@ -1,0 +1,1 @@
+It is a method to get indipendent [[Classification|classifiers]]: changes the probability distribution of the elements in order to have a higher chance of getting those which have bad results.

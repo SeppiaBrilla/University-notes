@@ -36,6 +36,14 @@ The supervised learning for the algorithm gives to $\mathcal{M}$ a set of x with
 ### Flavours of classificator
 
 There are two kinds of classificator:
-- __Crisp__: the classifier assign a label to each individual, like [[Decision tree]].
-- __Probabilistic__: the classifier assign a probability for each possible label, like [[Naive Bayes classifier]], [[Perceptron]]
+- __Crisp__: the classifier assign a label to each individual, like [[Decision tree]], [[Perceptron]], [[Neural networks]], [[K nearest classifier]], [[Ensemble methods]].
+- __Probabilistic__: the classifier assign a probability for each possible label, like [[Naive Bayes classifier]]
 We can [[Transform a probabilistic classifier into a crisp classifier]]
+
+## From binary to multiclass classifiers
+
+Most of the classifiers works better with two classes (like the [[Perceptron]] based ones) and so, we need to find a good way to transform the two-way classification into a multi-way classification. Two main methods:
+- [[One-vs-One (OVO)]]
+- [[One-vs-Rest (OVR)]]
+
+[[OVO vs OVR]]

@@ -1,0 +1,1 @@
+[[One-vs-One (OVO)|OVO]] requires solving a higher number of problems of smaller size while [[One-vs-Rest (OVR)|OVR]] it is intrisically unbalanced due to the fact that the number of example of each class are obviuslly smaller then the summed example of every other class.
