@@ -4,7 +4,7 @@ The distance is computed with a [[Similarity and dissimilarity|distance]] functi
 
 ## Distortion
 
-given a dataset $\{x_1,dots,x_N\}$, an encoding function $encode: \mathbb{R}^D \rightarrow [1,\dots,k]$ and a decoding function: $decode: [1,\dots,k] \rightarrow \mathbb{R}^D$ we define distortion as:
+Given a dataset $\{x_1,\dots,x_N\}$, an encoding function $encode: \mathbb{R}^D \rightarrow [1,\dots,k]$ and a decoding function: $decode: [1,\dots,k] \rightarrow \mathbb{R}^D$ we define distortion as:
 $$
 \text{Distortion} = \sum_{i = 1}^N(x_i - decode(encode(x_i)))^2
 $$

@@ -1,4 +1,3 @@
-
 Association rules are elements that appear "frequently" in objects. For example, in a dataset of shopping carts where each row is a cart and each dimension an element in the cart, we could try to find association rules between items frequently bought together like Nutella and bread or salt and pepper.
 
 ## Some definitions

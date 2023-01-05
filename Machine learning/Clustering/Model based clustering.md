@@ -1,4 +1,4 @@
-Model based are [[Clustering]] tecniques that use statistics in order to build a model that capture the meaning of the data.
+Model based are [[Clustering]] tecniques that use statistics in order to build a model that captures the meaning of the data.
 The main tecninque uses the mixture model that view the data as a mixture of different probablity distribution summed together.
 As a base model, usually, a multivariate [[Gaussian (normal) distribution]] is used and the esimator is usually made with [[Maximum likelihood estimation]]. An important assumption on the data is that every variable must be indipendent from the others, like in [[Naive Bayes classifier]].
 

@@ -1,4 +1,3 @@
-
 ### Similarity
 
 A numerical value of how-alike data object are with value between 0 and 1 with 1 completely identical, 0 totally different.

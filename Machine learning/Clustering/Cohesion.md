@@ -1,6 +1,6 @@
-Cohesion measuresthe distance between each element of a cluster in a [[Clustering]] scheme.
+Cohesion measures the distance between each element of a cluster in a [[Clustering]] scheme.
 It is computed as the sum of the proximities ([[Similarity and dissimilarity]]) between the elements of the cluster and the geometric center.
-
+f test in statistics
 #### Some definitions:
 - [[Centroid]]
 - [[Medoid]]

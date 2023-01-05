@@ -1,10 +1,10 @@
-Clustering is a machine learining tecnique that tries to find a natural partition in the data that splits the dataset in k ___clusters___. The result will be a clustering function that map each new object to a sequence (or to noise). Of course, we want the data in the same cluster to be as similar as possible.
+Clustering is a machine learining tecnique that tries to find a natural partition in the data that splits the dataset into k ___clusters___. The result will be a clustering function that map each new object to a sequence (or to noise). Of course, we want the data in the same cluster to be as similar as possible.
 
 ### A bit of formality
 
 We want to find a function clust() from $X \; \text{to} \; 1,\dots,K$ such that:
-- $\forall x_1,x_2 \in X clust(x_1) = clust(x_2) \Rightarrow x_1\text{and } x_2 \text{ are similar}$ 
-- $\forall x_1,x_2 \in X clust(x_1) \neq clust(x_2) \Rightarrow x_1\text{and } x_2 \text{ are not similar}$  
+- $\forall x_1,x_2 \in X \;\; clust(x_1) = clust(x_2) \Rightarrow x_1\text{and } x_2 \text{ are similar}$ 
+- $\forall x_1,x_2 \in X \;\; clust(x_1) \neq clust(x_2) \Rightarrow x_1\text{and } x_2 \text{ are not similar}$  # Building a neural network FROM SCRATCH (no Tensorflow/Pytorch, just numpy & math)
 
 # Measure the clustering quality
 

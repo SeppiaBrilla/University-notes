@@ -1,1 +1,1 @@
-A medoid is an element of the dataset whose average dissimilarity with all thye elements of the cluster is minimal (not necessarily unique). It is used in contexts when the mean is not defined like 3D trajectories or gene expression 
+A medoid is an element of the dataset whose average dissimilarity with all the elements of the cluster is minimal (not necessarily unique). It is used in contexts when the mean is not defined like 3D trajectories or gene expression 
