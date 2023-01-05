@@ -31,3 +31,8 @@ Another way to resolve this issue is __Undersampling__ that reduces the number o
 ### Oversampling with SMOTE
 
 It is an oversampling tecnique that tries to _synthesize_ new examples of the minority classes. It tries to generate a new object taking a random element from the minority class and generating the new element as a point in between the choosen element and one of his neighbours. 
+
+
+
+## Classification tecniques comparison
+![[Pasted image 20230104120306.png]]

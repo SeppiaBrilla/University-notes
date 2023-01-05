@@ -1,0 +1,9 @@
+{
+  "serverUrl": "https://api.languagetool.org",
+  "urlMode": "standard",
+  "glassBg": false,
+  "shouldAutoCheck": true,
+  "pickyMode": false,
+  "staticLanguage": "en",
+  "ruleOtherDisabledRules": "ARROWS[1],ARROWS[2],ARROWS[3]"
+}

@@ -1,4 +1,7 @@
 {
   "attachmentFolderPath": "University",
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "spellcheckDictionary": [
+    "continuos"
+  ]
 }

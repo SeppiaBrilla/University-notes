@@ -11,7 +11,7 @@ $$
 \begin{align}
 \max_{w_0,w_1,\dots,w_n} &M \\
 \sum_{j = 1}^n w_j^2 &= 1\\
-c_i(w_0 + w_1 x_{i,1} + \dots& + w_n x_{i,n}) > M \forall i = 1, \dots D
+c_i(w_0 + w_1 x_{i,1} + \dots& + w_n x_{i,n}) > M \; \forall i = 1, \dots D
 \end{align}
 $$
 

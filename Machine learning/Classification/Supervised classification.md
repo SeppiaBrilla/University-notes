@@ -24,9 +24,7 @@ $$
 where $\theta$ is a set of parameters for the decision function.
 The supervised learning for the algorithm gives to $\mathcal{M}$ a set of x with their corresponding y in order to determine $\theta$ by reducing the prediction error as much as possible ([[Gradient method]] ndr)
 ([[Vapnik-Chervonenkis Dimension]], [[Define a model for learning process in AI]])
-
-
-
+entropy
 ## Workflow
 1) Learning the model for a given set of classes: we need a training set with all the lables, the set should be as much representative as possible.
 2) Estimate the [[accuracy]] of the model: with a test set with given labels, we use the model to guess the labels of the test set, and then we check the correctness of the guess.

@@ -44,3 +44,8 @@ In the case we have some already-clustered data, we could use it as a test set w
 - Hierarichical: [[Hierarchical clustering]]
 - Based on density: [[Density based clustering]]
 - Statistics: [[Model based clustering]]
+
+
+## Clustering tecniques comparison
+
+![[Pasted image 20230103180557.png]]
