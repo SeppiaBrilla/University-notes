@@ -1,3 +1,4 @@
+
 Our data can have a lot of problems associated with it:
 - noise and outliers
 - missing values
