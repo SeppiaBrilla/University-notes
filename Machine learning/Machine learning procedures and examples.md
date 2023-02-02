@@ -98,9 +98,12 @@ if IN_COLAB:
 	uploaded = files.upload()
 
 data = data[~data.isnull().any(axis=1)] # remove rows with null values 
+data = data.dropna(how='any')
 data.isnull().sum() > 0 # check column with null values
 
+cross_val_score(model, X_train, y_train, scoring='accuracy')
 
+plot_confusion_matrix(confusion_matrix_test, show_normed=True);
 
 def two_plots(x, y1, y2, xlabel, y1label, y2label):
 
