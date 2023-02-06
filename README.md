@@ -4,6 +4,6 @@ This notes are incomplete and will be updated while my studies goes on.
 ## Tools
 You'll find mostly markdown notes taken with [Obsidian](https://obsidian.md/). The code is mostly python, written with [Jupiter notebooks](https://jupyter.org/) on VS Code.
 
-## Metodology
+## methodologies
 The notes are organized in folders. Each folder contains the specific notes from a particular course.
 The notes mostly try to follow the [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) metodology (with a certain degree of freedom). It is possible that some topics have multiple notes: I do that whenever I feel that a different take on the same subject is needed. 
