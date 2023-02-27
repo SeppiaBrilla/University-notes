@@ -1,4 +1,4 @@
-theta_p, theta_g and w are parameters that should be carefully choose  as they strongly influence the efficencyAlgorithms to find a solution to a [[Constraint satisfaction problem|CSP]] with an a posteriori verification of the constraints (create the solution then check if it is valid).
+theta_p, theta_g and w are parameters that should be carefully choose  as they strongly influence the efficencyAlgorithms to find a solution to a [[Fundamentals of Artificial Intelligence and Knowledge Representation/Module 1/Costraints/Constraint satisfaction problem|CSP]] with an a posteriori verification of the constraints (create the solution then check if it is valid).
 
 ## Generate and Test (GT)
 This algorithm generate all possible solutions then it test them. Very inefficient and slow

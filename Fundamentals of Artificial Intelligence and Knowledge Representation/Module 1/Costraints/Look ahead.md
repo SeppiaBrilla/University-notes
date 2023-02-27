@@ -1,4 +1,4 @@
-Is a type of [[Propagation algorithms]] for [[Constraint satisfaction problem|CSP]].
+Is a type of [[Propagation algorithms]] for [[Fundamentals of Artificial Intelligence and Knowledge Representation/Module 1/Costraints/Constraint satisfaction problem|CSP]].
 It is very similar to [[Forward checking]] but, if [[Forward checking]] updates the possible values only by deleting the one incompatible with the current choice, Look ahead update the values of each variable also by looking at the updated value of the previous one.
 There are two look ahead implementations:
 

@@ -1,0 +1,3 @@
+It is a tecnique to improve our [[Combinatorial Decision Making and Optimization/Constraint satisfaction problem|CSP]] model.
+Often, in our model, we will have implied constraints that can be inferred by the combination of other constraints but are not explicitly expressed. Sometimes, express those contraints could be usefull in order to prune some solutions earlier than it would be without that pruning. 
+We should also be carefull not to insert constraints that are redundant both semantically and computationally speaking.

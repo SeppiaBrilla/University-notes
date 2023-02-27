@@ -1,0 +1,2 @@
+It is a language used for reasoning.
+It uses symbols to represent concepts. Any symbol is bonded to an interpretation, an interpretation is a pair D, i where D is a set of objects, called domain and i is a mapping from the symbols to elements and relations of D.

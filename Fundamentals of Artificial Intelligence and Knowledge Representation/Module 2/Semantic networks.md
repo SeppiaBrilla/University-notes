@@ -1,0 +1,2 @@
+Basically graph over [[Ontology|categories and objects]] with categories and objects as node and arcs that connect objects with categories they belong to or categories with their sub/super sets.
+They can be used for reasoning purposes, but they are less powerfull than [[First order logic]]. In order to make them as powerfull, we can call personalized procedures to resolve some links between nodes.

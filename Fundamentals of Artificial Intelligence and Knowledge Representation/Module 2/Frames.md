@@ -1,0 +1,2 @@
+Similar to [[Semantic networks]].
+Frames are pieces of knowledge that describe objects in terms of properties. They have unique names. In the Frames proposal, an object belong to a category if it is similar enough to some typical members of the category, named prototypes.

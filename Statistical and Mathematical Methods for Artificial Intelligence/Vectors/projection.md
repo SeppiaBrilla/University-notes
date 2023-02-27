@@ -1,4 +1,5 @@
-We define the projection of a linear space $V$ the [[linear mapping]] $\phi: V \rightarrow U$ where $U$ is a subpace of $V$ ($U \subseteq V$). $\phi$ must have the following property:
+The description, explanation, and simulation of human  
+thought processes.We define the projection of a linear space $V$ the [[linear mapping]] $\phi: V \rightarrow U$ where $U$ is a subpace of $V$ ($U \subseteq V$). $\phi$ must have the following property:
 $$
 \begin{align}
 &\phi^2 = \phi \; \circ \; \phi = \phi  \\
