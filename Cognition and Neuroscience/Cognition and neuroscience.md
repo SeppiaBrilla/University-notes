@@ -59,3 +59,9 @@ The belif that all knowledge comes from nature and observation of phenomena. The
 
 ### Montreal's procedure
 A method to treat epilepsy by destroyng the neurons causing it.
+
+
+
+### A deep(-ish) dive in the whole biology thing
+
+- [[Individual cels]]

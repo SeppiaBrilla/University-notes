@@ -1,0 +1,1 @@
+Requires a sequence of variables to be lexicographically less than or equal to another sequence of variables. It is usefull to break [[Symmetry inc CSPs|simmetries]].

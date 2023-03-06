@@ -1,0 +1,1 @@
+Ensure a sequence of variables obey certain patterns

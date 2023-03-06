@@ -20,4 +20,5 @@ __A better approach__:
 	- $\text{alldifferent}([D_{1,2}, D_{1,3}, \dots, D_{(m - 1),m}])$
 	The "alldifferent" constraint is an implied one while the Ds variables are auxiliary. This new model reduces the computational cost to $O(m^2)$ which is waaay better.
 
-We should also keep in mind that there may be some problems when the order of the variable is non-significant. In those cases, we could have a [[Symmetry inc CSPs|symmetry problem]]
+We should also keep in mind that there may be some problems when the order of the variable is non-significant. In those cases, we could have a [[Symmetry inc CSPs|symmetry problem]].
+In order to exploit the constraint order to better prune our solution tree, we need to [[Constraints propagation|propagate the constraits]]

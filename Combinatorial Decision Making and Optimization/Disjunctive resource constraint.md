@@ -1,0 +1,1 @@
+Requires that tasks do not overlap in time. Also known as noOverlap constraint.

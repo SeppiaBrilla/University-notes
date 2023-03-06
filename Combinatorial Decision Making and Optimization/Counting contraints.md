@@ -1,0 +1,1 @@
+Restrict the number of variables satisfying a condition or the number of times values are  taken.

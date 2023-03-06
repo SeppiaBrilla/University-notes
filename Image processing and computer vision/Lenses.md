@@ -26,3 +26,13 @@ $$
 
 Given a choosen point, every other object in a different focus point will appear out of focus.
 Those other points will be called __circle of confusion or blurr circle__.
+
+## Diaphragm
+
+It is the mechanical part that control the amount of light gathered by the camera.
+
+## Focusing mechanism
+
+![[Pasted image 20230302182143.png]]
+
+With a focal length long as the distance from p to the lens, we obtain a focus point at infinity, in any other case, the focus point move and the point in focus change.
