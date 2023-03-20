@@ -1,0 +1,3 @@
+Median filter is a non-lienar [[Image filters]] where each pixel is replaced with the median over a given neighbourhood.
+Median filtering tends to keep sharper edges than linear filters such as [[Mean filter]] and [[Gaussian filter]]. It reduces [[Noise]] in the images because, often, the noisy pixels tend to have very high or very low values. 
+Yet, Gaussian-like noise, such as sensor noise, cannot be dealt with by the Median, as this would require computing new noiseless intensities.

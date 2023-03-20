@@ -38,4 +38,18 @@ There are 3 main types of neurons, separated by their functional category:
 - __Motor__: carry commands from the brain to the body
 - __Interneurons__: mediate the impulses between sensory and motor neurons
 
-Here's how [[Information sharing between neurons]] works
+Here's how [[Information sharing between neurons]] works.
+
+### Divergence
+A neuron can activate many target cells. This helps with share the influence
+
+### Convergence
+A neuron need to be activated by a number of different other neurons.
+
+
+## Inhibitory neurons
+
+Some neurons can have a hinibitory function that reduces the likelihood of firing.
+These neurons can be:
+- __Feed-forward__: excitatory neurons' synapse onto inhibitory interneurons, inhibiting other downstream neurons. They enhance the effect of the active pathway by suppressing the activity of pathways mediating opposing actions
+- __Feed-back__: excitatory neurons' synapse onto inhibitory interneurons, which project back to the same neurons and inhibit them. They dampen activity within the stimulated pathway and prevent it from exceeding a certain critical level

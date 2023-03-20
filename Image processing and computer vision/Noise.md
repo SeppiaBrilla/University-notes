@@ -28,7 +28,3 @@ $$
 O(p) = \frac{1}{|K|} \sum_{q \in K}^N I(q) = \frac{1}{|K|} \sum_{q \in K}^N (\tilde{I}(q) + n(q)) = \frac{1}{|K|} \sum_{q \in K}^N \tilde{I}(q) + \frac{1}{|K|} \sum_{q \in K}^N n(q) \cong \tilde{I}(q)
 $$
 And that is what we call an [[Image filters]].
-
-## Mean filter
-
-It is the simplest possible [[Image filters]] that uses [[Convolution]]. It denoise the image by multiplying the full image by a matrix of size $n^2$ with values $\frac{1}{n^2}$. It works as a low passing filter that smooth the image. With this process, the image gets blurrier.
