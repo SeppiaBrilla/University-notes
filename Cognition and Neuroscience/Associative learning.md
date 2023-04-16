@@ -39,3 +39,42 @@ The CS is reinforced only part of the time. Associations are acquired more slowl
 
 ### Fear/threat/aversive conditioning
 Is a particular kind of classical conditioning that involves the use of fear to stimulate a response.
+
+
+## Contiguity
+
+Associative learning is learning about contiguity.
+
+### Contiguity
+closeness in time between stimulus/behavior and outcome. Stimuli that are close between one and another in time become associated (not sufficien for learning).
+
+Two types of conditioning:
+- __Delay conditioning__: he CS extends throughout the interstimulus interval (ISI), which is the time interval between the CS onset and the US onset
+- __Trace conditioning__: there is a time interval between the cs and the us. The interval must be short
+
+### Plasticity
+Neural connections can be modified by experience and learning.
+__Hebb’s Law__: Neurons that fire together, wire together.
+
+### Contingency
+Contingency is the causal relationship between stimulus/behavior and outcome. When one stimulus depends on the other, they will become associated --> Predictive value critical.
+It is foundamental, with contiguity, to create an association.
+
+## Surpise 
+
+With Contiguity and Contingency also surpise is foundamental to the learning process.
+![[Pasted image 20230407124924.png]]
+Learning theories have posited that conditioning is not instructed by a simple sensory representation of the outcome, but instead by an error signal measuring the difference between the outcome actually present and that expected.
+
+## Prediction error
+It dicates the variations in the effectivness of the US in supporting the learning: if the difference is large, then the learning update the prediction.
+### Rescola-Wagner model for prediction error
+$\delta_t = R_t - V_t$ , $V_{t + 1} = V_t + \alpha \delta_t$ where:
+- R is the vaule of US, 1 if delivered and 0 if omitted
+- V is the expectancy of the use of the expected value of a given CS
+- T is the trial
+- $\alpha$ is the learning rate parameter, between 0 and 1.
+![[Pasted image 20230407125702.png]]
+
+### Temporal-difference model for prediction error
+$V_{t + 1} = V_t + \alpha \delta_t$ , $\delta_t = R_t + V_t - V_{t - 1}$. It is a real-time model and t is the time steps within a trial instad of a complete one.
