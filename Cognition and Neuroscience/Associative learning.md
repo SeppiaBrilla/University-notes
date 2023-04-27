@@ -68,6 +68,7 @@ Learning theories have posited that conditioning is not instructed by a simple s
 
 ## Prediction error
 It dicates the variations in the effectivness of the US in supporting the learning: if the difference is large, then the learning update the prediction.
+
 ### Rescola-Wagner model for prediction error
 $\delta_t = R_t - V_t$ , $V_{t + 1} = V_t + \alpha \delta_t$ where:
 - R is the vaule of US, 1 if delivered and 0 if omitted
@@ -78,3 +79,15 @@ $\delta_t = R_t - V_t$ , $V_{t + 1} = V_t + \alpha \delta_t$ where:
 
 ### Temporal-difference model for prediction error
 $V_{t + 1} = V_t + \alpha \delta_t$ , $\delta_t = R_t + V_t - V_{t - 1}$. It is a real-time model and t is the time steps within a trial instad of a complete one.
+
+## Dopamine 
+
+To update the response of the neurons after the prediction error has been computed, the brain uses dopamine: a neurotransmitter having effects other than, or in addition to, direct neural excitation or inhibition.
+There are 3 pathways the brain che follow to fix the neurons' firing rate:
+- __Nigrostriatal pathway__: it is critical in the production of movement as part of the basal ganglia motor loop
+- __Mesolimbic pathway__: projects to the nucleus accumbens, septum, amygdala and hippocampus (important for motivational function)
+- __Mesocortical pathway__: projects to the medial prefrontal, cingulate, orbitofrontal and perirhinal cortex (important for motivational function)
+
+![[Pasted image 20230416144426.png]]
+
+![[Pasted image 20230416145948.png]]

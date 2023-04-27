@@ -1,1 +1,2 @@
-I'm neither an expert nor particularly interested in this field and, for this reason, the summaries are not so summarized. I could not clearly identify important things, and so I ended up copying a lot from the slides
+I'm neither an expert nor particularly interested in this field and, for this reason, the summaries are not so summarized. I could not clearly identify important things, and so I ended up copying a lot from the slides.
+__The notes do not take into account the experiments which are required in the exam. Do not study only from them__ 
