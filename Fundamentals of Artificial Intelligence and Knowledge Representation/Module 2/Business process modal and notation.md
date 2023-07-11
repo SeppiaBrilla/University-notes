@@ -1,5 +1,5 @@
 BPMN is a model and notation to represent the logical behind [[Business Process Management]].
-Like flowcharts but with more metamodel rules, event-trigger descriptions and a way to capture collaborations. It uses [[Logic]] in ordert to forecast what to do next.
+Like flowcharts but with more metamodel rules, event-trigger descriptions and a way to capture collaborations. It uses [[Fundamentals of Artificial Intelligence and Knowledge Representation/Module 2/Logic]] in ordert to forecast what to do next.
 Problems: no method on how to make a good model and no styling guide, useful in order to
 disambiguate models, have a complete model, understanding similarity and dissimilarity
 between models.

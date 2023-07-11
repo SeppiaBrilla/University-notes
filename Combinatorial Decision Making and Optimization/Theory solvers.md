@@ -52,3 +52,12 @@ NOp(S):
 
 If we cannot rely on the convex property, we will need to use the non-deterministic Nelson-Oppen procedure which works through arrangements of shared constants, basically doing  
 case splitting $x = y \vee x \neq y$ between pairs of shared constants x, y, but it is exponential in the worst case scenario.
+
+
+### Extension
+There are several extensions and enhancements to the SMT  
+framework. Hierarchical approach: the problem is stratified in layers L1, L2, ... of increasing complexity, solved by solvers of increasing expressiveness.
+![[Pasted image 20230428152325.png]]
+
+### Case splitting
+Sometimes it is easier to proceed "per case" and splitting the formula in different cases to solve indipendently.

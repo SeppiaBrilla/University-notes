@@ -1,4 +1,4 @@
-It is a kind of [[Logic]]. In proposition logic, each symbol can be either true or fals, and they are called propositions or atoms or atomic formulas or Pi.
+It is a kind of [[Fundamentals of Artificial Intelligence and Knowledge Representation/Module 2/Logic]]. In proposition logic, each symbol can be either true or fals, and they are called propositions or atoms or atomic formulas or Pi.
 Pi can be connected together with connectives:
 $\wedge, \vee, \rightarrow, \neg, \leftrightarrow, \perp$    
 An __well-formed__ formula is:

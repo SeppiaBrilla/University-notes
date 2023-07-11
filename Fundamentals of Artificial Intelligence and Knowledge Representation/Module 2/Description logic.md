@@ -1,4 +1,4 @@
-A kind of [[Logic]] that focus on the description of terms.
+A kind of [[Fundamentals of Artificial Intelligence and Knowledge Representation/Module 2/Logic]] that focus on the description of terms.
 Siymbols we can use:
 - punctuation
 - positive integers

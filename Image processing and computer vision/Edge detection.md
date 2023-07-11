@@ -71,7 +71,7 @@ $$
 ![[Pasted image 20230314185754.png]]
 
 ### Prewitt operator
-Given the same smoothing, we would wish to approximate tehe partial derivatives by centra differences
+Given the same smoothing, we would wish to approximate the partial derivatives by centra differences
 $$
 \begin{align}
 \bar{I_x}(i,j) = \mu_y(i, j + 1) - \mu_y(i, j - 1) \Rightarrow \frac{1}{3}
@@ -114,7 +114,7 @@ $$
 
 ## NMS
 
-Deciding a trashold value to detect edges on the gradient function can be difficult. A better approach is finding the maximum local value on the image.
+Deciding a threshold value to detect edges on the gradient function can be difficult. A better approach is finding the maximum local value on the image.
 The magnitude of the gradient has to be estimated at points which do not belong to the discrete pixel grid. Such values can be estimated by linear interpolation of those computed at the closest points belonging to the grid
 
 ## Canny’s Edge Detector
@@ -159,5 +159,5 @@ To have a better edge detection we must smooth the image, the log edge detection
 
 Unlike those based on smooth derivatives, the LOG edge detector allows the degree of  
 smoothing to be controlled (i.e. by changing the σ parameter of the Gaussian filter). 
-it Is basically impossible to have 0 as a value in the second derivative in corrispondance of the edges, so, a much more realistic approach is to search to a change in sign in the pixel value and use the most close-to-zero value as the edge.
+it Is basically impossible to have 0 as a value in the second derivative in correspondence of the edges, so, a much more realistic approach is to search to a change in sign in the pixel value and use the most close-to-zero value as the edge.
 

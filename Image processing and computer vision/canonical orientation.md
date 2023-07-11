@@ -2,4 +2,4 @@ Lowe proposes to compute the canonical orientation of DoG keypoints as follows:
 1) Given the keypoint, the magnitude and orientation of the gradient are computed at each pixel of the associated Gaussian-smoothed image, L: $$\begin{align}m(x,y) &= \sqrt{(L(x+1,y) - L(x-1,y))^2 + (L(x,y+1) - L(x,y-1))^2}\\ \theta(x,y) &= \tan^{-1}\left(\frac{L(x,y+1) - L(x,y-1)}{L(x+1,y) - L(x-1,y}\right)\end{align}$$
 2) Compute an orientation histogram by accumulating the contributions of the pixels belonging to a neighborhood of the keypoint location (bin size equal to 10°). The contribution of each pixel to its designated orientation bin is given by the gradient magnitude weighted by a Gaussian with σ=1.5!σs (σs denotes the scale of the keypoint)
 3) The characteristic orientation of the keypoint is given by the highest peak of the orientation histogram (other peaks higher than 80% of the main one would be kept as well)
-4) Finally, a parabola is fit in the neighbourhood of each peak to achieve a more accurate estimation of the canonical orientation
+4) Finally, a parabola is fit in the neighborhood of each peak to achieve a more accurate estimation of the canonical orientation

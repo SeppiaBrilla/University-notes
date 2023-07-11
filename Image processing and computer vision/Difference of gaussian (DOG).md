@@ -1,5 +1,5 @@
 
-Very similar to [[Multi-Scale Feature Detection]] but, instead of computing the derivatives, we can just compute the difference between the image with a gaussian filter and the image itself with a different gaussian filter.
+Very similar to [[Multi-Scale Feature Detection]] but, instead of computing the derivatives, we can just compute the difference between the image with a Gaussian filter and the image itself with a different Gaussian filter.
 $$
 DoG(x,y,\theta) = (G(x,y,k\theta) - (G(x,y,k\theta)) * I(x,y) = L(x,y,k\theta) - L(x,y,\theta)
 $$

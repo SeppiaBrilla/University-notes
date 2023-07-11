@@ -1,4 +1,4 @@
-The choiche on how to expand a search tree is called "strategy".
+The choice on how to expand a search tree is called "strategy".
 
 
 ## Kind of strategies

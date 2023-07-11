@@ -1,14 +1,14 @@
 In the [[Perspective projection]] we assume, as a model, the pinhole camera. However, that model has a major flaw: the amount of light captured is very low. In order to solve the problem, we have two possible solutions:
 
-- Encrease the hole (this results also in a blurrier image because each point in the original image is now a cone in the new image)
-- Take more light over time (this could lead to a motion blur problem if the image has object in moovements)
+- Increase the hole (this results also in a blurrier image because each point in the original image is now a cone in the new image)
+- Take more light over time (this could lead to a motion blur problem if the image has object in movements)
 
 In order to ease the problems of the first solution, we can use Lenses.
-The pinhole model assume an infinite deptho of view, lenses limit that depth to a certain amount but allow a bigger hole and, as a consequence, more light.
+The pinhole model assumes an infinite depth of view, lenses limit that depth to a certain amount but allow a bigger hole and, as a consequence, more light.
 ![[Pasted image 20230227161920.png]]
 
 - P is the scene point
-- p is the focussed image point
+- p is the focused image point
 - u is the distance from P to the lens
 - v the distance from p to the lens
 - f is the focal length (parameter of the lens)
@@ -24,8 +24,8 @@ $$
 \frac{1}{u} + \frac{1}{v} = \frac{1}{f} \rightarrow v = \frac{uf}{u - f}
 $$
 
-Given a choosen point, every other object in a different focus point will appear out of focus.
-Those other points will be called __circle of confusion or blurr circle__.
+Given a chosen point, every other object in a different focus point will appear out of focus.
+Those other points will be called __circle of confusion or blur circle__.
 
 ## Diaphragm
 

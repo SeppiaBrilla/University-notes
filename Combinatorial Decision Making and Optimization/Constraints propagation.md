@@ -42,4 +42,4 @@ Embed specialized propagation which exploits the substructure.
 - [[Cumulative resource constraint]]
 - [[Lexicographic ordering constraint]]
 
-The global constraints can be propagated via specialized algorithms (already written by someone else <3) or via decomposition: decompone the constraint in smaller, easier to propagate constraints. 
+The global constraints can be propagated via specialized algorithms (already written by someone else <3) or via decomposition: decompone the constraint in smaller, easier to propagate constraints. 3

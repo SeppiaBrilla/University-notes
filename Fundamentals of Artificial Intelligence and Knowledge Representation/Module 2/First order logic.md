@@ -1,4 +1,4 @@
-It is a kind of [[Logic]] built upon [[Proposition logic]].
+It is a kind of [[Fundamentals of Artificial Intelligence and Knowledge Representation/Module 2/Logic]] built upon [[Proposition logic]].
 Given this, we can define FOL as: 
 - The set of constants (always true or always false)
 - The set of function symbols (e.g. appear_on(film) $\equiv$ TV)

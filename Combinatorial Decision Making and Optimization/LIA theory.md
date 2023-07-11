@@ -1,0 +1,3 @@
+Like [[LRA theory]] but for integers (also a [[Satisfiability Modulo Theory (SMT)]] solvable theory).
+If not linear, undecidable (Peano arithmetic), if fully quantified, Presburger arithmetic, if quantifier-free, different decision procedures exist
+We can apply methods like Fourier-Motzkin, but Simplex branch & bound/cut generally better. Methods exist also for LIRA = integer + real arithmetic and NLA = nonlinear arithmetic

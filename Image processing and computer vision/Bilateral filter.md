@@ -1,4 +1,4 @@
-It is a non-linear [[Image filters]] that deals with gaussian noise without blurring the image like [[Mean filter]] and [[Gaussian filter]].
+It is a non-linear [[Image filters]] that deals with Gaussian noise without blurring the image like [[Mean filter]] and [[Gaussian filter]].
 The formula of a bilateral filter is:
 $$
 \begin{align}
@@ -11,4 +11,4 @@ $$
 $$
 ![[Pasted image 20230309192143.png]]
 
-In practice, the filter takes into account both the spatial and the color distance of the pixels and uses it to encrease or lower the influence of the neighbours pixels on the intensity of the current one.
+In practice, the filter takes into account both the spatial and the color distance of the pixels and uses it to increase or lower the influence of the neighbors pixels on the intensity of the current one.

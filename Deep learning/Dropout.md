@@ -1,2 +1,1 @@
-
 As in any machine learning algorithm, [[overfitting]] can be a problem. In order to solve it for [[Neural networks]] we canuse dropout: during training "detach" some of the neurons (randomly) so that other neurons need to "learn" more feature and are less prone to overfitting

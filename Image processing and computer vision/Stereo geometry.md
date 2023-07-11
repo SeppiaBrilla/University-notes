@@ -13,5 +13,5 @@ The issue with this method is that we need to know the transformation between th
 
 ## Rectification
 
-Searching hrough oblique epipolar lines is computationally harder.
+Searching through oblique epipolar lines is computationally harder.
 In order to ease the problem, we can rectify the images (rotate them) in order to convert epipolar geometry to standard geometry.

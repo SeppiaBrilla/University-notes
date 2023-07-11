@@ -1,4 +1,4 @@
-A kind of [[Logic]] built upon [[Modal logic]] that, like [[Situation calculus]] or [[Event calculus]], introduces the concept of evolution over time of the world.
+A kind of [[Fundamentals of Artificial Intelligence and Knowledge Representation/Module 2/Logic]] built upon [[Modal logic]] that, like [[Situation calculus]] or [[Event calculus]], introduces the concept of evolution over time of the world.
 It uses 3 new operators:
 - a circle ($\bigcirc$) when somethig is true at the next moment in time
 - a square ($\Box$) when something will always be true in the future

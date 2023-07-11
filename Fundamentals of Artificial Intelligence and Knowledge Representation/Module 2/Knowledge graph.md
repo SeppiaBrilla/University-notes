@@ -1,4 +1,4 @@
-A graph that stores information in nodes and link them via arcs. It does not use any [[Logic|logical]] formula (looks a bit like [[Semantic networks]]).
+A graph that stores information in nodes and link them via arcs. It does not use any [[Fundamentals of Artificial Intelligence and Knowledge Representation/Module 2/Logic|logical]] formula (looks a bit like [[Semantic networks]]).
 We can evaluate it by checking the coverage, the correctness of the information and freshness of the informations. It is used in semantic web.
 
 ## Graph Embedding

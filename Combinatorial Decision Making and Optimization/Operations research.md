@@ -1,0 +1,2 @@
+Operation Research (OR) is a well-established field mainly based on mathematical techniques for enhancing complex decision-making. It is less “AI-oriented” and “logic-oriented”, more “math-oriented”, less “constraints-centered”, more “inequalities-centered”.
+Based on relaxations and cutting-planes rather than propagation.

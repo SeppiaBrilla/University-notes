@@ -24,11 +24,11 @@ The - mirror the image so, in order to transform it, we can get rid of it.
 
 ## Properties
 
-The furtherst the objects are from the camera, the smallest they will appear. We can compute the new dimension (or get the original one) with the formula:
+The furthest the objects are from the camera, the smallest they will appear. We can compute the new dimension (or get the original one) with the formula:
 $$
 l = L \frac{f}{z}
 $$
-where L is the origina length of the segment we want to know the new dimension, f is the focal lenght and z is the distance from the optical center. This formula assumes the segment L is lying on the horizontal axis because ratios of length are not preserved unless the scene is parallel to the camera.
+Where L is the original length of the segment we want to know the new dimension, f is the focal length and z is the distance from the optical center. This formula assumes the segment L is lying on the horizontal axis because ratios of length are not preserved unless the scene is parallel to the camera.
 
 
 # A more realistic approach
@@ -90,9 +90,9 @@ The rotation matrix has 9 entries, but it has only 3 independent parameters, whi
 
 ==>
 
-## Combining the trasformations
+## Combining the transformations
 
-We can combine the trasformations from WRT to CRF and from CRF to 2D into a singolar operation:
+We can combine the transformations from WRT to CRF and from CRF to 2D into a singular operation:
 
 $$
 \begin{cases}
@@ -101,7 +101,7 @@ v = f_v \frac{r_{21}x_w + r_{22}y_w + r_{23}z_w + t_2}{r_{31}x_w + r_{32}y_w + r
 \end{cases}
 $$
 But this model is non-linear.
-In order to linearize it, we can insert a "dummy" parameter that transform the 2D point in a homogenuous 3D space ($\begin{bmatrix}u\\v\end{bmatrix} \equiv \begin{bmatrix}u\\v\\1\end{bmatrix} \equiv \begin{bmatrix}ku\\kv\\k\end{bmatrix}$): 
+In order to linearize it, we can insert a "dummy" parameter that transform the 2D point in a homogeneous 3D space ($\begin{bmatrix}u\\v\end{bmatrix} \equiv \begin{bmatrix}u\\v\\1\end{bmatrix} \equiv \begin{bmatrix}ku\\kv\\k\end{bmatrix}$): 
 $$
 \begin{bmatrix}
 u \\

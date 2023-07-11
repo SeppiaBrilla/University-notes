@@ -10,3 +10,6 @@ Some interesting way we can use SMT:
 - Array theory
 - Theory of bit-vectors
 - Theory of strings
+- [[LRA theory]]
+- [[LIA theory]]
+- [[Difference logic theory]]

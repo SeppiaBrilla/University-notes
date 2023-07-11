@@ -37,4 +37,4 @@ The camera sensor cannot percieve color. In order to obtain it we need to put a 
 ## Dynamic range 
 
 Measures the range on which the sensor can operate. The DR of a sensor is defined as: $\frac{E_{max}}{E_{min}}$
-The higher, the better. HDR (high dynamic range) is obtained by capturing 3 phots: overexposed, normal and underexposed. The 3 combined get the most possible amount of information.
+The higher, the better. HDR (high dynamic range) is obtained by capturing 3 photos: overexposed, normal and underexposed. The 3 combined get the most possible amount of information.

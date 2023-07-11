@@ -1,4 +1,4 @@
-A type of [[Logic]] built upon [[First order logic]] that adds the concept of "known" (a fact we know) and "belived" (a fact we have no certains)
+A type of [[Fundamentals of Artificial Intelligence and Knowledge Representation/Module 2/Logic]] built upon [[First order logic]] that adds the concept of "known" (a fact we know) and "belived" (a fact we have no certains)
 
 ## K operator
 

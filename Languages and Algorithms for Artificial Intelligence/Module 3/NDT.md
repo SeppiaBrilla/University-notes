@@ -1,0 +1,1 @@
+A Non-deterministic turing machine, is a [[Turing machine]] that computes [[Complexity classes|NP]] problem in polinomial time. It works with 2 extra states: accept and reject that either accept or rejects the output and two transition functions that the machine chooses undeterministically an any step.
