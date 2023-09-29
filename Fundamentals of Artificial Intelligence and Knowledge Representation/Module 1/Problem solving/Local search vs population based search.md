@@ -1,5 +1,5 @@
 ## [[Local search]] is better when:
-- neighbourhood structures create correlated search graphs
+- neighborhood structures create correlated search graphs
 - computational cost is low
 - inventing a move is easy
 

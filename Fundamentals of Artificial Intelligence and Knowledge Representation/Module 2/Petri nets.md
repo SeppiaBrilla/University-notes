@@ -12,4 +12,4 @@ Problems: token cannot be distinguished, they can host a single process instance
 - __Condition events nets__: at each point, a place, can only have one token
 - __Place transition nets__: a place can host more token and arcs can have a weight (number of
    token to be consumed or produced) but still tokens cannot be distinguished
-- __Coloured Petri Nets__: tokens have colour (value attached to them) with a domain an allowed operation. Transitions depends also on the base of the colour. Problem: similar to [[First order logic|FOL]] so, undecidable.
+- __Colored Petri Nets__: tokens have color (value attached to them) with a domain an allowed operation. Transitions depends also on the base of the color. Problem: similar to [[First order logic|FOL]] so, undecidable.

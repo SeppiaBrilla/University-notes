@@ -1,4 +1,4 @@
-The PCA is a unsupervised ML algorthm that's provide an easy way to shrink the number of dimensions (and data as a concequence) needed to represent some data with the minimum loss.
+The PCA is a unsupervised ML algorithm that's provide an easy way to shrink the number of dimensions (and data as a consequence) needed to represent some data with the minimum loss.
 This algorithm is based upon the [[SVD]] matrix decomposition and it is computed as follow (for a matrix $A \in \mathbb{R}^{n \times m}$):
 
 1) compute the mean of every vector of the matrix 

@@ -9,7 +9,7 @@ There are two broad classifications of learning:
 ![[Pasted image 20230402142931.png]]
 
 
-## Neural bases of aversive conditioning acquisition
+## Neural bases of averse conditioning acquisition
 
 Double dissociation between patients who have amygdala lesions and patients with hippocampal lesions. The amygdala is necessary for the implicit expression of  
 conditioning. The hippocampus is necessary for the explicit or declarative expression of conditioning

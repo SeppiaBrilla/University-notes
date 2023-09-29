@@ -8,8 +8,8 @@ This is as effective and much faster.
 ![[Pasted image 20230403153849.png]]
 
 ### Extrema detection
-a point (x, y, σ) is detected as a keypoint iff its DoG is higher (lower) than that of the 26 neighbours (8 at the same scale and 18=9+9 at the two nearby scales) in the (x, y, σ) space.
+a point (x, y, σ) is detected as a keypoint iff its DoG is higher (lower) than that of the 26 neighbors (8 at the same scale and 18=9+9 at the two nearby scales) in the (x, y, σ) space.
 
-According to the orginal paper, the best number of octave is 3, the initial value of $\sigma$ should be 1.6 and the input image shoudl be enlarged by a factor of 2.
+According to the original paper, the best number of octave is 3, the initial value of $\sigma$ should be 1.6 and the input image should be enlarged by a factor of 2.
 
 ![[Pasted image 20230403161003.png]]

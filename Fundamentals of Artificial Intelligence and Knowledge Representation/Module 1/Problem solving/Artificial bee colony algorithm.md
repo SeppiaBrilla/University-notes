@@ -1,5 +1,5 @@
 Is a [[Swarm Intelligence]] algorithm. Each "bee" can be:
-- an __employed bee__ that is associeted with a specific "nectar source" (good solution for the problem)
+- an __employed bee__ that is associated with a specific "nectar source" (good solution for the problem)
 - an __onlooker__ that observe emplyed bees and choose a "nectar source" accordingly
 - a __scout__ that discover new food source
 

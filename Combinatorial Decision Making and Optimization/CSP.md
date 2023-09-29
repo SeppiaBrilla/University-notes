@@ -1,4 +1,4 @@
-Note: this is an extention on the [[Fundamentals of Artificial Intelligence and Knowledge Representation/Module 1/Costraints/Constraint satisfaction problem|constraints]] notes taken for module one of FAIKR course. It is more in depth but cover more or less the same things.  
+Note: this is an extension on the [[Fundamentals of Artificial Intelligence and Knowledge Representation/Module 1/Costraints/Constraint satisfaction problem|constraints]] notes taken for module one of FAIKR course. It is more in depth but cover more or less the same things.  
 
 A Costraint satisfaction problem, also called CSP, is a triple $<X,D,C>$ where X is the set of variable to fill, D is the variable domain, C is a set of constraints.
 A solution to a CSP problem is a variable assignement with domain values that respect the constraints.

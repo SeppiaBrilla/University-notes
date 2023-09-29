@@ -1,1 +1,1 @@
-Are planner that reacts to the world changing aroud them. They often are very simple and do not plan for future but just react to some conditions (e.g. Thermostat: if degrees are 18 or lower start the heating. if temperature is higher and the heating is on, switch it off)
+Are planner that reacts to the world changing around them. They often are very simple and do not plan for future but just react to some conditions (e.g. Thermostat: if degrees are 18 or lower start the heating. if temperature is higher and the heating is on, switch it off)

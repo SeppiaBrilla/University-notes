@@ -1,5 +1,5 @@
 
-Every problem formulated in [[linear programming]] and, more in general, [[Operations research]] has a "dual": a problem with the same optimal value that focus more on evaluation of resoruces rather than allocation.
+Every problem formulated in [[linear programming]] and, more in general, [[Operations research]] has a "dual": a problem with the same optimal value that focus more on evaluation of resources rather than allocation.
 We can formulate the dual problem as follows:
 let $P:\max(cs) \; s.t. \; Ax = b, \; x \geq 0$, the dual of P is: $D(P): \min(by) \; s.t. \; A^T y \geq c, \; y \in \mathbb{R}^m$ with 
 - a variable $y_i$ for each constraint $\sum_{j=1}^n a_{i,j}x_j = b_i, \; i = 1,\dots,m$ of P
@@ -17,4 +17,4 @@ We can apply the dual simplex algorithm on a problem to find the optimal solutio
 
 We can also use a hybrid approach: from a dual solution y look for a primal solution x satisfying certain optimality conditions. A “reduced problem” P′ is solved, if possible; if not, from D(P′) a new dual solution y′ is derived and the procedure is repeated.
 
-The duality property is very usefull also for [[Sensitivity analysis]].
+The duality property is also very useful for [[Sensitivity analysis]].

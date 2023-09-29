@@ -2,10 +2,10 @@
 
 The study of how the nervous system is organized and functions.
 It works at different level of investigation:
-- __Molecular__: molecular neuroanatomy, mechanisms of molecular signaling in the nervous system
+- __Molecular__: molecular neuro-anatomy, mechanisms of molecular signaling in the nervous system
 - __Cellular__: study of neurons at a cellular level including morphology and physiological properties
 - __Neural circuits and system__: how neural circuits are formed and function to generate behaviors, such as:
-	- sensory perception and multisensory integration
+	- sensory perception and multi-sensory integration
 	- motor reflex and actions
 
 ### Localizationism
@@ -40,13 +40,12 @@ Connections between neurons. They can be chemical or electrical.
 
 The description, explanation, and simulation of human thought processes.
 It includes many processes like:
-- __Perception__: take in information from the envinronment
-- __Attention__: allows to focus
-- __Learning__: manipulation of new information and integration with prior knowledge
+- __Perception__: take in information from the environment
+- __Attention__: allows tfocusing- __Learning__: manipulation of new information and integration with prior knowledge
 - __Memory__: store information
-- __Action__: use information to interact with the envinronment
+- __Action__: use information to interact with the environment
 - __Language__: the ability to understand and express thoughts, it allows communication.
-- __Thought__: allows to engage in decision-making and problem-solving
+- __Thought__: allows decision-making and problem-solving
 
 
 ## Some cool stuff about cognition

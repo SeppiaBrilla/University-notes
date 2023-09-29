@@ -1,4 +1,4 @@
-It is a [[Deductive planning]] tecnique that aims at resolving a [[Planning]] problem as a [[First order logic]] deduction. The main difference with [[Situation calculus]] is that uses a green-like formulation to describe the word.
+It is a [[Deductive planning]] technique that aims at resolving a [[Planning]] problem as a [[First order logic]] deduction. The main difference with [[Situation calculus]] is that uses a green-like formulation to describe the word.
 
 ## Event calculus keywords
 - __HoldsAt(F, T)__: the fluet F is true at time T

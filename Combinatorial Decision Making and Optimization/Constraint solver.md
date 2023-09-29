@@ -1,4 +1,4 @@
-An algorithm to resolve a [[Combinatorial Decision Making and Optimization/Constraint satisfaction problem|CSP]].
+An algorithm to resolve a [[CSP|CSP]].
 There are many ways to build such algorithm. The simplest one is the generate and test one: generate all possibilities, then check for a good one (computationally awfull). A better approach is to use [[Constraints propagation]] to prune solutions in order to restrict the search area.
 The standart algorithm that uses constraints propagation uses backtracking as programming tecnique to find a solution.
 
@@ -16,7 +16,7 @@ Another thing we can do is to design a problem-specific algorithm that, at each 
 
 # Constraint optimization problems
 
-Often, in a [[Combinatorial Decision Making and Optimization/Constraint satisfaction problem|CSP]], we don't only want to only find a solution but an optimal one (given a function to maximize / minimize). We need to take that into account in the search algorithm or else the computational costs will explode.
+Often, in a [[CSP|CSP]], we don't only want to only find a solution but an optimal one (given a function to maximize / minimize). We need to take that into account in the search algorithm or else the computational costs will explode.
 
 ### Branch and bound
 

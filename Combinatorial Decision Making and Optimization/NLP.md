@@ -1,5 +1,5 @@
 It stands for Non-Linear Programming, which, is like [[Linear programming]] (thus, also an [[Operations research|OR]]) but with non-linear functions like $y = x^2 + \frac{1}{z}$. In order to solve this kind of problems, we can operate in two different ways:
-- Encode the problem in an equally satifiable linear problem ([[From NLP to LP]])
+- Encode the problem in an equally satisfiable linear problem ([[From NLP to LP]])
 - Use a specific NLP approach
 
 

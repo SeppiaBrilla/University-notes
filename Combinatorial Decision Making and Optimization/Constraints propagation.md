@@ -7,9 +7,9 @@ A form of inference which detects inconsistent partial assignments. It looks onl
 ## Generalized arc consistency (GAC)
 
 A constraint $C(X_1, \dots, X_k)$ defined over k variables, is consistent iff $\forall X_i \in \{X_1, \dots, X_k\}, \forall v \in D(X_i), \; \text{v belongs to a support}$.
-At k = 2 we have __arc consistency__. A [[Combinatorial Decision Making and Optimization/Constraint satisfaction problem|CSP]] is GAC iff all its contraints are GAC
+At k = 2 we have __arc consistency__. A [[CSP|CSP]] is GAC iff all its contraints are GAC
 
-(This thing is also been explained in [[Consistency tecnique]])
+(This thing is also been explained in [[Consistency technique]])
 
 ## Bound consistency
 

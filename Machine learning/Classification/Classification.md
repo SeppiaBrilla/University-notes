@@ -1,6 +1,6 @@
-Classification is a type of problem we can solve with machine learning tecniques.
+Classification is a type of problem we can solve with machine learning techniques.
 Any classification problem is shaped as a set of characteristic that we want to label.
-Example: finding the correct desease to a patient, find the specie of an animal, ...
+Example: finding the correct disease to a patient, find the specie of an animal, ...
 
 Some classification algorithms are:
 - [[PCA]]
@@ -10,8 +10,8 @@ Some classification algorithms are:
 
 ## Types of classification
 
-We can find two type of classification (that, in reality, are the same for all machine learning tecniques):
-- [[Unsupervised learning]]. Often, with classification, the unsupervised tecniques are known with other names different from classification ([[PCA]] is often referred as a demensionality reduction tecnique)
+We can find two type of classification (that, in reality, are the same for all machine learning techniques):
+- [[Unsupervised learning]]. Often, with classification, the unsupervised techniques are known with other names different from classification ([[PCA]] is often referred as a dimensionality reduction technique)
 - [[Supervised learning]] -> [[Supervised classification]]
 
 
@@ -30,9 +30,9 @@ Another way to resolve this issue is __Undersampling__ that reduces the number o
 
 ### Oversampling with SMOTE
 
-It is an oversampling tecnique that tries to _synthesize_ new examples of the minority classes. It tries to generate a new object taking a random element from the minority class and generating the new element as a point in between the choosen element and one of his neighbours. 
+It is an oversampling technique that tries to _synthesize_ new examples of the minority classes. It tries to generate a new object taking a random element from the minority class and generating the new element as a point in between the choosen element and one of his neighbours. 
 
 
 
-## Classification tecniques comparison
+## Classification techniques comparison
 ![[Pasted image 20230104120306.png]]

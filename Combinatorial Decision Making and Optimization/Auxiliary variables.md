@@ -1,2 +1,2 @@
-It is a tecnique to improve our [[Combinatorial Decision Making and Optimization/Constraint satisfaction problem|CSP]] model.
+It is a tecnique to improve our [[CSP|CSP]] model.
 An important tool we can consider to improve our model is to define some extra variables that can better express some properties of our problem. This could be usefull to design better constraints that prune the search space more efficently

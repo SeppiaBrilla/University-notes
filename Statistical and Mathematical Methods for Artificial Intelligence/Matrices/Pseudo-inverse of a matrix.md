@@ -1,4 +1,4 @@
-The pseudo-inverse of a matix $A$ is computed when the inverse ($A^{-1}$) does not exists.
+The pseudo-inverse of a matrix $A$ is computed when the inverse ($A^{-1}$) does not exist.
 $$
 \begin{aligned}
 &A^{m \times n} \Rightarrow \cancel{A^{-1}} \\

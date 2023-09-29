@@ -1,4 +1,4 @@
-The [[The chain rule for functions of vectors]] is often used in deep networks where de function value $y$ is computed as the composition of many functions:
+The [[The chain rule for functions of vectors]] is often used in deep networks where the function value $y$ is computed as the composition of many functions:
 $$
 y = (f_k \circ f_{k-1} \circ \dots \circ f_1)(x) 
 $$
@@ -7,8 +7,8 @@ Every function $f_i$ can be written as:
 $$
 f_i(x_{i-1}) = \sigma (A_{i-1}x_{i-1} + b_{i-1})
 $$
-where $x_{i-1}$ is the output of the previus function and $\sigma$ is an activation function (??).
-In order to train the model we require to compute the [[loss function]] $L$ for each function.
+where $x_{i-1}$ is the output of the previous function and $\sigma$ is an activation function (??).
+In order to train the model, we require to compute the [[loss function]] $L$ for each function.
 For example if:
 $$
 \begin{align}

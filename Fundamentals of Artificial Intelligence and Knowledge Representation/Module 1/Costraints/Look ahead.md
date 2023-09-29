@@ -1,8 +1,8 @@
 Is a type of [[Propagation algorithms]] for [[Fundamentals of Artificial Intelligence and Knowledge Representation/Module 1/Costraints/Constraint satisfaction problem|CSP]].
-It is very similar to [[Forward checking]] but, if [[Forward checking]] updates the possible values only by deleting the one incompatible with the current choice, Look ahead update the values of each variable also by looking at the updated value of the previous one.
+It is very similar to [[Forward checking]] but, if [[Forward checking]] updates the possible values only by deleting the one incompatible with the current choice, look ahead update the values of each variable also by looking at the updated value of the previous one.
 There are two look ahead implementations:
 
-## partial look ahead (PLA)
+## Partial look ahead (PLA)
 it does update the possible values of current variable looking at the next one.
 Example:
 $$
@@ -16,8 +16,8 @@ $$
 \end{align}
 $$
 
-## full look ahead (FLA)
-it does update the possible values of current variable looking at the next one and it's predecessor.
+## Full look ahead (FLA)
+it does update the possible values of current variable looking at the next one, and its predecessor.
 Example:
 $$
 \begin{align}

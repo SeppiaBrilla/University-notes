@@ -1,4 +1,4 @@
-The search euristics in as [[Fundamentals of Artificial Intelligence and Knowledge Representation/Module 1/Costraints/Constraint satisfaction problem|CSP]] algorithm determine:
+The search heuristics in as [[Fundamentals of Artificial Intelligence and Knowledge Representation/Module 1/Costraints/Constraint satisfaction problem|CSP]] algorithm determine:
 - The order of the variables to assign. The two most commonly used tecnique are __first fail__ that chooses the next variable as the one with the least remaining values and __most constrained principle__ that chooses the next variable as the one with the largest amount of constraints
 - The value to assign to a varible. There are no general rules but the rationale is try the values that are most likely to succeed (__least constraining principlple__)
 

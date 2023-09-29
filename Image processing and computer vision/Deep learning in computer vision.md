@@ -31,7 +31,7 @@ Then, we create the codebook by [[Clustering]] of extracted patches or descripto
 
 Then, given an image, we repeat the same process and assign each patch to the nearest centroid in the codeboock
 
-We, then for each class, compute an instogram of wher the patch of the images representing int lies and we use those instograms as a classifier.
+We, then for each class, compute an histogram of where the patch of the images representing int lies and we use those histograms as a classifier.
 
 
 ### Deep [[Convolution]]
@@ -52,6 +52,6 @@ A generic convolutional layer has $C_{out}(C_{in} * H_KW_K + 1)$ parameters wher
 - $H_K$ and $W_k$ are the height and width of the kernel
 - + 1 for the bias
 
-The flop represents the number of operations needed to compute the output of the convolution and it is given by:
+The flop represents the number of operations needed to compute the output of the convolution, and it is given by:
 $2(C_{out}H_{out}W_{out})(C_{in}H_KW_K)$ 
 and, dropping the "2" we get the MACs 

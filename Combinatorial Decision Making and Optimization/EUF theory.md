@@ -1,4 +1,4 @@
-EUF = Equality with Uninterpreted Functions theory, is a way to reason over problems without assuming what the funcions does. It is usefull when we are dealing with functions very difficult to compute.
+EUF = Equality with Uninterpreted Functions theory, is a way to reason over problems without assuming what the functions do. It is useful when we are dealing with functions very difficult to compute.
 Example:
 $$
 a * (f(b) + f(c)) = d \wedge b * (f(a) + f(c)) \neq d \wedge a = b

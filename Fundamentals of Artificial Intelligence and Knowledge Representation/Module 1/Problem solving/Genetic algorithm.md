@@ -5,7 +5,7 @@ Is a [[Population based search]] inspired by evolution with three key components
 
 --->
 
-- the fittest individuals have hight chance of having numerous offspring
+- the fittest individuals have high chance of having numerous offspring
 - the children are similar, but not equal, to their parents
 - the traits characterizing the fittest individuals spread across the population, generation by generation
 
@@ -13,10 +13,10 @@ Is a [[Population based search]] inspired by evolution with three key components
 ### Genetic operators
 - **Crossover**: combination of two chromosomes
 - **Mutation**: each gene has probability pM to be flipped
-- **Proportional selection**: the probability of an individual to be choosen is proportional to his fitness
-- **Generation replacement**: the new generation completely replace the old one. This approach is very simple, easy to compute and easier to analize but it might lose good solutions lost on the new generation. To solve this problem is possible to keep the best ns individuals of the old generation
+- **Proportional selection**: the probability of an individual to be chosen is proportional to his fitness
+- **Generation replacement**: the new generation completely replace the old one. This approach is very simple, easy to compute and easier to analize, but it might lose good solutions lost on the new generation. To solve this problem is possible to keep the best ns individuals of the old generation
 
-### Pseudo code
+### Pseudocode
 ```python
 def GeneticAlgorithm():
 	population = initializePopulation()

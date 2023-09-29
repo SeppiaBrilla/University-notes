@@ -1,4 +1,4 @@
-Automated planning is an important problem to solve activites on which a series of actions are needed to go from an initial state to a goal. 
+Automated planning is an important problem to solve activities on which a series of actions are needed to go from an initial state to a goal. 
 An __automated planner__ is an agent that operate in a certain domain described by:
 1) a representation of the initial state
 2) a representation of the goal

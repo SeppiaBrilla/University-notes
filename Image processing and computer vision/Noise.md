@@ -1,4 +1,4 @@
-It may happen that, after a photo is captured ([[Perspective projection|here's how]]), it may present some sort of noise: irregularities in the image due to the [[Lenses]] or the envinronment. 
+It may happen that, after a photo is captured ([[Perspective projection|here's how]]), it may present some sort of noise: irregularities in the image due to the [[Lenses]] or the environment. 
 
 ## Signal-to-noise ratio
 
@@ -22,8 +22,8 @@ $$
 O(p) = \frac{1}{N} \sum_{k=1}^N I_k(p) = \frac{1}{N} \sum_{k=1}^N (\tilde{I}_k(p) + n_k(p)) = \frac{1}{N} \sum_{k=1}^N \tilde{I}_k(p) + \frac{1}{N} \sum_{k=1}^N n_k(p) \cong \tilde{I}(p)
 $$
 
-This is if we have a moltitude of photos, what if we have a single one?
-We may use the neighbourhood of the pixel to try and guess its "true" value. ==>
+This is if we have a multitude of photos, what if we have a single one?
+We may use the neighborhood of the pixel to try and guess its "true" value. ==>
 $$
 O(p) = \frac{1}{|K|} \sum_{q \in K}^N I(q) = \frac{1}{|K|} \sum_{q \in K}^N (\tilde{I}(q) + n(q)) = \frac{1}{|K|} \sum_{q \in K}^N \tilde{I}(q) + \frac{1}{|K|} \sum_{q \in K}^N n(q) \cong \tilde{I}(q)
 $$

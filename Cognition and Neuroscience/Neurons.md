@@ -1,8 +1,8 @@
-Neurons are the cells in the brain responsable for the information share and manipulation.
+Neurons are the cells in the brain responsible for the information share and manipulation.
 Here are the different types of neurons:
 ![[Pasted image 20230304132459.png]]
 
-There are 100 billion neurons in our brain that are of 100 different types. Each neruon receive and gives rise to thousands of connections. Neurons vary in their form, location, and interconnectivity within the nervous system, and these variations are closely related to their functions.
+There are 100 billion neurons in our brain that are of 100 different types. Each neuron receive and gives rise to thousands of connections. Neurons vary in their form, location, and inter-connectivity within the nervous system, and these variations are closely related to their functions.
 
 ## Structure
 
@@ -23,7 +23,7 @@ A neuron is also composed of:
 
 ### More on synapses
 
-Depending on who is receiving or giving the information, a neuron can be Post synaptic (receiving) or Pre synaptinc (giving). The narrow space separating the presynaptic and postsynaptic cell is called Synaptic cleft.
+Depending on who is receiving or giving the information, a neuron can be Post synaptic (receiving) or Presynaptic (giving). The narrow space separating the presynaptic and postsynaptic cell is called Synaptic cleft.
 Type of synapses:
 - __Axosomatic__: synapses that are made onto the soma or cell body of a neuron.
 - __Axodendritic__: synapses that one neuron makes onto the dendrite of another neuron. The most common type.
@@ -49,7 +49,7 @@ A neuron need to be activated by a number of different other neurons.
 
 ## Inhibitory neurons
 
-Some neurons can have a hinibitory function that reduces the likelihood of firing.
+Some neurons can have a inhibitory function that reduces the likelihood of firing.
 These neurons can be:
 - __Feed-forward__: excitatory neurons' synapse onto inhibitory interneurons, inhibiting other downstream neurons. They enhance the effect of the active pathway by suppressing the activity of pathways mediating opposing actions
 - __Feed-back__: excitatory neurons' synapse onto inhibitory interneurons, which project back to the same neurons and inhibit them. They dampen activity within the stimulated pathway and prevent it from exceeding a certain critical level

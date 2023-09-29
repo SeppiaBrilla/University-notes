@@ -5,7 +5,7 @@ A model could be:
 
 The creation of a model is divided in two steps:
 - __Training step__: where we train our model on the data we have and tune it to predict on that data
-- __Testing step__: where we use some other data to test ohw good is our predicting model on unseen data
+- __Testing step__: where we use some other data to test how good is our predicting model on unseen data
 Generally, we split our dataset in two dataset: _Train_ and _Test_ each used in the respective step
 
 ## Deterministic functions

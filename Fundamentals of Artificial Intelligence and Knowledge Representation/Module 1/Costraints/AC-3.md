@@ -1,5 +1,5 @@
-is a [[Consistency tecnique]] to find arc consistency.
-It uses a queue of arcs and cycles untill is empty. At each step, if the values of a variable are reduced, all the arcs from and to it will be enqueued.
+Is a [[Consistency technique]] to find arc consistency.
+It uses a queue of arcs and cycles until is empty. At each step, if the values of a variable are reduced, all the arcs from and to it will be enqueued.
 
 ### pseudocode
 ```python 

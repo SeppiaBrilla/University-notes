@@ -1,6 +1,6 @@
 Ant colony optimization is a [[Swarm Intelligence]] algorithm. 
-Any individual leave behind him some sort of "pheromon" that the other individuals will follow.
-Uses a probabiistic parametrized model ([[Define a model for learning process in AI|here some notes on probabilistic models]]) to model pheromon trails and the solution is build in an incremental way with stocastics steps in a fully connected graph called _construction graph_ G = (C,L) with C being vertexes / solution components, L arcs / connections and States being path on G.
+Any individual leave behind him some sort of "pheromone" that the other individuals will follow.
+Uses a probabilistic parameterized model ([[Define a model for learning process in AI|here some notes on probabilistic models]]) to model pheromone trails and the solution is build in an incremental way with stochastic steps in a fully connected graph called _construction graph_ G = (C,L) with C being vertexes / solution components, L arcs / connections and States being path on G.
 
 Pseudocode:
 ```python
@@ -13,7 +13,7 @@ def ACO():
 ```
 
 We also save in memory the past paths in order to avoid loops. Starting from node I we chose probabilistically the next consistent node to visit. 
-The probablisitic choice depends on:
+The probabilistic choice depends on:
 - pheromone trails $\tau_{ij}$ 
 - heuristic $\eta_{ij} = \frac{1}{d_{ij}}$
 $$
@@ -37,4 +37,4 @@ $$
 \end{align}
 $$
 
-Some "_demon actions_" can be applied to alter the standard execution of the algorithm like leave additional phermones or [[Local search]] procedure on a state to improve it.
+Some "_demon actions_" can be applied to alter the standard execution of the algorithm, like leave additional phermones or [[Local search]] procedure on a state to improve it.

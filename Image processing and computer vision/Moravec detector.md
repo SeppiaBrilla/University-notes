@@ -1,5 +1,5 @@
 
-The cornerness at p is given by the minimum squared difference between the patch centered at p and those centered at its 8 neighbours.
+The cornerness at p is given by the minimum squared difference between the patch centered at p and those centered at its 8 neighbors.
 $$
 C(p) = \min_{q \in N_8(p)} ||N(p) - N(q)||^2
 $$

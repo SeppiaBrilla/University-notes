@@ -12,4 +12,4 @@ $$
 \end{align}
 $$
 
-The 2 norm of a matrix is the square root of the largest iegienvalue of the transposed matrix multiplied by the matrix. 
+The 2 norm of a matrix is the square root of the largest eigenvalue of the transposed matrix multiplied by the matrix. 

@@ -1,4 +1,4 @@
-An interative algorithm that finds the [[Local minimum]] of a funcion $f$ creates a series of approximated $x^*$ that converges to the exact solution.
+An iterative algorithm that finds the [[Local minimum]] of a function $f$ creates a series of approximated $x^*$ that converges to the exact solution.
 $$
 x_k \rightarrow_{k \rightarrow \infty} x^*
 $$

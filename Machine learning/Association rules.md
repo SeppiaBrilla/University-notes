@@ -4,9 +4,9 @@ Association rules are elements that appear "frequently" in objects. For example,
 
 - __Itemset__: a collection of one or more items. Example: {Nutella, Milk}
 - __K-itemset__: an itemset containing k items.
-- __Support count$(\sigma)$__: frequency of occurence of an itemset in a dataset.
+- __Support count$(\sigma)$__: frequency of occurrence of an itemset in a dataset.
 - __Support__: fraction of rows containing a given itemset. Example: 3/5 with 3 rows containing the given itemset and 5 total rows.
-- __Frequent Itemset__: an itemset whose support is grater or equal to a given trashold
+- __Frequent Itemset__: an itemset whose support is grater or equal to a given threshold
 - __Association Rule__: A -> C with A, C itemset and A antecedent, C consequent
 - __Rule evaluation metrics__:
 	- __Support (sup)__: Fraction of the dataset containing both A and C
@@ -20,9 +20,9 @@ $$
 
 ## Association rule mining task
 
-We want to find a set of association rules that has sup and conf > then a given trashold. In order to do so we can use different approaches:
-- Bruteforce: try all and prune the bad ones (wery expensive, impossible to compute)
-- Frequently item generation: generate all items with support grater than the trashold and, from them, generate rules. Still very computationally expensive
+We want to find a set of association rules that has sup and conf > then a given threshold. In order to do so we can use different approaches:
+- Bruteforce: try all and prune the bad ones (very expensive, impossible to compute)
+- Frequently item generation: generate all items with support grater than the threshold and, from them, generate rules. Still very computationally expensive
 - Apriori principle: Given an itemset i, if that itemset is infrequent then, all the itemset j containing i ($i \in j$) are infrequent => cut them. On the opposite, foreach item i frequent, all of his components j ($j \in i$) must be frequent => consider them
 
 
@@ -76,14 +76,15 @@ def rule_generator(L): #L is a list of frequent itemset
 
 ## Interestingness
 
-The generation process tends to build a lot of association rules with a lot of them that are not usefull or interesting. We could build a contincecy table to measure the interestingness of a rule:
+The generation process tends to build a lot of association rules with a lot of them that are not useful or interesting. We could build a contingency table to measure the interestingness of a rule:
+
 |           | $C$      | $\bar{C}$ |          |
 | --------- | -------- | --------- | -------- |
 | $A$       | $f_{11}$ | $f_{10}$  | $f_{1+}$ |
 | $\bar{A}$ | $f_{01}$ | $f_{00}$  | $f_{0+}$ |
 |           | $f_{+1}$ | $f_{+0}$          |          |
 
-There can be sitation where $A \Rightarrow C$ has a high confidence (computed as $\frac{f_{11}}{f_{1+}}$) but the probability $P(C|\bar{A})$ (computed as $\frac{f_{01}}{f_{0+}}$) higher than the confidence of the rule and that invalidates the rule itself.
+There can be situation where $A \Rightarrow C$ has a high confidence (computed as $\frac{f_{11}}{f_{1+}}$) but the probability $P(C|\bar{A})$ (computed as $\frac{f_{01}}{f_{0+}}$) higher than the confidence of the rule and that invalidates the rule itself.
 
 
 

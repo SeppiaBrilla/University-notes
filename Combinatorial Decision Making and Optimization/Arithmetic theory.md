@@ -1,1 +1,1 @@
-Theory over numbers are clearly very used and useful. Decidible for $\tau_Z$ and $\tau_R$. For $\tau_R$ in polinomial time, while is an NP-hard problem for $\tau_Z$. Is a problem we can solve with [[Satisfiability Modulo Theory (SMT)]].  
+Theory over numbers are clearly very used and useful. Decidable for $\tau_Z$ and $\tau_R$. For $\tau_R$ in polinomial time, while is an NP-hard problem for $\tau_Z$. Is a problem we can solve with [[Satisfiability Modulo Theory (SMT)]].  

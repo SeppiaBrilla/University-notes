@@ -13,7 +13,7 @@ An alternative approach is to linearize the non-linear constraints, but this met
 If the non-linear function is of the form $a \vee b$ with a and b linear functions, we can use reification to linearize the function.
  
 Given a constraint $C(x_1,\dots,x_k)$ a (full) reification of C is a boolean variable b s.t. $b = true \Leftrightarrow C(x_1,\dots,x_k)$. An integer reification is the same with 1 instead of true, while a half reification is when $b = 1 \Rightarrow C(x_1,\dots,x_k)$.
-We are looking for half reifcation of constraints.
+We are looking for half reification of constraints.
 
 ### Big-M trick
 To encode $C_1 \vee \dots \vee C_m$, we introduce m new variables b with value between 0 and 1, and we impose the sum of them to be more than one. Then, to assign a value to the b variables, we can impose a new constraint for each constraint $C_i$: if we assume $C_i \equiv \sum_{i,j} a_{i,j}x_j \leq \beta_i$, we can add a constraint $\sum_{i,j} a_{i,j}x_j - \beta_i \leq M(1-b_i)$ with M a "big enough" constant.

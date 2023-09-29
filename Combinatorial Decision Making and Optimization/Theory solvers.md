@@ -60,4 +60,4 @@ framework. Hierarchical approach: the problem is stratified in layers L1, L2, ..
 ![[Pasted image 20230428152325.png]]
 
 ### Case splitting
-Sometimes it is easier to proceed "per case" and splitting the formula in different cases to solve indipendently.
+Sometimes it is easier to proceed "per case" and splitting the formula in different cases to solve independently.

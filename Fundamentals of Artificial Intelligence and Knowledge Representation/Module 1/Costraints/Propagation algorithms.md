@@ -1,2 +1,2 @@
-A propagation algorithm is a search method that exploit constraints to prevent failures rather then recover from them.
-This kind of methods prune the search tree a priori by the elimiation of all subtrees that lead to a failure limiting the backtracking.
+A propagation algorithm is a search method that exploit constraints to prevent failures rather than recover from them.
+These kinds of methods prune the search tree a priori by the elimination of all subtrees that lead to a failure, limiting the backtracking.

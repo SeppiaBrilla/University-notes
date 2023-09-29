@@ -11,5 +11,4 @@ Its initial states consists of the initial knowledge about the problem and the r
 ## backward or goal driven production system
 The memory contains the goal at its initial state. The rules are choosen by consequent matching with the working memory. At each step new sub-goals are added to the memory and the procedure ends when the initial state is in memory
 
-
 The combination of the two system can be applied.

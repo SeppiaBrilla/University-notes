@@ -27,11 +27,11 @@ Implementation:
 	&S_b = \bar{X_c} * \bar{X_c^T}
 	\end{aligned}
 	$$
-5) We want to project our data with the maximum distance between clusters while keep the within cluster distance as little as possilble. To do so we maximize the function:
+5) We want to project our data with the maximum distance between clusters while keep the within cluster distance as little as possible. To do so we maximize the function:
 	$$
 	H(q) = \frac{q^TS_wq}{q^TS_bQ}
 	$$
-	Where $Q = (q_1,\dots,q_k)$ are the vector of the matrix of dimension $k$ on which we want to project our data. $Q$ is composef of orthonormal vectors.
+	Where $Q = (q_1,\dots,q_k)$ are the vector of the matrix of dimension $k$ on which we want to project our data. $Q$ is composed of orthonormal vectors.
 	We can rewrite the above function as: 
 	$$
 	\max_q q^tS_wq \; s.t. \; q^tS_bq = 1
@@ -45,7 +45,7 @@ Implementation:
 	&\epsilon \approx 10^{-6}
 	\end{align}
 	$$
-	 Now we can compute $W$ a matrix containing all the egenvectors of $L^{-1}S_bL$
+	 Now we can compute $W$ a matrix containing all the eigenvectors of $L^{-1}S_bL$
 	 and then keep only the first k elements of it ($W_k \in \mathbb{R}^{d \times k}$).
 	Finally $Q = L^{-T}W$ and $Q^T$ will be the projection matrix of LDA 
 

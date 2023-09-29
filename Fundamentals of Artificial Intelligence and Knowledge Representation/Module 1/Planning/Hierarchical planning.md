@@ -1,4 +1,4 @@
-It is a planner that find a plan by managing the plan at different level of astraction by considering the simpler problems after finding a solution for the most complex ones.
+It is a planner that find a plan by managing the plan at different level of abstraction by considering the simpler problems after finding a solution for the most complex ones.
 We now need a language to differentiate atominc operators from macro operators and then use a sub planner ([[Strips]]-like / [[Non-linear planning - Partial order planning (POP)|partial order]]-like) to resolve them.
 An hierarchical algorithm must be able to:
 - organize high (meta-level)

@@ -27,7 +27,7 @@ Having this different voltage allow the nuron to work as a battery and the volta
 
 ## Electrical and chemical synapses
 
-Inside the neuron, the information flow with electricity but, when the information needs to be shared, the synapses can use both electrical and chemical signals (one or the oder for each synapse).
+Inside the neuron, the information flow with electricity but, when the information needs to be shared, the synapses can use both electrical and chemical signals (one or the other for each synapse).
 - Electrical synapses: neuronal membranes are touching at gap junctions, and the cytoplasm of the two neurons are essentially continuous. Electrical synaptic transmission depends on the instantaneous transmission of the flow of ions from the pre- to the post-synaptic neuron.
 - Chemical synapses: no structural continuity between pre- and postsynaptic neurons, synaptic cleft separates the neurons. Chemical synaptic transmission depends on the diffusion of a neurotransmitter across the synaptic cleft.
 
@@ -39,4 +39,4 @@ Inactivation of Neurotransmitters can be accomplished by
 2. Enzymatic breakdown or degradation of the transmitter in the synaptic cleft
 3. Diffusion of the neurotransmitter away from the site of action (e.g., in the case of hormones that act on target cells distant from the synaptic terminals)
 
-The effect of a neurotransmitter to a postsynaptic neuron does not depend on the neurotransmitter itself, buton the receiving neuron. A signal can be percieved differently if received by two neurons.
+The effect of a neurotransmitter to a postsynaptic neuron does not depend on the neurotransmitter itself, but on the receiving neuron. A signal can be perceived differently if received by two neurons.

@@ -1,4 +1,4 @@
-It is a [[Data pre-processing]] tecnique.
+It is a [[Data pre-processing]] technique.
 Many algorithms like [[Perceptron]] require numerical data in order to work.
 -> 
 [[Type|categorical]] features must be converted in [[Type|numerical]] and [[Ordinal data type]] must also preserve the order in the conversion

@@ -1,5 +1,5 @@
 
-It is a [[Clustering]] tecniques that generate a nested clustering structure.
+It is a [[Clustering]] techniques that generate a nested clustering structure.
 It can be:
 - Agglomerative (bottom up)
 	At the starting point each element is a cluster, then, at each step, the less separated clusters are merged together. (It is needed some kind of separation measure between clusters)
@@ -8,7 +8,7 @@ It can be:
 
 ## Single linkage 
 
-It is a bottom up Hierarchical clustering tecnique.
+It is a bottom up Hierarchical clustering technique.
 
 ### Pseudocode
 ```python
@@ -31,5 +31,5 @@ The final clustering scheme could be computed by stopping the procedure at the d
 
 ## Conclusions
 
-Depending on the distance tecnique used ([[Single link]], [[Complete link]], [[Average link]]) the generated cluster could be more or less compact.
+Depending on the distance technique used ([[Single link]], [[Complete link]], [[Average link]]) the generated cluster could be more or less compact.
 The scaling is poor due to complexity, the decision is always local and greedy and cannot be undone, but the generated tree (dendogram structure) helps interpretation a lot and, often, the result is good.

@@ -23,10 +23,10 @@ Cerebrospinal Fluid occupies:
 
 it allows:
 - the brain to float to help offset the pressure that would be present if the brain were merely sitting on the base of the skull  
-- reduces shock to the brain and spinal cord during rapid accelerations or decelerations, such as when we fall or are struck on the head
+- reduces shock to the brain and spinal cord during rapid accelerations or deceleration, such as when we fall or are struck on the head
 
 ### Blood-brain barrier
-Barrier between the brain’s blood vessels (capillaries) and the cells and other components that make up brain tissue. Whereas the skull, meninges and cerebrospinal fluid protect against physical damage, the blood–brain barrier provides a defense against disease-causing pathogens and toxins that may be present in our blood. Very effective at preventing unwanted substances from accessing the brain, which has a downside. The vast majority of potential drug treatments do not readily cross the barrier, posing a huge impediment to reating mental and neurological disorders.
+Barrier between the brain’s blood vessels (capillaries) and the cells and other components that make up brain tissue. Whereas the skull, meninges and cerebrospinal fluid protect against physical damage, the blood–brain barrier provides a defense against disease-causing pathogens and toxins that may be present in our blood. Very effective at preventing unwanted substances from accessing the brain, which has a downside. The vast majority of potential drug treatments do not readily cross the barrier, posing a huge impediment to treating mental and neurological disorders.
 
 ### Spinal cord
 It is divided into 31 segments. Each segment has a right and a left spinal nerve that  
@@ -50,7 +50,7 @@ It is divided in 6 subdivision:
 - Diencephalon
 - Cerebral hemispheres or telencephalon
 
-The brain is symmetrical and so, each subdivision can be found in both emipheres
+The brain is symmetrical and so, each subdivision can be found in both hemispheres
 
 __The brain stem__ regulates basic life functions like:  
 - blood pressure
@@ -69,22 +69,22 @@ It contains far more neurons than any other single subdivision of the brain. It'
 Gateway to the cortex, is the essential link pathway of sensory information from the periphery to sensory regions of the cerebral hemispheres and determines which sensory information reaches the neocortex.
 
 ### Hypothalamus
-Ventral to the thalamus, it is the link between the nervous and the endocrine system also regulates body temperature, thirst and hunger, and the circadian rhythm. Is the essential component of the motivational systems of the brain, initiating and maintaining behaviors the organism finds aversive or rewarding.
+Ventral to the thalamus, it is the link between the nervous and the endocrine system also regulates body temperature, thirst and hunger, and the circadian rhythm. Is the essential component of the motivational systems of the brain, initiating and maintaining behaviors the organism finds averse or rewarding.
 
 ## Basal Ganglia  
 
-- Collection of subcortical nuclei  
+- Collection of sub-cortical nuclei  
 - Receive inputs from sensory and motor areas  
 - Send output largely through the thalamus to the frontal lobe  
 - Extensively interconnected
 - Has a crucial role in motor control
 
-The movement control works in two ways: activation and inhibition of movement. If one of the two paths gets dameged, there will be some motor problems (Parkinson, Huntington).
+The movement control works in two ways: activation and inhibition of movement. If one of the two paths gets damaged, there will be some motor problems (Parkinson, Huntington).
 Play a big role in reward-based learning and goal-oriented behavior. It has many dopamine receptors monitoring reinforcements and rewards, and changes in dopamine represent the error between predicted future reward and actual reward.
 
 ## The amygdala
 
-Small, almond shaped structures in the medial temporal lobe adjacent to the anterior portion of the hippocampus. It is a collection of 13 nuclei. It is involved in attenction, perception, value representation, decision-making, learning, memory.
+Small, almond shaped structures in the medial temporal lobe adjacent to the anterior portion of the hippocampus. It is a collection of 13 nuclei. It is involved in attention, perception, value representation, decision-making, learning, memory.
 
 ## The hippocampus
 

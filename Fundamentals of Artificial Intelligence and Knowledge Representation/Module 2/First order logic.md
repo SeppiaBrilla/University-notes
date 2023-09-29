@@ -11,7 +11,7 @@ Given this, we can define FOL as:
 We now need a way to decide if a formula is true or not. In order to do so, we can introduce the concept of __engine__.
 
 ### Engine
-an engine is a method of reasoning on a logic formula in order to assing to that formula a value (T o F).
+an engine is a method of reasoning on a logic formula in order to assign to that formula a value (T o F).
 We write $F_1 \wedge \dots \wedge F_n \dashv^E G$ to denote that the formula G is deducible from $F_1 \wedge \dots \wedge F_n$ with the engine E.
 
 ### Sound
@@ -22,5 +22,5 @@ A method E is said to be sound if holds: $\Gamma \models \varphi  \Rightarrow \G
 
 ## Reasoning by deduction
 
-__Theroem__: Given a set of formulas $\{F_1, \dots, F_n\}$ and a formula G, $F_1 \wedge \dots \wedge F_n \models G$ if and olny if $\models (F_1 \wedge \dots \wedge F_n) \rightarrow G$.
-The proof procede by absurd, prooving that  $F_1 \wedge \dots \wedge F_n \wedge \neg G$ is inconsistent.
+__Theorem__: Given a set of formulas $\{F_1, \dots, F_n\}$ and a formula G, $F_1 \wedge \dots \wedge F_n \models G$ if and only if $\models (F_1 \wedge \dots \wedge F_n) \rightarrow G$.
+The proof proceed by absurd, proving that  $F_1 \wedge \dots \wedge F_n \wedge \neg G$ is inconsistent.

@@ -7,5 +7,5 @@ We call the $m \times n$ matrix $A_{\phi}$ with elements:
 $$
 	A_{(i,j)} = a_{i,j}
 $$
-the trasformation matrix for $\phi$.
+the transformation matrix for $\phi$.
 Basically: $\phi \leftrightarrow A_{\phi}$

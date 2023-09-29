@@ -1,7 +1,7 @@
 It is an alternative to [[Linear planning]]: instead of searching in the state space, this kind of algorithms search in the  plan space. Each node is a partial plan and operators are plan refinement operations.
 A non linear planner is represented by:
 - a set of actions
-- a (non exhastive) set of ordering between actions
+- a (non exhaustive) set of ordering between actions
 - a set of casual links
 
 The initial plan is an empty plan with two fake actions: 
@@ -13,7 +13,7 @@ At each step the either the set of operators or the set of orderings or the set 
 At the end we will have a set of partially specified and partially ordered operators and then the partial order will be linearized to one of the possible total order.
 
 ### Causal links
-A causal links is a triple <Si, Sj, c>. Si and Sj are two operators and c is a subgoal that is a consequence of Si and a condition to be met for Sj.
+A causal links is a triple <Si, Sj, c>. Si and Sj are two operators and c is a sub-goal that is a consequence of Si and a condition to be met for Sj.
 A __threat__ is an action Sk that, as effect, negates c and no ordering constraint exists to prevent Sk to be ordered between Si and Sj.
 Possible solutions:
 - __Demotion__: Sk < Si is imposed
@@ -57,7 +57,7 @@ def resolveThreats(plan):
 
 ## Modal truth criterion
 
-Often __promotion__ and __demotion__ are not enough to ensure the completeness of the planner and we have to use other methods to resolve conflicts. MTC is a construction process that guarantees planner compleateness:
+Often __promotion__ and __demotion__ are not enough to ensure the completeness of the planner, and we have to use other methods to resolve conflicts. MTC is a construction process that guarantees planner completeness:
 - __Establishment__: open goal achievement by means of: (1) a new action to be inserted in the plan, (2) an ordering constraint with action already in the plan or simply (3) of a variable assignment.
 - __Promotion__: as before
 - __Demotion__: as before

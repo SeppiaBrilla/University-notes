@@ -1,4 +1,4 @@
-A set of tecniques to infer data from a set of photos from which we do not know the corrispondace between two points.
+A set of techniques to infer data from a set of photos from which we do not know the correspondence between two points.
 
 ## Stereo matching
 

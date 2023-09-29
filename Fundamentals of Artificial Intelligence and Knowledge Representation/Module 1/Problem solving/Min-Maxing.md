@@ -1,6 +1,6 @@
 Min-maxing in an algorithm that tries to find a solution for [[Games]] problems.
 We assume a two player game where both player have the same knowledge about the current state of the game (not always true e.g. card games). We also assume that the objectives of the players are complementary (win and lose).
-The developement of a game is interpreted as a tree, the players (min, max) are assumed to perform the best possible moves to win (max) avoid the other player wins (min). Le levaes are labeled as 1 (win state) or -1 (lose state) 
+The development of a game is interpreted as a tree, the players (min, max) are assumed to perform the best possible moves to win (max) avoid the other player wins (min). Le leaves are labeled as 1 (win state) or -1 (lose state) 
 
 ## pseudo code 
 ```python 
@@ -27,13 +27,13 @@ This algorithm:
 - Complete: if the tree is finite
 - Optimal: against a perfect opponent
 
-For complex games like Chess or GO the high complexity will be a problem so we need to prune the tree.
-Solution: (Shannon, 1949) look forward a few levels then use an evaluating function to estimate the quality of a certain node and use it as it's label.
+For complex games like Chess or GO the high complexity will be a problem, so we need to prune the tree.
+Solution: (Shannon, 1949) look forward a few levels then use an evaluating function to estimate the quality of a certain node and use it as its label.
 ### How we decide to stop the expansion and evaluate a node?
  With a perfect evaluation function this is not a problem since we just expand the root and then decide the move using the evaluation function on each child.
  With a non-perfect evalution function we can:
  - always expand to a certain depth p (this could be a problem for very complicated moves that would need a better expansion)
- - do a secondary search focussed on the best move choice
+ - do a secondary search focused on the best move choice
 
 
 ## Alpha-beta cuts

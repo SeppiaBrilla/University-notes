@@ -1,4 +1,4 @@
-A data manifold is a small set of items, in a large space, that have regularities. The probability of picking an item from a manifold at random should be 0. Since, for most data science application, the interesting data is a manifold (e.g. usefull images are just a small portion of the possible ones) moving the datapoint (slightly changing its values) toward another class is an easy task.
+A data manifold is a small set of items, in a large space, that have regularities. The probability of picking an item from a manifold at random should be 0. Since, for most data science application, the interesting data is a manifold (e.g. useful images are just a small portion of the possible ones) moving the datapoint (slightly changing its values) toward another class is an easy task.
 
 ## Data compression
 

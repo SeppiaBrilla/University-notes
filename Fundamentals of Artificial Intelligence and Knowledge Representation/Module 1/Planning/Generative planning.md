@@ -1,4 +1,4 @@
-it is an off-line [[Planning]] technique that generates the whole plan before execution and operates on a snapshot of the current state.
+It is an off-line [[Planning]] technique that generates the whole plan before execution and operates on a snapshot of the current state.
 It is based on some assumption:
 - Atomic time: action non interruptable
 - Deterministi effect

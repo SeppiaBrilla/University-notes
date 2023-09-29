@@ -33,7 +33,7 @@ Here are some options:
 
 ## Complexity
 
-All the methods above relies on the support vectors method described on the [[Maximum margin Hyperplane]] note (with the necessary adjustements). For this reason, they all have the same complexity that may scale from $O(D * N^2)$ to $O(D * N^3)$ with D number of features and N elements. The complexity is heavly influenced by the data with more sparse data that reduces the computational cost. 
+All the methods above relies on the support vectors method described on the [[Maximum margin Hyperplane]] note (with the necessary adjustments). For this reason, they all have the same complexity that may scale from $O(D * N^2)$ to $O(D * N^3)$ with D number of features and N elements. The complexity is heavly influenced by the data with more sparse data that reduces the computational cost. 
 
 ## Conclusions
 This method has a slower learning process than simpler methods like [[Decision tree]] and it is also very influenced by his parameters, but it can be very precise.

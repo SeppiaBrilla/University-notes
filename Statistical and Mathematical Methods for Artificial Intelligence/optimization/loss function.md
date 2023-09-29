@@ -1,1 +1,1 @@
-The loss function quantifiy the difference between the expected outcome and the produced outcome
+The loss function quantify the difference between the expected outcome and the produced outcome

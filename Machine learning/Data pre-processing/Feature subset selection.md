@@ -1,4 +1,3 @@
-
 ### A local way to reduce dimensionality
 
 - Remove redundant attributes that a given dataset may have.

@@ -1,5 +1,5 @@
-It is a [[Supervised learning|supervised]] tecnique to evalutate a [[Clustering]] scheme.
-We may have a set of data with some label already computed (in this case, the labes works as clusters names). We can use the clustering scheme we have computed to label the data and compare the actual label against the cluster label.
+It is a [[Supervised learning|supervised]] technique to evaluate a [[Clustering]] scheme.
+We may have a set of data with some label already computed (in this case, the label works as clusters names). We can use the clustering scheme we have computed to label the data and compare the actual label against the cluster label.
 Sometimes it could be necessary a permutation of the labels' names in order to match the clustering ones. 
 ![[Pasted image 20221227171522.png]]
 In this case a rename of 0 to 1 and to 1 to 0 is necessary but, in general, the clustering process was successfull.

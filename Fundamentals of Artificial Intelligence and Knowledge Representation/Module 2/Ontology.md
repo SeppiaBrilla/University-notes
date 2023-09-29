@@ -1,23 +1,23 @@
 An Ontology is a formal, explicit description of a domain of interest.
 __Definitions__:
-- _formal_: described using a language with a clear, non ambiguos semantic
+- _formal_: described using a language with a clear, non ambiguous semantic
 - _explicit_: the information should be available or derivable in a finite time
 - _description_: it should provide information
 - _domain_: such information should be related to some topic of interest.
 
 # Categories and objects
 
-Categories are groups with common characteristics. They can be very specific (e.g. people taller than 1.93 cm with brown long hairs that wear blue shoes on saturday morning) or very general (e.g. people). Categories can also be organised hierarchically.
+Categories are groups with common characteristics. They can be very specific (e.g. people taller than 1.93 cm with brown long hairs that wear blue shoes on Saturday morning) or very general (e.g. people). Categories can also be organised hierarchically.
 Objects are instance of categories. Some objects can belong to more than one category.
 
 ## Upper ontologies 
 
-Are antologies that focus on largest domain, and they correspond, more or less, with larger categories.
+Are ontologies that focus on largest domain, and they correspond, more or less, with larger categories.
 
-### Special purpose and general purpose antologies
+### Special purpose and general purpose ontologies
 
-Special purpose antologies can always be generaliseed into general purpose ones.
-Also, general purpose / upper ontologies must have, at least, those ttwo characteristics:
+Special purpose ontologies can always be generaliseed into general purpose ones.
+Also, general purpose / upper ontologies must have, at least, those two characteristics:
 - they must be applicable to (almost) any special domain
 - we should be able to combine different ontologies without having inconsistencies.
 

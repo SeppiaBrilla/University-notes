@@ -2,21 +2,21 @@ It is a [[Modal logic]] built on atomic proposition whose truth value can change
 
 ## LTL model
 
-Let P the set of all atomic propositions. An LTL model is a triple $(K, \succ, v)$ where $v: P \rightarrow 2^K$ is a function mapping wach proposition in P to the set of time instants at which the proposition holds.
+Let P the set of all atomic propositions. An LTL model is a triple $(K, \succ, v)$ where $v: P \rightarrow 2^K$ is a function mapping each proposition in P to the set of time instants at which the proposition holds.
 
 
 ## LTL execution trace
 
 Given a set L of atomic proposition (representing possible events) an LTL execution trace is a LTL model having $(N,<)$ as time structure and L as atomic propositions. In particular, $T = (N, <, v_{acc})$.
 
-In [[Business Process Management]], differently from LTL, execution trace are finite and events cannot happen sinultaneously.
+In [[Business Process Management]], differently from LTL, execution trace are finite and events cannot happen simultaneously.
 
 In addition to classic operators, in LTL we have temporal operators:
 - $\bigcirc$ next time
-- $U$ untill
+- $U$ until
 - $\diamond$ eventually
 - $\square$ globally
-- $W$ weak untill
+- $W$ weak until
 
 ![[Pasted image 20230211202008.png]]
 

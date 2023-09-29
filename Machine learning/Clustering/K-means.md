@@ -1,4 +1,4 @@
-K-means is a [[Clustering]] tecnique that tries to find k clusters (with k as parameter) with an iterating tecnique.
+K-means is a [[Clustering]] technique that tries to find k clusters (with k as parameter) with an iterating technique.
 At first, the algorithm set the [[Centroid|centroids]] of the clusters at random. Then, at each iteration, each point finds his nearest center and each center finds the centroid of its points. Then, the centroid move in the center of its points.
 The distance is computed with a [[Similarity and dissimilarity|distance]] function.
 
@@ -19,7 +19,7 @@ The reasons:
 - there is only a finite number of ways to partition N object into k groups
 - the number of configurations where a centroid is the center of the points he owns is finite
 - at each step the state changes only if the distortion is reduced, therefore the state is always a never seen before state and we cannot have loops.
-- Sooner or later all the states will be visited and the algorithms must end.
+- Sooner or later all the states will be visited, and the algorithms must end.
 
 
 The algorithm uses functions like [[Gradient method]] so it can converge to a local minimum. Therefore, the starting guess is important and a re-run of the algorithm with different starting poinst could improve the result.

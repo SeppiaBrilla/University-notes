@@ -1,4 +1,4 @@
-A set of [[Supervised learning]] tecnique for [[Classification]]: we have a train set with all the properties and the label and, from there, the algorithm finds correlations and try to guess the unkown labels from them.
+A set of [[Supervised learning]] technique for [[Classification]]: we have a train set with all the properties and the label and, from there, the algorithm finds correlations and try to guess the unknown labels from them.
 
 | label | p1  | p2  | p3  | p4  | ... | pn  |
 | ----- | --- | --- | --- | --- | --- | --- |
@@ -11,11 +11,11 @@ A set of [[Supervised learning]] tecnique for [[Classification]]: we have a trai
 
 ### Developing a classification model
 
-The developement of a classification model can be divided in 3 steps:
+The development of a classification model can be divided in 3 steps:
 - choose the learning algorithm
 - let the algorithm learn its parametrization
 - asset the quality of the model
-Then the model will be used by a classification algoritm with the developed parametrization.
+Then the model will be used by a classification algorithm with the developed parametrization.
 
 A classifiation function, given a data element x with an unknown label y(x) makes a prediction as:
 $$
@@ -26,12 +26,12 @@ The supervised learning for the algorithm gives to $\mathcal{M}$ a set of x with
 ([[Vapnik-Chervonenkis Dimension]], [[Define a model for learning process in AI]])
 entropy
 ## Workflow
-1) Learning the model for a given set of classes: we need a training set with all the lables, the set should be as much representative as possible.
+1) Learning the model for a given set of classes: we need a training set with all the labels, the set should be as much representative as possible.
 2) Estimate the [[accuracy]] of the model: with a test set with given labels, we use the model to guess the labels of the test set, and then we check the correctness of the guess.
 3) Use the model on new individuals
 
 
-### Flavours of classificator
+### Flavors of classificator
 
 There are two kinds of classificator:
 - __Crisp__: the classifier assign a label to each individual, like [[Decision tree]], [[Perceptron]], [[Neural networks]], [[K nearest classifier]], [[Ensemble methods]].

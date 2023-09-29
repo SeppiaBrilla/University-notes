@@ -1,6 +1,4 @@
 The choice on how to expand a search tree is called "strategy".
-
-
 ## Kind of strategies
 - [[Non informed strategies]]
 - [[informed strategies]]
@@ -11,4 +9,4 @@ The choice on how to expand a search tree is called "strategy".
 - Completeness: does the algorithm guarantee to find a solution if it exists
 - Time complexity: how long does it take to find the solution?
 - Space complexity: how much memory do the algorithm need to be performed?
-- Optimality: does the algorithm find the best possible solution when more then one is present?
+- Optimality: does the algorithm find the best possible solution when more than one is present?

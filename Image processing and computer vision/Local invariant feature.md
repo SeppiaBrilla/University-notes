@@ -1,8 +1,8 @@
 Several Computer Vision tasks deal with finding “Corresponding Points” between two (or more) images of a scene ([[Stereo vision]]). This can be difficult for several reasons (e.g. viewpoint variations, different lighting conditions...).
 
-The task of finding correspondances in two images can be split in 3 steps:
+The task of finding correspondences in two images can be split in 3 steps:
 1) __Detection__ of salient points
-2) __Description__: computation of a suitable descriptor based on pixels in the keypoint neighbourhood (use a single pixel can lead to multiple error because it is easy to mistake it, since the same intensity may be easy to find in multiple locations)
+2) __Description__: computation of a suitable descriptor based on pixels in the keypoint neighborhood (use a single pixel can lead to multiple error because it is easy to mistake it, since the same intensity may be easy to find in multiple locations)
 3) __Matching__ descriptors between images.
 __Descriptors should be invariant (robust) to as many transformations as possible__
 
@@ -11,7 +11,7 @@ __Descriptors should be invariant (robust) to as many transformations as possibl
 - __Saliency__: it should find keypoints surrounded by informative patterns
 
 ### Properties of good descriptors
-- __Distinctiveness vs. Robustness Trade-off__: the description algorithm should capture important information around the choosen keypoint so to keep salient token and ignore changes due to noise or change in the scene
+- __Distinctiveness vs. Robustness Trade-off__: the description algorithm should capture important information around the chosen keypoint so to keep salient token and ignore changes due to noise or change in the scene
 - __Compactness__: the description should be as small as possible to minimize memory occupancy and computational cost.
 
 ### Detectors
@@ -29,6 +29,6 @@ An example of a descriptor is: [[SIFT descriptor]]
 ## Matching process
 
 Descriptors are compared across diverse views of a scene to find corresponding keypoints with a [[K nearest classifier|K nearest]] matching algorithm.
-The matching process search, for each feature in the target image, the clostest reference point in the reference image. When matching [[SIFT descriptor|SIFT]] descriptors, the distance typically used is the Euclidean distance.
+The matching process search, for each feature in the target image, the closest reference point in the reference image. When matching [[SIFT descriptor|SIFT]] descriptors, the distance typically used is the Euclidean distance.
 The found NN does not necessarily provide a valid correspondence, as some features in the target image may not have a corresponding feature in the reference image.
 To fix this problem, we could threshold the match: $\frac{d_{NN}}{d_{2_NN}}\leq T$. The second criteria is always less than 1 and. Lowe shows that T=0.8 may allow for rejecting 90% of wrong matches while missing only 5% of those correct

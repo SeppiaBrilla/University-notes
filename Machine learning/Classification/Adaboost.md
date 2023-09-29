@@ -1,1 +1,1 @@
-It is a method to get indipendent [[Classification|classifiers]]: modifies the classifier importance based on it's the error rate
+It is a method to get independent [[Classification|classifiers]]: modifies the classifier importance based on it's the error rate

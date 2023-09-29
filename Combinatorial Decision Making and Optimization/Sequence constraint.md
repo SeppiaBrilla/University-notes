@@ -1,4 +1,4 @@
-Constrains the number of values taken from a given set in any subsequence of q variables.
+Constrains the number of values taken from a given set in any sub sequence of q variables.
 Also known as amongseq constraint. (See also [[Among constraint]])
 $$
 \begin{align}

@@ -20,7 +20,7 @@ D -->|No| H[perdict B]
 ```
 
 ### Pseudocode
-(valid, for the sake of semplicity, for binary decision trees)
+(valid, for the sake of simplicity, for binary decision trees)
 ```python
 def DecisionTreeFunction(attributes, node):
 		if node.is_inner_node:
@@ -43,7 +43,7 @@ Given a set X of elements with a known class grown a decision tree as:
 - If X is large, Which attribute we choose for testing? 
 	- Choose a test based on an attribute with 2 or more outcomes
 	- make this test the root of a tree with a branch for each possible outcome
-	- partition X in subsets corresponding to the outocomes and apply recursively the procedure
+	- partition X in subsets corresponding to the outcomes and apply recursively the procedure
 
 ### Problems:
 - Which attribute we choose for testing? -> [[Pattern finding and evaluation]]
@@ -56,4 +56,4 @@ Given a set X of elements with a known class grown a decision tree as:
 ## Error and overfitting
 
 After the decision tree has been generated, we can start guessing the labels. First, we compute the labels on our train set; We will get a "small" error $x$. $x$ is called _lower limit_ and represents the smaller possible error we will have. Then we will test on our test set. The error associated with the test set will be our _upper limit_ (hopefully). It may happen that the error on the test set is way worse than that on the train set, this is called [[Overfitting with decision trees]].
-In order to semplify a decision tree and reduce overfitting is by pruning it.
+In order to simplify a decision tree and reduce overfitting is by pruning it.

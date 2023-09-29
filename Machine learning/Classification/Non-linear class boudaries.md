@@ -3,10 +3,10 @@ One method to deal with those cases is to apply a non-linear transformation on t
 ![[Pasted image 20221226120044.png]]
 
 ## The kernel trick
-The separation hyperplane computation requires a series of operations that will encrease the complexity of the algorithm.
+The separation hyperplane computation requires a series of operations that will increase the complexity of the algorithm.
 But there is a particular family of mapping functions that do not need explicit computation and will keep the complexity down. These functions are called __kernel functions__ or, simply, __kernel__, and they are:
 - linear: $<x, x'>$
-- polinomial: $(\gamma<x, x'> + r)^{dg}$
+- polynomial: $(\gamma<x, x'> + r)^{dg}$
 - rbf: $-\gamma ||x- x'||^2$
 - sigmoid: $\tanh(<x, x'> + r)$ 
 

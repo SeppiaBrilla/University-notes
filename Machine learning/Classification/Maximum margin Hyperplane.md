@@ -5,7 +5,7 @@ The maximum margin hyperplane method ensures the maximum separation between labe
 Is the tightest enclosing convex polygon of a set of points (the convex hull of two linearly separable classes do not intersect)
 
 The maximum margin hyperplane is as far as possible to from both hulls and perpendicular to the shortest line connecting the hulls.
-In general, is sufficient a subset of the points of the hull. Thise points are called support vector.
+In general, is sufficient a subset of the points of the hull. Those points are called support vector.
 The support vectors and the maximum margin hyperplane could be find solving a class of constrained quadratic optimization problems:
 $$
 \begin{align}

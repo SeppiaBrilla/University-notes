@@ -1,4 +1,4 @@
-The domain space is exponential in size because, in order to get the full search space, we need to compute the cartesian product of every variable. Because of that, we need to define our model such that we can prune wrong solution as fast as possible. 
+The domain space is exponential in size because, in order to get the full search space, we need to compute the Cartesian product of every variable. Because of that, we need to define our model such that we can prune wrong solution as fast as possible. 
 
 There are some tools we can use to improve our models like: 
 - [[Auxiliary variables]]
@@ -21,4 +21,4 @@ __A better approach__:
 	The "alldifferent" constraint is an implied one while the Ds variables are auxiliary. This new model reduces the computational cost to $O(m^2)$ which is waaay better.
 
 We should also keep in mind that there may be some problems when the order of the variable is non-significant. In those cases, we could have a [[Symmetry inc CSPs|symmetry problem]].
-In order to exploit the constraint order to better prune our solution tree, we need to [[Constraints propagation|propagate the constraits]]
+In order to exploit the constraint order to better prune our solution tree, we need to [[Constraints propagation|propagate the constraints]]

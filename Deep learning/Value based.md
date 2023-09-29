@@ -1,6 +1,6 @@
 It is a model free approach to [[Reinforcement learning]]. We try to evaluate each state s with a value function.
 
-Each state is as good as the best reward an action can give at that given state. We can, then, compute the value of a state knowing the expected outcome of each action. But, knowing that expected value, would make this a model based tecnique.
+Each state is as good as the best reward an action can give at that given state. We can, then, compute the value of a state knowing the expected outcome of each action. But, knowing that expected value, would make this a model based technique.
 So, we need to approximate that value. We can approximate the expected outcome by exploring the world randomly and saving the obtained outcome at each given state and given action. The value get saved in a table called Q table.
 
 ### Pseudocode
@@ -33,7 +33,7 @@ def Q_learning():
 
 ## Deep Q-learning
 
-The previus algorithm is very inefficient for large envinronments with a lot of actions and states, thus, impossible to use in most of the cases. A solution is to use deep learning in order to approximate more efficiently the Q_table. 
+The previous algorithm is very inefficient for large environments with a lot of actions and states, thus, impossible to use in most of the cases. A solution is to use deep learning in order to approximate more efficiently the Q_table. 
 The loss function would be the difference between the expected outcome and the real one. 
 
-To compute the value of the q table of a given state, we need to get the maximum possible outcome from that state. So, since to compute the loss function we also need the "real" maximum outcome of an action, we must use the network also to compute the outcome of the next state, then we can compute the loss and update the weigths. But, doing so, not only the current value of the q table will be updated but also the value of the next state. This can bring instability to the training process. To fix this, we can copy the current weights of the net we are training in another identical network and use that to compute the q table value of the next state. The weights of the second network will be copied periodically from the first one.   
+To compute the value of the q table of a given state, we need to get the maximum possible outcome from that state. So, since to compute the loss function we also need the "real" maximum outcome of an action, we must use the network also to compute the outcome of the next state, then we can compute the loss and update the weights. But, doing so, not only the current value of the q table will be updated but also the value of the next state. This can bring instability to the training process. To fix this, we can copy the current weights of the net we are training in another identical network and use that to compute the q table value of the next state. The weights of the second network will be copied periodically from the first one.   

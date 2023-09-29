@@ -1,4 +1,4 @@
-The SVD is a data-driven generalization of the [[fourier transform]] and it is really usefull in every data reduction algorithm.
+The SVD is a data-driven generalization of the [[fourier transform]] and it is really useful in every data reduction algorithm.
 It is based on [[projection]] : ([[projection in practice (multi dimensions)]]) 
 Any matrix can be factorize as the product of three matrices:
 $$

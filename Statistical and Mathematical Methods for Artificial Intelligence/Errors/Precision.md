@@ -1,1 +1,1 @@
-The precision is the number of digits with wich a number is expressed
+The precision is the number of digits with which a number is expressed

@@ -1,4 +1,4 @@
-They are particular types of [[Petri nets]]. They use places as conditions and transition as activity instances. Tokens are colored and they represent process instances (with an identifier). They have only a starting place (i) with no arc ongoing and only a final place (o) with no arcs outgoing.
+They are particular types of [[Petri nets]]. They use places as conditions and transition as activity instances. Tokens are colored, and they represent process instances (with an identifier). They have only a starting place (i) with no arc ongoing and only a final place (o) with no arcs outgoing.
 We have control flow patterns with their own semantic (up to the designer): and split/join,
 xor split/join.
 We have automatic, user, external and time triggers.
@@ -6,7 +6,7 @@ We have automatic, user, external and time triggers.
 ## Structural soundness
 
 A net is structural sound if there is only a start and only an end place, and each inner place is in a path from the initial to the final place.
-This property still allows having deadlocks, kivelocks and remaining tokens.
+This property still allows having deadlocks, livelocks and remaining tokens.
 
 ## Sound
 

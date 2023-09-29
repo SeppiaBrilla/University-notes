@@ -1,13 +1,13 @@
 Change in response is caused by learning about the association of at least two stimuli or events. Change in response is caused by learning about the association of at least two stimuli or events:  
 - A neutral stimulus/event  
 - A stimulus/event that is a reinforcer  
-Associative learning is the way in which an animal learns to predict events and control them, in order to maximize rewarding outcomes and minimize aversive outcomes to increase chances of survival.
+Associative learning is the way in which an animal learns to predict events and control them, in order to maximize rewarding outcomes and minimize averse outcomes to increase chances of survival.
 
 ### Primary reinforcer/unconditioned stimulus  
 • A stimulus that is biologically relevant and prepared to elicit a response. Can be positive or negative.  
 
 ### Secondary reinforcer  
-A stimulus that comes to elicit a response following associative learning. It has becomed relevant after an associative learning experience. Can be positive or negative.
+A stimulus that comes to elicit a response following associative learning. It has become relevant after an associative learning experience. Can be positive or negative.
 
 # Pavlovian or classical conditioning
 
@@ -37,7 +37,7 @@ The CS is reinforced with the US every single time it occurs. It most effective 
 The CS is reinforced only part of the time. Associations are acquired more slowly with partial reinforcement, but the response is more resistant to extinction.
 
 
-### Fear/threat/aversive conditioning
+### Fear/threat/averse conditioning
 Is a particular kind of classical conditioning that involves the use of fear to stimulate a response.
 
 
@@ -46,10 +46,10 @@ Is a particular kind of classical conditioning that involves the use of fear to 
 Associative learning is learning about contiguity.
 
 ### Contiguity
-closeness in time between stimulus/behavior and outcome. Stimuli that are close between one and another in time become associated (not sufficien for learning).
+closeness in time between stimulus/behavior and outcome. Stimuli that are close between one and another in time become associated (not sufficient for learning).
 
 Two types of conditioning:
-- __Delay conditioning__: he CS extends throughout the interstimulus interval (ISI), which is the time interval between the CS onset and the US onset
+- __Delay conditioning__: he CS extends throughout the inter-stimulus interval (ISI), which is the time interval between the CS onset and the US onset
 - __Trace conditioning__: there is a time interval between the cs and the us. The interval must be short
 
 ### Plasticity

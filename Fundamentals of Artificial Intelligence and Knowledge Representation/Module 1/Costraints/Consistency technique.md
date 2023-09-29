@@ -1,7 +1,7 @@
-In contrast to [[Propagation algorithms]] that propagate the constraints as a result of the instantiations of variables, consistency tecnique reduces the original problem by eliminating domain values that cannot appear in the final solution.
+In contrast to [[Propagation algorithms]] that propagate the constraints as a result of the instantiations of variables, consistency technique reduces the original problem by eliminating domain values that cannot appear in the final solution.
 They can be applied statically or at every step on not-yet instantiated variables.
-All the consistency tecniques see the problem as a graph where arcs are the constraints that connects variables and the arcs can be directional or not.
-A node could also have arcs that point to it self that represent unary constraints
+All the consistency techniques see the problem as a graph where arcs are the constraints that connects variables and the arcs can be directional or not.
+A node could also have arcs that point to itself that represent unary constraints
 (Example: $X_1, \;\; D_1 = [r,g,b] \bigwedge X_1 \neq r$). 
 
 ## Node consistency
@@ -11,10 +11,10 @@ A graph is node consistent, or level one consistent, if all its node are node co
 ## Arc consistency
 An arc i,j is consistent if $\forall x \in D_i \; \exists y \in D_j$ such that the constraints between i and j are satisfied. y is called support for i. 
 A network is arc consistent, or level 2 consistent, if every node is consistent.
-After the consistency checks some possible values of the variables could be deleted, therefore, further chek must be applied untill the graph reaches a stability and consistency (__QUIESCENT__).
-The arc consistency can be applied as a pre-processing tecnique or as a propagation step.
-An example of an arc consistency finding tecnique is [[AC-3]]
-__Arc consistency does not guarantee the existance of a solution__
+After the consistency checks some possible values of the variables could be deleted, therefore, further check must be applied until the graph reaches a stability and consistency (__QUIESCENT__).
+The arc consistency can be applied as a pre-processing technique or as a propagation step.
+An example of an arc consistency finding technique is [[AC-3]]
+__Arc consistency does not guarantee the existence of a solution__
 
 ## Path consistency
 Is obtained starting from a graph that is level 2 consistent.

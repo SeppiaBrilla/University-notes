@@ -1,8 +1,8 @@
-The expected value of a function $g: \mathbb{R} \rightarrow \mathbb{R}$ of a continuos [[Random variable]]  is a [[Statistic]] and it is given by:
+The expected value of a function $g: \mathbb{R} \rightarrow \mathbb{R}$ of a continuous [[Random variable]]  is a [[Statistic]] and it is given by:
 $$
 \mathbb{E}_x[g(x)] = \int_X g(x)p(x) \; dx
 $$
-or for a descrete [[Random variable]]:
+or for a discrete [[Random variable]]:
 $$
 \mathbb{E}_x[g(x)] = \sum_{x \in X} g(x)p(x)
 $$

@@ -1,5 +1,5 @@
 After the [[Perspective projection|analogical/geometrical]] part of the image capture process, a digitalization procedure is needed.
-Normally, the image plane of a camera consist of a polar sensor which convert the irradiance in electricity. For this reason, we get a continuos value for each point of the image that we need to discretize and then convert to numeric. The whole process looks like this:
+Normally, the image plane of a camera consist of a polar sensor which convert the irradiance in electricity. For this reason, we get a continuous value for each point of the image that we need to discretize and then convert to numeric. The whole process looks like this:
 ![[Pasted image 20230302183418.png]]
 
 ## Sampling 
@@ -24,14 +24,14 @@ In the second image we used less pixel than needed, in the $3^{th}$ one we used 
 
 # Camera sensor
 
-It's a 2d array of photodetectors that convertlight into a proportional charge.
+It's a 2d array of photodetectors that convert light into a proportional charge.
 There are two main type of sensor:
 - CCD (Charge Coupled Devices): More precise, less prone to nose and with a higher Dynamic range and better uniformity.
 - CMOS (Complementary Metal Oxide Semiconductor): cheaper and smaller. 
 
 ## Color
 
-The camera sensor cannot percieve color. In order to obtain it we need to put a filter on top of the lens that convert a pixel in red, green and blue. The nuber of green pixel are doubles the others to mimic the human eye. Through this process, the resolution gets lover due to the interpolation of pixel to obtain color.
+The camera sensor cannot perceive color. In order to obtain it we need to put a filter on top of the lens that convert a pixel in red, green and blue. The number of green pixel are doubles the others to mimic the human eye. Through this process, the resolution gets lover due to the interpolation of pixel to obtain color.
 ![[Pasted image 20230302190257.png]]
 
 ## Dynamic range 

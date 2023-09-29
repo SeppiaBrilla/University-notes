@@ -5,4 +5,4 @@ The SIFT (Scale Invariant Feature Transform) descriptor is computed as follows:
 4) Each histogram has 8 bins (i.e. bin size 45°)
 5) Each pixel in the region contributes to its designated bin according to:
 	1) Gradient magnitude  
-	2) Gaussian weighting function centred at the keypoint (with σ equal to half the grid size)
+	2) Gaussian weighting function centered at the keypoint (with σ equal to half the grid size)

@@ -1,6 +1,6 @@
 Is a [[Swarm Intelligence]] algorithm for solution optimization.
-The idea is to build a swarm of particles that influence each other in the solution search: each particle moves toward the best solution found sofar (exploitation) but also search for a better one (exploration). 
-An important concept in this algorithm is the "proximity" concept: individuals are effected by actions of other individual in the same group. Each particle belongs in more than one group so that informations spread. The groups are decided a priori and are not releted to physical proximity.
+The idea is to build a swarm of particles that influence each other in the solution search: each particle moves toward the best solution found so far (exploitation) but also search for a better one (exploration). 
+An important concept in this algorithm is the "proximity" concept: individuals are effected by actions of other individual in the same group. Each particle belongs in more than one group so that information spread. The groups are decided a priori and are not related to physical proximity.
 
 ### Pseudocode
 
@@ -27,4 +27,4 @@ def PSO(theta_g,theta_p, w, particles_number):
 			g = particles[i].p
 ```
 
-theta_p, theta_g and w are parameters that should be carefully choose  as they strongly influence the efficencytheta_p, theta_g and w are parameters that should be carefully choose  as they strongly influence the efficency
+theta_p, theta_g and w are parameters that should be carefully chosen as they strongly influence the efficiency theta_p, theta_g and w are parameters that should be carefully chosen as they strongly influence the efficiency

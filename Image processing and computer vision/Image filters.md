@@ -1,4 +1,4 @@
-They are image filters that consist in a 2 sensor noiseImage Filters are image processing operators that compute the new intensity (colour) of a pixel, p, based on the intensities (colours) of those belonging to a neighbourhood (aka support) of p. With them, we can acchieve a variety of image processing functions like denoising ([[Noise]]) or sharpening.
+They are image filters that consist in a 2 sensor noise Image Filters are image processing operators that compute the new intensity (color) of a pixel, p, based on the intensities (colors) of those belonging to a neighborhood (aka support) of p. With them, we can achieve a variety of image processing functions like denoising ([[Noise]]) or sharpening.
 
 ## Linear Translation Equivariant (LTE)
 

@@ -1,1 +1,1 @@
-A [[Regression]] tecnique very similar to [[Linear regression]] but with a non linar model: sometimes is impossilbe to have a good regression function that is also linar. We can, then, use a non-linear function to predict the result.
+A [[Regression]] technique very similar to [[Linear regression]] but with a non linear model: is sometimes impossilbe to have a good regression function that is also linar. We can, then, use a non-linear function to predict the result.

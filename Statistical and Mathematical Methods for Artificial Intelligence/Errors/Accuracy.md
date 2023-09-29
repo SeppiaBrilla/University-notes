@@ -1,1 +1,1 @@
-The accuracy is the number of correct significan digits in an approximate quantity
+The accuracy is the number of correct significant digits in an approximate quantity

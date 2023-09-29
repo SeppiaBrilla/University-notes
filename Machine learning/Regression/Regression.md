@@ -1,4 +1,4 @@
-It is a machine learning tecnique with a similar objective as [[Classification]] but it has a continuos domain ($\mathbb{R}$) instead of a descrete one.
+It is a machine learning technique with a similar objective as [[Classification]] but it has a continuous domain ($\mathbb{R}$) instead of a discrete one.
 Regression models can be achieved only with [[Supervised learning]] tecniques. They mainly try to minimize the error of the prediction with the respect to a specific target.
 
 ## Types of regression:

@@ -1,1 +1,1 @@
-Use domain knowlend and apply rules using some kind of [[Euristics]]
+Use domain knowledge and apply rules using some kind of [[Heuristics]]

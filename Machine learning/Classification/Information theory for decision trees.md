@@ -1,4 +1,4 @@
-We can use [[Entropy]] to find the better split over our dataset and test on the choosen thrashold:
+We can use [[Entropy]] to find the better split over our dataset and test on the chosen threshold:
 1) choose the attribute giving the highest IG
 2) partition the dataset according to the choose attribute
 3) choose as a class label of each partition the majority

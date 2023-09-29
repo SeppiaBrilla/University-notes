@@ -5,4 +5,4 @@ $$
 $$
 
 Theorem:
-If all the [[Partial derivative|partial derivatives]] of $f$ in $x_0$ exists and are continuos then $f$ is differentiable in $x_0$ 
+If all the [[Partial derivative|partial derivatives]] of $f$ in $x_0$ exists and are continuous then $f$ is differentiable in $x_0$ 

@@ -18,9 +18,7 @@ R((R)) --- W((W))
 S((S)) --- W((W))
 ```
 With:
-| P(C) |     |
-| ---- | --- |
-| 0.5  |     |
+P(C) = 0.5
 
 | C   | P(S\|C) |
 | --- | ------- |
@@ -60,6 +58,6 @@ def rejection_sampling(X, e, bn, N):
 
 Basically, in order to compute P(X|e) we extract from our samplings the samples agreeing with our e and return the normalization of those samples values.
 
-# Likelyhood weighting
+# Likelihood weighting
 
 The procedure is similar to the sampling generation, but fixes the values of our evidences and sample according to them.

@@ -5,7 +5,7 @@ the point means the places that are input (or output) of $t_i$ if it is before (
 
 - __P1 Termination__: any process instance starting from i will terminate in o
 - __P2 Proper termination__: o is the only state reachable from i with a token in the final place
-- __P3 No dead transition__: eache transition contribute to, at least, one process instance
+- __P3 No dead transition__: each transition contributes to, at least, one process instance
 - __P4 Transition Participation__: each transition participates to at least one process instance starting from i and ending in o
 
 We have:
