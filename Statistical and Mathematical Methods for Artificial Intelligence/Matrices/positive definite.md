@@ -1,1 +1,0 @@
-A matrix is called positive definite if all of its eigenvalues are grater then 0 and a matrix is positive semi-definite if all its eigenvalues are equal or grater then zero.

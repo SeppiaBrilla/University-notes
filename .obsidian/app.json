@@ -9,5 +9,6 @@
     "emitting",
     "pact",
     "weak"
-  ]
+  ],
+  "vimMode": true
 }

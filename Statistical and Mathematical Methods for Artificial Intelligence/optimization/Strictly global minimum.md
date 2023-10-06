@@ -1,1 +1,0 @@
-As [[Global minimum]] but the condition is: $f(x^*) < f(x)$ and not $f(x^*)\leq f(x)$ 

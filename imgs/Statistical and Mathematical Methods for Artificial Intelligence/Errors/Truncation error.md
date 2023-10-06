@@ -1,0 +1,1 @@
+The error die to the truncation of infinite procedure to a finite procedure (Wikipedia)[https://en.wikipedia.org/wiki/Truncation_error]

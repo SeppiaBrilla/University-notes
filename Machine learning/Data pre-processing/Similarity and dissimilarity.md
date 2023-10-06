@@ -66,7 +66,7 @@ $$
 T(p,q) = \frac{p*q}{||p||^2 + ||q||^2 - p*q}
 $$
 
-### [[Statistical and Mathematical Methods for Artificial Intelligence/Statistics/Correlation]]
+### [[imgs/Statistical and Mathematical Methods for Artificial Intelligence/Statistics/Correlation]]
 
 
 ### Correlation in [[Nominal data type]]

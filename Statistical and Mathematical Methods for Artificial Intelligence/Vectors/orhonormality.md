@@ -1,1 +1,0 @@
-two vectors are orthonormal if they are [[orthogonality|orthogonal]] and $x = y = 1$.

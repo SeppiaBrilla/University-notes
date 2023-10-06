@@ -1,1 +1,0 @@
-The error due to the propagation of the rounding errors of the single operation in the algorithmic process

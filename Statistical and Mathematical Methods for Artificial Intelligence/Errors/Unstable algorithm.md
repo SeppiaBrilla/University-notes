@@ -1,1 +1,0 @@
-An algorithm is called *unstable* when the [[algorithmic error]] is not limited

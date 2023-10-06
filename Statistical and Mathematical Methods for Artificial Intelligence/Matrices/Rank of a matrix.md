@@ -1,1 +1,0 @@
-The rank of a matrix A ($rank(A)$) is the number of [linear indipendent](https://en.wikipedia.org/wiki/Linear_independence) column of A

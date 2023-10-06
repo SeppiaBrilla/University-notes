@@ -1,1 +1,0 @@
-Is a set $\Omega$ that contains all the [[events]] of a random experiment. (Es: toss of a coin $\Omega = [$Head, Tail$]$)
