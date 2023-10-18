@@ -1,5 +1,6 @@
 {
   "baseFontSize": 16,
   "accentColor": "",
-  "theme": "obsidian"
+  "theme": "system",
+  "cssTheme": "80s Neon"
 }

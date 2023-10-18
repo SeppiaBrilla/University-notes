@@ -1,0 +1,1 @@
+The error due to the finite representation of the data of a problem

@@ -1,1 +1,0 @@
-In data analysis we can use [[projection]] to find the best axes (axis) to project our data in order to keep the most possible information and also removing redundant or less significant data. 

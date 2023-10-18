@@ -1,0 +1,1 @@
+every [[linear mapping]] is an Endomorphism

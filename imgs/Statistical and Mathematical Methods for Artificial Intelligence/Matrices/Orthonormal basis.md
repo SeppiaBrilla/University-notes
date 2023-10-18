@@ -1,0 +1,1 @@
+a base is orthonormal if the vector are [[orthogonality|orthogonal]] between them and the length of each basis vector is 1

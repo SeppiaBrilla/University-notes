@@ -1,1 +1,0 @@
-A rotation matrix is a [[orhonormality|Orthonormal matrix]] that rotates the vector / matrix it is multiplied with

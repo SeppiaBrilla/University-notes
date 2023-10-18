@@ -1,1 +1,0 @@
-$f: \mathbb{R}^n \rightarrow \mathbb{R}$ is differentiable with continuity if it is [[Differentiable functions|differentiable]] in all the points in it's domain.

@@ -1,1 +1,0 @@
-A stationary point is a point $x^*$ where $\nabla f(x^*) = 0$ ([[Gradient]])

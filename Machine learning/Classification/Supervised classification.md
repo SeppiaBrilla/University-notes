@@ -27,7 +27,7 @@ The supervised learning for the algorithm gives to $\mathcal{M}$ a set of x with
 entropy
 ## Workflow
 1) Learning the model for a given set of classes: we need a training set with all the labels, the set should be as much representative as possible.
-2) Estimate the [[accuracy]] of the model: with a test set with given labels, we use the model to guess the labels of the test set, and then we check the correctness of the guess.
+2) Estimate the [[Accuracy]] of the model: with a test set with given labels, we use the model to guess the labels of the test set, and then we check the correctness of the guess.
 3) Use the model on new individuals
 
 
