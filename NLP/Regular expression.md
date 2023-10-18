@@ -1,0 +1,1 @@
+Before advance NLP techniques (like [[Transformers]]) were common, the only text manipulation tool were the regular expression. REGEX match a sub-string with a pattern described and this can be used to describe text pattern, extract information or [[Text normalization|normalize text]]. Each regex pattern can be found on the website [regex101](https://regex101.com/).
