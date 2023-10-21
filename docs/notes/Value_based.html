@@ -1,0 +1,59 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Value based</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Value based</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>It is a model free approach to <a href="./Reinforcement_learning.html">Reinforcement learning</a>
+. We try to evaluate each state s with a value function.</p>
+<p>Each state is as good as the best reward an action can give at that given state. We can, then, compute the value of a state knowing the expected outcome of each action. But, knowing that expected value, would make this a model based technique.
+So, we need to approximate that value. We can approximate the expected outcome by exploring the world randomly and saving the obtained outcome at each given state and given action. The value get saved in a table called Q table.</p>
+<h3>Pseudocode</h3>
+<pre><code class="language-python">def Q_learning():
+    Q_table = new_qtable()
+    replay_buffer = []
+    random_step = 1
+    for _ in range(episodes):
+        s = state()
+        while not s.finished():
+            if random(0,1) &gt; random_step:
+                a = Q_table.get_max(s)
+            else:
+                a = Q_table.get_random(s)
+            r, s1 = perform_action(a,s)
+            D.append([s,a,r,s1.finished(),s1])
+            mini_batch = get_random(D)
+            for transition in mini_batc 
+                if transition.T: # T indicates if the state is a terminal one
+                    R = r
+                else:
+                    R = r + gamma * Q_table.get_max_reward(s1)
+                Q_table.reward(s,a) += learning_rate(R - Q_table.reward(s,a)) 
+            s = s1
+        random_step -= decrease_value
+</code></pre>
+<h2>Deep Q-learning</h2>
+<p>The previous algorithm is very inefficient for large environments with a lot of actions and states, thus, impossible to use in most of the cases. A solution is to use deep learning in order to approximate more efficiently the Q_table. 
+The loss function would be the difference between the expected outcome and the real one. </p>
+<p>To compute the value of the q table of a given state, we need to get the maximum possible outcome from that state. So, since to compute the loss function we also need the &quot;real&quot; maximum outcome of an action, we must use the network also to compute the outcome of the next state, then we can compute the loss and update the weights. But, doing so, not only the current value of the q table will be updated but also the value of the next state. This can bring instability to the training process. To fix this, we can copy the current weights of the net we are training in another identical network and use that to compute the q table value of the next state. The weights of the second network will be copied periodically from the first one.   </p>
+
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Conditional planning</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Conditional planning</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p><a href="./Planning.html">planners</a>
+ oftnen works under the assumption that the world is fully described in the state, but this is, of course, not true. To mitigate this problem, we can add a &quot;sensing action&quot; to the possible ones to sense the world and clear the uncertanties.
+A conditional planner is a <a href="./Search_strategies.html">Search strategies</a>
+ that generates various alternative plans for each source of uncertainty of the plan. It is constituted by:</p>
+<ul>
+<li>casual actions</li>
+<li>sensing actions for retrieving unknown information</li>
+<li>several alternative partial plans of which, only one will be executed depending on the result of the observations.</li>
+</ul>
+<h3>Limitations</h3>
+<ul>
+<li>explosion of the search tree with high number of alternative contexts</li>
+<li>a lot of memory consumed</li>
+<li>alternative context are not always known in advantage
+-&gt; often conditional planners are associated with probabilistic planners that plan only for the most probable contexts.</li>
+</ul>
+
+            </div>
+        </div>
+    </body>
+</html>

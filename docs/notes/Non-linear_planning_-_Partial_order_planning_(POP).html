@@ -1,0 +1,94 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Non-linear planning - Partial order planning (POP)</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Non-linear planning - Partial order planning (POP)</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>It is an alternative to <a href="./Linear_planning.html">Linear planning</a>
+: instead of searching in the state space, this kind of algorithms search in the  plan space. Each node is a partial plan and operators are plan refinement operations.
+A non linear planner is represented by:</p>
+<ul>
+<li>a set of actions</li>
+<li>a (non exhaustive) set of ordering between actions</li>
+<li>a set of casual links</li>
+</ul>
+<p>The initial plan is an empty plan with two fake actions: </p>
+<ul>
+<li><strong>start</strong>: No preconditions. It&#39;s effect match the initial state</li>
+<li><strong>stop</strong>: No effects. It&#39;s preconditions match the goal state</li>
+<li>ordering: start &lt; stop</li>
+</ul>
+<p>At each step the either the set of operators or the set of orderings or the set of causal links are updated until all goals are met. If an ordering isn&#39;t needed it will not be set.
+At the end we will have a set of partially specified and partially ordered operators and then the partial order will be linearized to one of the possible total order.</p>
+<h3>Causal links</h3>
+<p>A causal links is a triple &lt;Si, Sj, c&gt;. Si and Sj are two operators and c is a sub-goal that is a consequence of Si and a condition to be met for Sj.
+A <strong>threat</strong> is an action Sk that, as effect, negates c and no ordering constraint exists to prevent Sk to be ordered between Si and Sj.
+Possible solutions:</p>
+<ul>
+<li><strong>Demotion</strong>: Sk &lt; Si is imposed</li>
+<li><strong>Promotion</strong> Sj &lt; Sk is imposed</li>
+</ul>
+<h2>Pseudocode</h2>
+<pre><code class="language-python">def POP(inital_state, goal, operators):
+    plan = new Plan([GetInitialAction(initial_state), getFinalAction(goal)])
+    while true:
+        if isSolution(plan):
+            return plan
+        Sn, C = selectSubgoal(plan)
+        chooseOperator(plan, operators, Sn, C)
+        resolveThreats(plan)
+
+def selectSubgoal(plan):
+    Sn, C = selectActionWithUnsolvedPrecondition(Plan)
+    return (Sn, C)
+def ChooseOperator(plan, operators, Sn, C)
+    S = chooseActionWithEffect(plan,operators,C)
+    if S is None:
+        raise NotExistingPlanException(f&quot;No action satisfies precondition {C}&quot;)
+    plan.addCausalLink((S, Sn, C))
+    plan.addOrderingConstraint(S,Sn)
+    if S.isAction():
+        plan.AddSteps(S)
+        plan.addOrderingConstraintAfterStart(S)
+        plan.addOrderingConstraintBeforeEnd(S)
+def resolveThreats(plan):
+    for threat in plan.threats:
+    S_threat, Si, Sj = threat.components()
+    action = choosePromotionOrDemotion(S_threat, Si, Sj)
+    if(action == &quot;promotion&quot;):
+        plan.addOrderingConstraint(S_threat,Si)
+    if(action == &quot;demotion&quot;):
+        plan.addOrderingConstraint(Sj,S_threat)
+    if plan.notConsisten():
+        raise NotConsistenPlanException(f&quot;plan {plan} not consistent&quot;)
+</code></pre>
+<h2>Modal truth criterion</h2>
+<p>Often <strong>promotion</strong> and <strong>demotion</strong> are not enough to ensure the completeness of the planner, and we have to use other methods to resolve conflicts. MTC is a construction process that guarantees planner completeness:</p>
+<ul>
+<li><strong>Establishment</strong>: open goal achievement by means of: (1) a new action to be inserted in the plan, (2) an ordering constraint with action already in the plan or simply (3) of a variable assignment.</li>
+<li><strong>Promotion</strong>: as before</li>
+<li><strong>Demotion</strong>: as before</li>
+<li><strong>White knights</strong>: insert a new operator or use one already in the plan to establish the needed precondition</li>
+<li><strong>Separation</strong>: insert a <em>noncode design constraint</em> between variables of the negative effect and the threatened precondition to avoid unification.</li>
+</ul>
+
+            </div>
+        </div>
+    </body>
+</html>

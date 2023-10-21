@@ -1,0 +1,42 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Data gathering</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Data gathering</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <h2>Data validity</h2>
+<p>Validity asks the question “are we measuring what we intend to measure?” In a network study this entails understanding how closely our model represents reality. Validity errors include:</p>
+<ul>
+<li>Omission errors: missing edges and nodes have huge impacts on errors in network variables (e.g., in centrality measures), by making the network appear more/less disconnected than it really is or make nodes and edges in the network appear to be more “important” than they really are.</li>
+<li>Commission errors: dual to omission errors, the erroneous inclusion of nodes and edges can affect the ultimate determination of node-level measures and the identification of key nodes.</li>
+<li>Data collection and retrospective errors: we should take care when we use network data collected from individuals where the network-elicitation question deals with reports of behavior, in particular when we have to do with social interactions of a temporally discrete nature. We need to avoid ambiguous questions that leave too much room to interpretation. Also, since people can both make commission and omission errors when describing their behaviors (e.g., &quot;whom did they interact with yesterday?&quot;) cross-checking (if possible) assertions between nodes is essential for the validity of the model.</li>
+<li>Edge/node attribution errors: mis-assignment of a behavior to a node can yield linkages that in reality do not exist. For example, two students may co-attend a large number of elective courses. Given the chances, we might assume a connection of friendship between the two. However, the phenomenon could be casual, and the two could live situations which never allowed them to interact, e.g., one is a student who always goes to parties, the other is a student worker who have no time to hang out. Treating high levels of co-attendance as friendship ties is, in this case, too broad, and we need other data to help us determine the existence of the tie.</li>
+</ul>
+<h2>Data realiability</h2>
+<p>Reliability ask the question “given the same conditions, if we repeated our study, would we obtain the same results?”</p>
+<ul>
+<li>Data fusion/aggregation: when aggregating data on different temporal, relational or spatial scales, it is possible that we exclude important nodes and edges because they have lost their importance in the network. Thus, there should be some guiding principles—preferably of a theoretical nature—for making aggregation decisions (e.g., before and after a hypothesized important event). E.g., if we aggregate data on stable relationships, we want to adopt a principle that defines that tie on a fixed temporal scale (e.g., a valid tie must have lasted at least 1 year).</li>
+<li>Errors in secondary sources and data mining: secondary-source data may have inherent biases, which should be considered in any analysis. Second-source data might be easier to collect than primary one, but it can be fraught with errors at a variety of levels. When adopting secondary data, it is important to probe the consistency of the model, asking questions like “if we asked a survey question, what survey question would the tie(s) in the model correspond to?”</li>
+<li>Formatting errors: when mining data (or the Web) errors can derive from (unexpected) differences in document formatting. These errors can lead to the over- or under-representation of terms, actors, attributes, etc. in the data retrieval process. We should take care that any relations assigned among nodes is not an artifact of formatting errors. In addition, Web scraping and automated data mining methods should be scrutinized for consistency of study-important concepts. The (general) bottom line is that the quality of a study is a function of the quality of the data: garbage in, garbage out.</li>
+</ul>
+
+            </div>
+        </div>
+    </body>
+</html>

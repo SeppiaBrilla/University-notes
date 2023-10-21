@@ -1,0 +1,45 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Warp</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Warp</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>Warping refers to transformations of the spatial domain of images, while <a href="./Image_filters.html">filtering</a>
+ refers to changes in the values of images</p>
+<p>If we have a function that computes point in image I’ starting from point in image I, we can copy the value:
+<img src="./Pasted_image_20230504201502.png" alt="Pasted image 20230504201502.png">
+</p>
+<h2>Forward mapping</h2>
+<p>After applying the warping function in general, we get continuous coordinates, not discrete ones. Possible choices to make it discrete: truncate, neareast neighbor (i.e. rounding).
+Regardless of the choice of the mapping, due to rounding we can have:</p>
+<ul>
+<li>more than one pixel can go to one position (folds)</li>
+<li>some pixels of the destination image may not be hit (holes)</li>
+</ul>
+<h2>Backward mapping</h2>
+<p>As forward mapping, but the other way around, and solves the problem of the other method.</p>
+<h3>Bilinear Interpolation</h3>
+<p>Is a way of choosing the color of the pixel with the respect to the original ones
+<img src="./Pasted_image_20230504201837.png" alt="Pasted image 20230504201837.png">
+</p>
+
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Business Process Management</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Business Process Management</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>It helps with business decisions.
+There are different possible business prospective.</p>
+<h3>High level prospectives</h3>
+<ul>
+<li>Organizational (describe I/O, expected outcomes and dependecies) vs operational (activities are specified, implementation is disregarded)</li>
+<li>Intra (all activities are executed within the business boundaries) vs Iner organization (part of the activities executed somewhere else)</li>
+</ul>
+<h2>Activity model and instances</h2>
+<p>An activity instance is the work conduced during the execution of the business instances. Events in an instance are temporarily ordered. An activity model is a set of similar instances.</p>
+<p>Process modelling can be divided in 3 key components:</p>
+<ul>
+<li><strong>Control flow</strong> that describes the process and order the activities in it. It can be <em>procedural</em> (order of the steps) or <em>declarative</em> (focus on the properties that should hold during the execution) also <em>open</em> (specifies allowed and forbidden activities) or <em>closed</em> (activities get executed only if the process specifies so)</li>
+<li><strong>Data</strong> produced and analyzed by the instances</li>
+<li><strong>Resources</strong> and structure that enable the execution of the BPs</li>
+</ul>
+<h2>Control flow pattern</h2>
+<p>The control flow is described by:</p>
+<ul>
+<li><strong>Sequence</strong>: state of the ordering activities</li>
+<li><strong>And/parallel split</strong>: the activities are split in multiple ones executed concurrently</li>
+<li><strong>And/parallel join</strong>: multiple, concurrent, activities are joined in one</li>
+<li><strong>Xor split/and xor join</strong>: only one of the several branches is chosen when splitting</li>
+<li><strong>or join</strong>: same as and join, but we don&#39;t necessarily need to wait all activities to be completed in order to proceed</li>
+<li><strong>multiple merge</strong>: multiple threads of control join without synchronization</li>
+<li><strong>discriminator</strong>: waits for one of the incoming branches to complete and trigger the
+ subsequent activity (then wait for the other branches and ignore them)</li>
+<li><strong>n out of m</strong>: wait for N out of M (n≤m) branches to be completed (and ignore the
+ remaining)</li>
+<li><strong>arbitrary circles</strong>: introduce loop using xor split/join</li>
+<li><strong>multiple instances</strong>: concatenation of several instances</li>
+</ul>
+
+            </div>
+        </div>
+    </body>
+</html>

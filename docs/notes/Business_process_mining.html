@@ -1,0 +1,65 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Business process mining</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Business process mining</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>It is the process that allow to discover and evaluate new <a href="./Business_Process_Management.html">BPM</a>
+ models.
+There are three types of process mining:</p>
+<ol>
+<li>discovery</li>
+<li>conformance checking</li>
+<li>enhancement</li>
+</ol>
+<p>and 6 guiding principles:</p>
+<ol>
+<li>Event Data should be treated as first-class citizens</li>
+<li>Log Extraction should be driven by questions</li>
+<li>Concurrency, Choice and other basic control-flow constructs should be supported</li>
+<li>Events should be related to model elements</li>
+<li>Models should be treated as purposeful abstractions of reality</li>
+<li>Process mining should be a continuous process</li>
+</ol>
+<h4>More on point one</h4>
+<p>Logs should be trustworthy, complete, well-defined and should guarantee privacy and security. IEEE XES Standard is a standard for event logs. In the log should be reported the description of the event, the id, the timestamp and the relation to
+activity start/end</p>
+<h1>Process discovery</h1>
+<p>We would like to learn a representative model from our logs. In order to do so we can use the <strong>α-algoritm</strong>: 
+<img src="./Pasted_image_20230212001552.png" alt="Pasted image 20230212001552.png">
+
+The α-algorithm generate a footprint matrix (another way to represent data) and looks for
+sets (A,B) such that A → B ∧ A#A ∧ B#B by swapping rows and cols looking for
+a pattern.</p>
+<p>Limits: it can learn complex nets that are not necessarily implicit tranisition places. No loops
+of dimension 1, 2. No local-dependencies and does not take into account frequencies and duplicate activities (nor silent transitions)</p>
+<h2>Conformance Checking</h2>
+<p>It focusses on logs. It then compares them to the model to check for descrepancies (error for descriptive models, deviations for prescrictive ones).</p>
+<h3>Conformance Checking using Token Replay</h3>
+<p>In <a href="./Petri_nets.html">Petri nets</a>
+ we can use tokens to keep track of the order of the transitions, then check if our model fits the trace. </p>
+<p>Problems: fitness values tend to be too high for extremely problematic logs; deviation make
+the net flooded of tokens; duplicated activities are difficult to achieve</p>
+<h3>Conformance checking via Alignment</h3>
+<p>We can align the logs in order to undesteand the trace and then see how our model align with that trace.</p>
+
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Knowledge graph</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Knowledge graph</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>A graph that stores information in nodes and link them via arcs. It does not use any [logical](Fundamentals of Artificial Intelligence and Knowledge Representation/Module 2/Logic)
+ formula (looks a bit like <a href="./Semantic_networks.html">Semantic networks</a>
+).
+We can evaluate it by checking the coverage, the correctness of the information and freshness of the informations. It is used in semantic web.</p>
+<h2>Graph Embedding</h2>
+<p>Triplettes in the shape of (h,r,t): head, tail and relation. A KG is a set S={(h,r,t)}
+We can represent entities and relation into a vectorial space.
+Then we can both:</p>
+<ul>
+<li>try to learn the relation function: input (h,t) and rh and t ⇒ output a ANN able to predict r given</li>
+<li>try to predict some entity: input (h,r) and t r ⇒ output a ANN able to predict t, given h and</li>
+</ul>
+<p>We have to choose a representation space, a scoring function and learn a representation
+function.</p>
+
+            </div>
+        </div>
+    </body>
+</html>

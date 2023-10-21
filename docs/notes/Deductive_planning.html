@@ -1,0 +1,65 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Deductive planning</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Deductive planning</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>It is a <a href="./Planning.html">Planning</a>
+ strategy that uses first order logic as a way to find a path from the initial state to the final state. </p>
+<h2>Green formulation</h2>
+<p>We use fluets (properties) that hold in a given state s to describe the current situation and to describe actions we describe which fluets are true after we have execute them. Example:
+properties:
+    on(b,a,S0)
+    onTable(c,S0)
+    clear(b,S0)
+    clear(c,S0)
+actions:
+    on(X,Y,S) and clear(X,S) -&gt; (onTable(X,do(putOnTable(X),S))) and (clear(Y,do(putOnTable(X),S)))
+    on(X,Y,S) and clear(X,S) and clear(Z,S) -&gt; (on(X,Z,do(move(X,Z),S))) and (clear(Y,do(move(X,Z),S)))
+<img src="./Pasted_image_20221208190536.png" alt="Pasted image 20221208190536.png">
+</p>
+<p>This method finds a proof of a formula containing a state variable, at the end of the planning the state variable will be instantiated to the plan to reach the objective.
+The proof is done by absurd on the action needed to reach the final state.
+Example:
+final state = on(b,c,s1)
+proof:
+    ~on(b,c,S1) -&gt; ~clear(c,S0) or ~clear(b,S0) or ~on(b,Y,S0)
+    but:
+    clear(c,S0)
+    clear(b,S0)
+    on(b,a,S0)
+    (from the previous properties)
+    -&gt; contradiction, absurd</p>
+<h3>The frame problem</h3>
+<p>Since we assume that every fluets not actually stated is false, we need to explicitly list all fluets that do not change after the actions&#39; execution.
+We need an axiom that keeps track of what does not change for each of our actions.</p>
+<h2>Kovalsky formulation</h2>
+<p>We have a set of predicates to describe states and actions:</p>
+<ul>
+<li>holds(rel, s/a) to describe all relations rel that are true in a given state s or made true by execution of an action</li>
+<li>poss(s) to indicate if a state s is possible </li>
+<li>pact(a,s) that indicate if an action an is executable on s </li>
+<li>poss(s) and pact(a, s) -&gt; poss(do(a,s))</li>
+</ul>
+<p>this limits the frame axioms needed to avoid the frame problem (just one for action)</p>
+
+            </div>
+        </div>
+    </body>
+</html>

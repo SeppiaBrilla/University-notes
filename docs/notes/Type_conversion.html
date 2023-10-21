@@ -1,0 +1,49 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Type conversion</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Type conversion</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>It is a <a href="./Data_pre-processing.html">Data pre-processing</a>
+ technique.
+Many algorithms like <a href="./Perceptron.html">Perceptron</a>
+ require numerical data in order to work.
+-&gt; 
+<a href="./Type.html">categorical</a>
+ features must be converted in <a href="./Type.html">numerical</a>
+ and <a href="./Ordinal_data_type.html">Ordinal data type</a>
+ must also preserve the order in the conversion</p>
+<p>In other case like <a href="./Classification.html">Classification</a>
+ the label must be discrete, and so we can discretize a <a href="./Type.html">numerical</a>
+ target.</p>
+<p>We can also discretize <a href="./Type.html">numerical</a>
+ features by converting them in a series of boolena features.</p>
+<h3>Continuos to discrete conversion</h3>
+<p><img src="./Pasted_image_20221226232205.png" alt="Pasted image 20221226232205.png">
+</p>
+<ul>
+<li>Equal width divides the data in equally spaced classes</li>
+<li>Equal frequency keeps the same amount of data in every class</li>
+<li>K divide data based on the mean</li>
+</ul>
+
+            </div>
+        </div>
+    </body>
+</html>

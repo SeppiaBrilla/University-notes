@@ -1,0 +1,43 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Sampling</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Sampling</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>It is a <a href="./Data_pre-processing.html">Data pre-processing</a>
+ strategy.
+Sampling is useful both for a preliminary investigation and a final data analysis.
+A sample, often, is as effective as the entire dataset <em><strong>if the set is representative</strong></em>.</p>
+<h2>Type of sampling</h2>
+<ul>
+<li>Simple random: a simple random choice of an object with a given probability distribution</li>
+<li>With replacement: like simple random but with multiple repetition of independent extraction</li>
+<li>Without replacement: Like with replacement but, at each extraction, the element is removed from the possible one</li>
+<li>Stratified: the data is separated in different partition according to some criteria and the random sample are draw from each partition. This guarantee representativity.</li>
+</ul>
+<p>A trade-off between data reduction and precision must be made.</p>
+<h2>Missing classes</h2>
+<p>The probability of sampling at least one element of each class is independent from the size of the dataset but is very important to have a representative sampling in order to properly train the machine learning model.
+If there is a high number of classes with low representativity, it could be difficult to get a good test/train or <a href="./Cross_validation.html">Cross validation</a>
+ sampling.</p>
+
+            </div>
+        </div>
+    </body>
+</html>

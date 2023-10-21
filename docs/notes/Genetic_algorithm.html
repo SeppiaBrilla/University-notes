@@ -1,0 +1,64 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Genetic algorithm</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Genetic algorithm</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>Is a <a href="./Population_based_search.html">Population based search</a>
+ inspired by evolution with three key components:</p>
+<ul>
+<li>Adaptation: organism are suited to their habitats</li>
+<li>Inheritance: offspring resemble their parents</li>
+<li>Natural selection: new types of organisms emerge and those that fails to change adequately are subject to extinction</li>
+</ul>
+<p>---&gt;</p>
+<ul>
+<li>the fittest individuals have high chance of having numerous offspring</li>
+<li>the children are similar, but not equal, to their parents</li>
+<li>the traits characterizing the fittest individuals spread across the population, generation by generation</li>
+</ul>
+<h3>Genetic operators</h3>
+<ul>
+<li><strong>Crossover</strong>: combination of two chromosomes</li>
+<li><strong>Mutation</strong>: each gene has probability pM to be flipped</li>
+<li><strong>Proportional selection</strong>: the probability of an individual to be chosen is proportional to his fitness</li>
+<li><strong>Generation replacement</strong>: the new generation completely replace the old one. This approach is very simple, easy to compute and easier to analize, but it might lose good solutions lost on the new generation. To solve this problem is possible to keep the best ns individuals of the old generation</li>
+</ul>
+<h3>Pseudocode</h3>
+<pre><code class="language-python">def GeneticAlgorithm():
+    population = initializePopulation()
+    evaluatePopulation(population)
+    while not Termination_conditions: # Execution time, satisfactory soltion(s), stagnation
+        new_population = []
+        while not new_population_completed:
+            parent1, parent2 = getParents(population)
+            individuals = mating(parent1,parent2)
+            individuals = applyCrossover(individuals)
+            individuals = mutation(individuals)
+            new_population.append(individuals)
+        population = new_population
+        evaluatePopulation(population)
+</code></pre>
+<p>The crossover function combines the good parts from good solutions (not guarantee)
+The mutation introduces diversity and the selection move the population towards high fitness</p>
+
+            </div>
+        </div>
+    </body>
+</html>

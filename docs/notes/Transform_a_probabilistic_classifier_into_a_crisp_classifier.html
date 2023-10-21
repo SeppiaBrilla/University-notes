@@ -1,0 +1,57 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Transform a probabilistic classifier into a crisp classifier</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Transform a probabilistic classifier into a crisp classifier</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>There are two methods to transform a probabilistic classifier into a crisp one depending on the kind of classifier:</p>
+<ul>
+<li>binary : set a threshold for the positive class</li>
+<li>multicast: return the class with maximum probability</li>
+</ul>
+<h2>Lift chart</h2>
+<p>Consider the dataset with N positive and apply the probabilistic classification,
+sort the classified elements in decreasing probability of positive class, plot a chart with a line representing the positives obtained with a random choice of sample test data and a curve with the number of positive taken by a fraction of the test data with decreasing probability.
+The largest the area between the two lines, the better the classifier
+<img src="./Pasted_image_20221225005327.png" alt="Pasted image 20221225005327.png">
+</p>
+<h2>Roc Curve</h2>
+<p>Find a threshold that maximize the trade-off between hit rate and false alarm due to noisy data.</p>
+<p>We assume to be able to represent the two label (p, n) with a Gaussian curve each. With a low level of noise the two curves are well separated but, with a lot of noise, the curves may overlap a lot.  Moving the threshold will increase the true positive and the false positive (in one direction) or the opposite in the opposite direction.</p>
+<h2>Converter pseudocode</h2>
+<pre><code class="language-python">def RocDrawer():
+ elements = elements.sort_with_decreasing_probability()
+ trashold = elements[0]
+ true_positive = TruePositivetWithTrashold(trashold)
+ true_negative = FalsePositivetWithTrashold(trashold)
+ drawPoint(true_positive, true_negative)
+ while(len(elements) &gt; 0):
+     trashold = elements.pop()
+     true_positive = TruePositivetWithTrashold(trashold)
+     true_negative = FalsePositivetWithTrashold(trashold)
+     drawPoint(true_positive, true_negative)
+</code></pre>
+<p>Then, from the Roc curve, mixed with the lift chart we can choose the threshold depending on our needs
+<img src="./Pasted_image_20221225011348.png" alt="Pasted image 20221225011348.png">
+</p>
+
+            </div>
+        </div>
+    </body>
+</html>

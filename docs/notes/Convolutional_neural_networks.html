@@ -1,0 +1,69 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Convolutional neural networks</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Convolutional neural networks</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>CNN are <a href="./Neural_networks.html">Neural networks</a>
+ with some layers that apply a <a href="./Convolution.html">Convolution</a>
+ to the input.
+Not like classical filters like <a href="./Image_filters.html">Image filters</a>
+, in CNN the value of the filters are not pre-computed but learned during the backpropagation process.
+Each convolutional layer has the following parameters:</p>
+<ul>
+<li><strong>Kernel size</strong>: the dimensions of the filter</li>
+<li><strong>Stride</strong>: the movement of the filter</li>
+<li><strong>Padding</strong>: the artificial enlargement of the input in order to compute the convolution on borders.</li>
+<li><strong>Depth</strong>: number of different kernel to sytesize.</li>
+</ul>
+<p>The output is given by: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>W</mi><mo>+</mo><mi>P</mi><mo>−</mo><mi>K</mi></mrow><mi>S</mi></mfrac><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\frac{W + P - K}{S} + 1</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:1.2173em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8723em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">W</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight" style="margin-right:0.13889em;">P</span><span class="mbin mtight">−</span><span class="mord mathnormal mtight" style="margin-right:0.07153em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> where:</p>
+<ul>
+<li><strong>W</strong> is the dimension of the input</li>
+<li><strong>P</strong> is the padding size</li>
+<li><strong>K</strong> is the kernel size</li>
+<li><strong>S</strong> is the stride
+The dimension of the kernel is going to be <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>×</mo><mi>M</mi><mo>×</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">N \times M \times D</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span> where N and M are the dimensions of the kernel given in input and D is the depth of the kernel.</li>
+</ul>
+<h3>Pooling</h3>
+<p>Is common to see some convolution layers alternate with some pooling layers. A pooling layer takes either the maximum, the minimum or the mean value of its receptive field.</p>
+<h3>Receptive field</h3>
+<p>The receptive field of a neuron is the dimension fo the input needed to produce an output of dimension 1 (without padding). A neuron can see only his receptive field.</p>
+<h3>Inception module</h3>
+<p>At each step of a CNN we must choose if to apply a convolution, a pooling operation, etc. But with an inception module, we can concatenate this operation in order to get the best from each of those operations.
+<img src="./Pasted_image_20230404165425.png" alt="Pasted image 20230404165425.png">
+</p>
+<h3>Depthwise separable convolutions</h3>
+<p>Convolutions are, often, 3D and if we want to apply a nxn convolution to an input channel of dimension i and output o we are going to have <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>×</mo><mi>n</mi><mo>×</mo><mi>i</mi><mo>×</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n \times n \times i \times m</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7429em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">m</span></span></span></span> parameters. If, instead, we compute i different convolution of size nxn and then apply a 1x1xi convolution o times, we&#39;re going to have <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>×</mo><mi>n</mi><mo>×</mo><mi>n</mi><mo>+</mo><mi>o</mi><mo>×</mo><mn>1</mn><mo>×</mo><mn>1</mn><mo>×</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">i \times n \times n + o \times 1 \times 1 \times i</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7429em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">o</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span> parameters =&gt; much less.</p>
+<h3>Residual learning</h3>
+<p>In order to solve the proble of low learning in the deeper layers, we can add a &quot;residual shortcut&quot; that repeat the input every 2–3 layers. 
+<img src="./Pasted_image_20230404173820.png" alt="Pasted image 20230404173820.png">
+</p>
+<h3>Transfering learning</h3>
+<p>We can reuse some of the neurons of an already-trained network in order to save time in the training procedure. 
+<img src="./Pasted_image_20230404174730.png" alt="Pasted image 20230404174730.png">
+</p>
+<h3>Transpose convolutions</h3>
+<p>They are convolutions with sparser values. They enlarge the input. They can be computed by transposing the matrix of the original convolution
+<img src="./Pasted_image_20230404175008.png" alt="Pasted image 20230404175008.png">
+</p>
+
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Production system</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Production system</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>Is a program that perform a <a href="./Search_strategies.html">Search strategies</a>
+ to a problem.
+Consists of: </p>
+<ul>
+<li>a set of ruels</li>
+<li>a working memory</li>
+<li>a control strategy</li>
+</ul>
+<h2>forward or data driven production system</h2>
+<p>Its initial states consists of the initial knowledge about the problem and the rules are choosen by antecendent matching them with the working memory. The process ends with success when the goal to prove is in memory</p>
+<h2>backward or goal driven production system</h2>
+<p>The memory contains the goal at its initial state. The rules are choosen by consequent matching with the working memory. At each step new sub-goals are added to the memory and the procedure ends when the initial state is in memory</p>
+<p>The combination of the two system can be applied.</p>
+
+            </div>
+        </div>
+    </body>
+</html>
