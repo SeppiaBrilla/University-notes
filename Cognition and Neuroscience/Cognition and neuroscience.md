@@ -63,5 +63,5 @@ A method to treat epilepsy by destroyng the neurons causing it.
 
 ### A deep(-ish) dive in the whole biology thing
 
-- [[Individual cels]]
+- [[Individual cells]]
 - [[Neural system]]

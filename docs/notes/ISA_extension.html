@@ -1,0 +1,54 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>ISA extension</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>ISA extension</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>ISA extension are some extension that can be added to any processor in order to make it faster at computing matrix multiplications.</p>
+<h2>HW loops and post increment</h2>
+<p>Let&#39;s suppose to have a loop of this type:</p>
+<pre><code class="language-c">for(int i = 0; i &lt; X; i ++){
+    var[i] = var[i] * 2
+}
+</code></pre>
+<p>In this case, the processor will need to: </p>
+<ol>
+<li>load in memory the variable needed to perform the computation</li>
+<li>perform the computation </li>
+<li>update the memory address to load the next variable</li>
+</ol>
+<p>With post increment instruction, we can perform step 1 and 3 at the same time, making way faster the computation. To do so, we need some extra hardware, however the increment in the processor size (8-12%) does not make it consume more than what we save performing such operation.</p>
+<p>Hardware loops can be implemented whenever we need beforehand how many times we need to perform a loop (for instruction). In this cases, we can design a special piece of hardware that can notify the main processor when to stop performing the loop. This way, the processor can avoid checking each time what to do next and, with a 5% increase in the processor size, we can have a 2x speed-up.</p>
+<h2>Multiply accumulate</h2>
+<p>We can let the processor do just the multiply part and do the accumulate directly on the register.
+Pro: </p>
+<ul>
+<li>Faster access to mac </li>
+<li>single cycle mac
+Cons:</li>
+<li>additional read port on the register file</li>
+<li>used for pre/post increment with register</li>
+</ul>
+<h2>Packed-SIMD</h2>
+<p>SIMD stands for &quot;Same Instruction Multiple Data&quot;, basically, we can load either 4 8bit or 2 16bit numbers on a 32bit register and perform the same instruction for all the numbers at the same time.</p>
+
+            </div>
+        </div>
+    </body>
+</html>
