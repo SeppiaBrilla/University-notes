@@ -1,0 +1,40 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Stereo geometry</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Stereo geometry</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>A set of techniques to infer data from a set of photos from which we do not know the correspondence between two points.</p>
+<h2>Stereo matching</h2>
+<p>We can infer how are the two images related by looking on the horizontal line from a starting point on the first image and search it on the same line in the second image (better if we use a window around the points).
+<img src="./__University_University-notes_imgs_Pasted_image_20230227150300.png" alt="Pasted image 20230227150300.png">
+</p>
+<p>But what if the two photos are no longer aligend? 
+The solution is to project the like related to the point <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>L</mi></msub></mrow><annotation encoding="application/x-tex">P_L</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">L</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> in the right plane (or viceversa) and search across that line. The line is called <strong>Epipolar line</strong>.
+<img src="./__University_University-notes_imgs_Pasted_image_20230227151409.png" alt="Pasted image 20230227151409.png">
+</p>
+<p>The issue with this method is that we need to know the transformation between the two cameras.</p>
+<h2>Rectification</h2>
+<p>Searching through oblique epipolar lines is computationally harder.
+In order to ease the problem, we can rectify the images (rotate them) in order to convert epipolar geometry to standard geometry.</p>
+
+            </div>
+        </div>
+    </body>
+</html>

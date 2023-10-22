@@ -1,0 +1,70 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Density based clustering</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Density based clustering</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>It is a <a href="./__University_University-notes_Machine_learning_Clustering_Clustering.html">Clustering</a>
+ technique.
+There are two main solutions:</p>
+<ul>
+<li>grid based: divide the Hyperspace in grids and connect together object in the same grid</li>
+<li>object-centered: define a radius of each object and connect together object whose radius collide.</li>
+</ul>
+<h1>DBSCAN</h1>
+<p>Density based spatial clustering of application with noise</p>
+<p>p is a border point if, in his radius, there are less than a certain threshold points.
+If p is not border then it is core.
+Define the neighbor of p all the point in his radius.
+p is directly density reachable from q if:</p>
+<ul>
+<li>q is core</li>
+<li>q is in the neighbor of p (and vice versa)
+The vice versa is not always true.
+A point p is density reachable from q if:</li>
+<li>q is core</li>
+<li>there is a sequence of directly densitive reachable points from q to p</li>
+</ul>
+<p>Two point are density connected if there is at least a point s such as both p and q are density reachable from s (Symmetric).</p>
+<h2>Cluster generation</h2>
+<p>A cluster is a maximal set of points connected by density. Border point not connected by density are noise.</p>
+<h2>Parameters selection</h2>
+<p>The threshold selection to define a point as border or core is a parameter that is very hard to find. Often, a set of trial and error is required, but a good starting guess is 2 * Number of dimensions.
+Choosing the radius is more difficult, but we can start from considering the distance from the k-nearest neighbors with k = threshold and choose a k-distance starting from there. Often, where there is a change of slope in the k distance plot there is a good epsilon value.</p>
+<h2>Conclusion on DBSCAN</h2>
+<p>It finds clusters of every shape, and it is very noise-robust. It can also be problematic with clusters with widely varying densities. And could have a high complexity <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> that can be reduced to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mi>log</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N\log(N)</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span> with spatial indexes are available. It is also very sensitive to his parameter.</p>
+<h1>Kernel density estimation (DENCLUDE)</h1>
+<p>It is a statistic based technique that describe the data distribution with a function and the overall density functions is the sum of the influence functions (or kernel functions) of each point.
+The kernel function must be symmetric and monotonically decreasing.</p>
+<h3>Denclude procedure</h3>
+<ol>
+<li>Derive a density function for the space occupied by the datapoints</li>
+<li>Identify the local maxima </li>
+<li>Associate each point with the nearest density attractor</li>
+<li>Define a cluster as a set of points associated with a particular density attractor</li>
+<li>Discard clusters with a density attractor whose density is less than a given threshold </li>
+<li>Combine clusters that are connected by a path of points with density higher than the trashold.</li>
+</ol>
+<h2>Conclusion on DENCLUDE</h2>
+<p>It has a strong theoretical foundation on statistics, very good at dealing with noise and different-shaped clusters. But it is very complex <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> and has truble with cluster with different densities and high dimensional data.</p>
+
+            </div>
+        </div>
+    </body>
+</html>

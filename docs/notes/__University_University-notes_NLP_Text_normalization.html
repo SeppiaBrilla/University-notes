@@ -1,0 +1,51 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Text normalization</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Text normalization</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>Every NLP task needs to do text normalization. This can include: </p>
+<ul>
+<li>Segmenting/tokenizing words in running text</li>
+<li>Normalizing word formats</li>
+<li>Segmentation sentences in running text</li>
+</ul>
+<h1>Tokenization</h1>
+<h2>Number of words</h2>
+<p>It can be really hard to define what is a new word and what isn&#39;t (cat and cats are the same or two different one?).
+The Herdan&#39;s law says that, if V is the vocabulary size and N the number of tokens (not words), then: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>V</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mi>k</mi><msup><mi>N</mi><mi>β</mi></msup></mrow><annotation encoding="application/x-tex">|V| = kN^\beta</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8491em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05278em;">β</span></span></span></span></span></span></span></span></span></span></span>. The standard way of handling tokenization (transform text into a sequence of tokens) has been regex, but it can be really hard, and the process need to change for every language.</p>
+<h3>Data-driven tokenization</h3>
+<p>It is a tokenization process particularly effective at dealing with unknown words. Tokens can also be sub-words. The process usually it&#39;s done in 2 steps:</p>
+<ul>
+<li>token learner: induces a vocabulary from a corpus</li>
+<li>token segmenter: does the segmentation using the learned vocabulary</li>
+</ul>
+<p>The 3 most common algorithms are <a href="./__University_University-notes_NLP_Byte-Pair_Encoding.html">Byte-Pair Encoding</a>
+ (BPE), unigram language modeling, and WordPiece </p>
+<h1>Normalization</h1>
+<p>It is the task of putting words/tokens in a standard format. We would like to not have different words for things like &quot;Apple and apple&quot; but also we would like to distinguish the apple fruit from the company &quot;Apple&quot;</p>
+<h3>Lemmatization</h3>
+<p>We may also want slightly different words to have the same meaning, as for &quot;restaurants&quot; and &quot;restaurant&quot;. Lemmatization reduces inflections or variant forms to base form, e.g. am, are, is -&gt; be.</p>
+<h3>Stemming</h3>
+<p>is a naive version of lemmatization: it reduces words by cutting their suffix and prefix.</p>
+
+            </div>
+        </div>
+    </body>
+</html>

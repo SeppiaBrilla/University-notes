@@ -1,0 +1,61 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Graph-based planning</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Graph-based planning</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>Is a <a href="./__University_University-notes_Fundamentals_of_Artificial_Intelligence_and_Knowledge_Representation_Module_1_Planning_Planning.html">Planning</a>
+ strategy proposed in 1995 that creates a graph called <strong>Planning graph</strong> while planning. It is correct, complete and one of the most efficient planner.
+It returns either the shortest possible path or an inconsistency. It inherits early commitment from <a href="./__University_University-notes_Fundamentals_of_Artificial_Intelligence_and_Knowledge_Representation_Module_1_Planning_Linear_planning.html">Linear planning</a>
+ (e.g. action A is executed at step 2) but also inherit from <a href="./__University_University-notes_Fundamentals_of_Artificial_Intelligence_and_Knowledge_Representation_Module_1_Planning_Non-linear_planning_-_Partial_order_planning_(POP).html">non linear planning</a>
+ the ability to create a partially ordered set of actions.
+Actions are like in <a href="./__University_University-notes_Fundamentals_of_Artificial_Intelligence_and_Knowledge_Representation_Module_1_Planning_Strips.html">Strips</a>
+, objects have a type and there is an action No-op that does nothing to resolve the frame problem (<a href="./__University_University-notes_Fundamentals_of_Artificial_Intelligence_and_Knowledge_Representation_Module_1_Planning_Deductive_planning.html">Deductive planning</a>
+). States are represented as true predicate in that state.
+The graph is leveled: every node has a level, and arcs connect nodes in adjacent levels.
+There are two type of levels:</p>
+<ul>
+<li>Proposition level: where nodes represent propositions</li>
+<li>Action level: where nodes represent actions</li>
+</ul>
+<p>At level 0 there is the initial state (proposition level) and arcs are divided into:</p>
+<ul>
+<li>Precondition arcs (proposition -&gt; action)</li>
+<li>Add arcs (action -&gt; proposition) (a new proposition holds)</li>
+<li>Delete arcs (Action -&gt; proposition) (a proposition gets deleted)</li>
+</ul>
+<p>During the graph creation, incosistencies between actions or prepositions may occour but. They may appear together in the same level, but they will not appear on the same plan.</p>
+<p>Once the graph has been build, we need to extract a valid plan out of it.
+Valid plan features:</p>
+<ul>
+<li>Action on the same level can be executed in any order</li>
+<li>Proposition at the same step must be not mutually exclusive</li>
+<li>The last level contains all literals that are not mutually exclusive</li>
+</ul>
+<h3>Theorems</h3>
+<ul>
+<li>if there is a valid plan then this is a subgraph of the planning graph</li>
+<li>A valid plan with mutually exclusive propositions at the same level does not exist</li>
+<li>In a planning graph two propositions are mutually exclusive in a level if they are inconsistent.</li>
+</ul>
+
+            </div>
+        </div>
+    </body>
+</html>

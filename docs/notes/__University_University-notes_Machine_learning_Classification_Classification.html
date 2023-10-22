@@ -1,0 +1,61 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Classification</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Classification</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>Classification is a type of problem we can solve with machine learning techniques.
+Any classification problem is shaped as a set of characteristic that we want to label.
+Example: finding the correct disease to a patient, find the specie of an animal, ...</p>
+<p>Some classification algorithms are:</p>
+<ul>
+<li><a href="./__University_University-notes_Statistical_and_Mathematical_Methods_for_Artificial_Intelligence_Matrices_PCA.html">PCA</a>
+</li>
+<li><a href="./__University_University-notes_Statistical_and_Mathematical_Methods_for_Artificial_Intelligence_Statistics_Maximum_likelihood_estimation.html">Maximum likelihood estimation</a>
+, <a href="./__University_University-notes_Statistical_and_Mathematical_Methods_for_Artificial_Intelligence_Statistics_MAP_(maximum_a_posteriori).html">MAP (maximum a posteriori)</a>
+</li>
+</ul>
+<h2>Types of classification</h2>
+<p>We can find two type of classification (that, in reality, are the same for all machine learning techniques):</p>
+<ul>
+<li><a href="./__University_University-notes_Machine_learning_Unsupervised_learning.html">Unsupervised learning</a>
+. Often, with classification, the unsupervised techniques are known with other names different from classification (<a href="./__University_University-notes_Statistical_and_Mathematical_Methods_for_Artificial_Intelligence_Matrices_PCA.html">PCA</a>
+ is often referred as a dimensionality reduction technique)</li>
+<li><a href="./__University_University-notes_Machine_learning_Supervised_learning.html">Supervised learning</a>
+ -&gt; <a href="./__University_University-notes_Machine_learning_Classification_Supervised_classification.html">Supervised classification</a>
+</li>
+</ul>
+<h2>Evaluation of a classifier</h2>
+<p>We want to know which is the best combination of model, algorithms and parameter to classify our data. 
+=&gt; <a href="./__University_University-notes_Machine_learning_Classification_Evaluation_of_a_classifier.html">Evaluation of a classifier</a>
+ </p>
+<h2>Imbalance data in classification</h2>
+<p>Some classes could have a minority representation in the data and this could alter the classifier result (e.s. rare events). A possible solution to this issue is to weight the classes that changes the cost function to take in exam the imbalance of the classes.
+It is very similar to oversampling the minority class in order to produce a balanced training set.</p>
+<p>Another way to resolve this issue is <strong>Undersampling</strong> that reduces the number of cases of the majority classes in order to balance the train set (this, of course, reduce the amount of knowledge in the set)</p>
+<h3>Oversampling with SMOTE</h3>
+<p>It is an oversampling technique that tries to <em>synthesize</em> new examples of the minority classes. It tries to generate a new object taking a random element from the minority class and generating the new element as a point in between the choosen element and one of his neighbours. </p>
+<h2>Classification techniques comparison</h2>
+<p><img src="./__University_University-notes_imgs_Pasted_image_20230104120306.png" alt="Pasted image 20230104120306.png">
+</p>
+
+            </div>
+        </div>
+    </body>
+</html>

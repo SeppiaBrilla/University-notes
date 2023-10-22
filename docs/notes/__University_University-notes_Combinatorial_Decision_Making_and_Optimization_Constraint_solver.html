@@ -1,0 +1,53 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Constraint solver</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Constraint solver</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>An algorithm to resolve a <a href="./__University_University-notes_Combinatorial_Decision_Making_and_Optimization_CSP.html">CSP</a>
+.
+There are many ways to build such algorithm. The simplest one is the generate and test one: generate all possibilities, then check for a good one (computationally awfull). A better approach is to use <a href="./__University_University-notes_Combinatorial_Decision_Making_and_Optimization_Constraints_propagation.html">Constraints propagation</a>
+ to prune solutions in order to restrict the search area.
+The standart algorithm that uses constraints propagation uses backtracking as programming tecnique to find a solution.</p>
+<h2>Search heuristics</h2>
+<p>After a possible variable assignement is choosen, it is not obvious what must be the next variable to assign. The better way to choose such a variable is to try with the one that has more possibility to end with a &quot;dead end&quot; (Fail First principle). There are many ways to do so:</p>
+<ul>
+<li>Dom: choose the variable with smaller domain. </li>
+<li>Deg: choose the variable with more constraints on it.</li>
+<li>Weighted degree heuristic (domWeg): like Dom, but constraints are weighted. The weight of a variable is given by the sum of all its constraints and the next one is chosen by: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>d</mi><mi>o</mi><mi>m</mi><mo stretchy="false">(</mo><msub><mi>X</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>w</mi><mo stretchy="false">(</mo><msub><mi>X</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{dom(X_i)}{w(X_i)}</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:1.53em;vertical-align:-0.52em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.01em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.02691em;">w</span><span class="mopen mtight">(</span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3281em;"><span style="top:-2.357em;margin-left:-0.0785em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mclose mtight">)</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.485em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">d</span><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight">m</span><span class="mopen mtight">(</span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3281em;"><span style="top:-2.357em;margin-left:-0.0785em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.52em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></li>
+<li><a href="./__University_University-notes_Combinatorial_Decision_Making_and_Optimization_Randomization.html">Randomization</a>
+ + <a href="./__University_University-notes_Combinatorial_Decision_Making_and_Optimization_Restarting.html">Restarting</a>
+ (to avoid <a href="./__University_University-notes_Combinatorial_Decision_Making_and_Optimization_Heavy_tail_behaviour.html">Heavy tail behaviour</a>
+)</li>
+<li>domWeg + <a href="./__University_University-notes_Combinatorial_Decision_Making_and_Optimization_Restarting.html">Restarting</a>
+</li>
+</ul>
+<p>Another thing we can do is to design a problem-specific algorithm that, at each step, chooses the next variable. It is a bit more expensive computationally speaking, but it can prune the search space faster and more efficiently.</p>
+<h1>Constraint optimization problems</h1>
+<p>Often, in a <a href="./__University_University-notes_Combinatorial_Decision_Making_and_Optimization_CSP.html">CSP</a>
+, we don&#39;t only want to only find a solution but an optimal one (given a function to maximize / minimize). We need to take that into account in the search algorithm or else the computational costs will explode.</p>
+<h3>Branch and bound</h3>
+<p>Find first a solution, then, backtrack with a new constraint that search for a better solution.</p>
+<h3>Large neighbourhood search</h3>
+<p>Define a (generic and large) neighbourhood and, after a solution has been found, search in the neighbourhood for a better one.</p>
+
+            </div>
+        </div>
+    </body>
+</html>

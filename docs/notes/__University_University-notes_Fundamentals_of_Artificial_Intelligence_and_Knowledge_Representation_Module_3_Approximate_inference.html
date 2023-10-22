@@ -1,0 +1,126 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Approximate inference</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Approximate inference</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>It&#39;s a way to query some probabilities on a <a href="./__University_University-notes_Fundamentals_of_Artificial_Intelligence_and_Knowledge_Representation_Module_3_Bayesian_network.html">Bayesian network</a>
+.
+The main idea is to draw N samples from a sample distribution and compute from them the approximate posterior probability.
+The error can be computed both <a href="./__University_University-notes_Statistical_and_Mathematical_Methods_for_Artificial_Intelligence_Errors_Relative_error.html">Relative error</a>
+ and <a href="./__University_University-notes_Statistical_and_Mathematical_Methods_for_Artificial_Intelligence_Errors_Absolute_error.html">Absolute error</a>
+ but, for each of them, having an error &lt; .5 and a failure rate for the algorithm of &lt;.5 is np-hard.</p>
+<h1>Sampling from an empty network</h1>
+<p>We start by sampling from an empty network, we extract a value for each variable in topological order, and then we compute the values for each of the others variables.
+Example:
+<pre class="mermaid">
+
+graph TD
+
+A((C)) --- S((S))
+
+A((C)) --- R((R))
+
+R((R)) --- W((W))
+
+S((S)) --- W((W))
+
+</pre>
+With:
+P(C) = 0.5</p>
+<table>
+<thead>
+<tr>
+<th>C</th>
+<th>P(S|C)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>T</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>F</td>
+<td>0.5</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>C</th>
+<th>P(R|C)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>T</td>
+<td>0.8</td>
+</tr>
+<tr>
+<td>F</td>
+<td>0.2</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>S</th>
+<th>R</th>
+<th>P(W|S,R)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>T</td>
+<td>T</td>
+<td>0.99</td>
+</tr>
+<tr>
+<td>T</td>
+<td>F</td>
+<td>0.90</td>
+</tr>
+<tr>
+<td>F</td>
+<td>T</td>
+<td>0.90</td>
+</tr>
+<tr>
+<td>F</td>
+<td>F</td>
+<td>0.1</td>
+</tr>
+</tbody></table>
+<p>If we extract 0.5 for C, 0.3 for S, 0.2 for R and 0.8 for W we will have true for C, R and W and False for S.</p>
+<p>Repeating this process N time will generate an approximate sample for the network.</p>
+<h1>Rejection sampling</h1>
+<pre><code class="language-python">def rejection_sampling(X, e, bn, N):
+    vector_count = {}
+    for j in N:
+        x = get_sample(bn)
+        if is_consistent(x, e):
+            vector_count[x] += 1
+        return normaize(vector_count)
+</code></pre>
+<p>Basically, in order to compute P(X|e) we extract from our samplings the samples agreeing with our e and return the normalization of those samples values.</p>
+<h1>Likelihood weighting</h1>
+<p>The procedure is similar to the sampling generation, but fixes the values of our evidences and sample according to them.</p>
+
+            </div>
+        </div>
+    </body>
+</html>

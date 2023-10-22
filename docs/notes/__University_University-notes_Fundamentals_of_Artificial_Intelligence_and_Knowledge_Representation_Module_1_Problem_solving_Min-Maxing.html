@@ -1,0 +1,70 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Min-Maxing</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Min-Maxing</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>Min-maxing in an algorithm that tries to find a solution for <a href="./__University_University-notes_Fundamentals_of_Artificial_Intelligence_and_Knowledge_Representation_Module_1_Problem_solving_Games.html">Games</a>
+ problems.
+We assume a two player game where both player have the same knowledge about the current state of the game (not always true e.g. card games). We also assume that the objectives of the players are complementary (win and lose).
+The development of a game is interpreted as a tree, the players (min, max) are assumed to perform the best possible moves to win (max) avoid the other player wins (min). Le leaves are labeled as 1 (win state) or -1 (lose state) </p>
+<h2>pseudo code</h2>
+<pre><code class="language-python">def MinMax(n, current_player):
+    cs = n.childs()
+    next_player = &quot;min&quot; if current_player == &quot;max&quot; else &quot;max&quot;
+    values = {}
+    if len(cs) == 0:
+        if n.isWinning:
+            return 1
+        if n.isLosing:
+            return -1
+        return 0
+    for c in cs:
+        values[c] = MinMax(c, nex_player)
+    
+    if current_player == &quot;max&quot;:
+        return getMaxValueChild(values)
+    return getMinValueChild(values)
+</code></pre>
+<p>This code is exponential in time and space</p>
+<p>This algorithm:</p>
+<ul>
+<li>Complete: if the tree is finite</li>
+<li>Optimal: against a perfect opponent</li>
+</ul>
+<p>For complex games like Chess or GO the high complexity will be a problem, so we need to prune the tree.
+Solution: (Shannon, 1949) look forward a few levels then use an evaluating function to estimate the quality of a certain node and use it as its label.</p>
+<h3>How we decide to stop the expansion and evaluate a node?</h3>
+<p> With a perfect evaluation function this is not a problem since we just expand the root and then decide the move using the evaluation function on each child.
+ With a non-perfect evalution function we can:</p>
+<ul>
+<li>always expand to a certain depth p (this could be a problem for very complicated moves that would need a better expansion)</li>
+<li>do a secondary search focused on the best move choice</li>
+</ul>
+<h2>Alpha-beta cuts</h2>
+<p>Another solution is to reduce the search space by avoiding expanding impossible moves
+<img src="./__University_University-notes_imgs_Pasted_image_20221208160656.png" alt="Pasted image 20221208160656.png">
+
+How much we are saving? 
+The number of not-expanded nodes depends on their order. In an avarage case we reduce the number of expanded nodes from <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>b</mi><mi>d</mi></msup><mtext>  </mtext><mtext>to</mtext><mtext>  </mtext><msup><mi>b</mi><mfrac><mrow><mn>3</mn><mi>d</mi></mrow><mn>4</mn></mfrac></msup></mrow><annotation encoding="application/x-tex">b^d \; \text{to} \; b^{\frac{3d}{4}}</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:0.979em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">d</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord text"><span class="mord">to</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.979em;"><span style="top:-3.363em;margin-right:0.05em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mopen nulldelimiter sizing reset-size3 size6"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.88em;"><span style="top:-2.656em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">4</span></span></span></span><span style="top:-3.2255em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line mtight" style="border-bottom-width:0.049em;"></span></span><span style="top:-3.384em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mathnormal mtight">d</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.344em;"><span></span></span></span></span></span><span class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span></span></span></span></span></span></span></span></span> </p>
+
+            </div>
+        </div>
+    </body>
+</html>
