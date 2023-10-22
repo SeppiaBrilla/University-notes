@@ -1,0 +1,37 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Restarting</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Restarting</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>It is a technique to avoid <a href="./Combinatorial_Decision_Making_and_Optimization_Heavy_tail_behaviour.html">Heavy tail behaviour</a>
+ in <a href="./Combinatorial_Decision_Making_and_Optimization_Constraint_solver.html">Constraint solver</a>
+ algorithms.
+It restarts the search in a different branch after a certain amount of resources has been used.
+There are several ways to implement restart:</p>
+<ul>
+<li>Constant (after L resources)</li>
+<li>Geometric (after <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>α</mi><mo>∗</mo></msup></mrow><annotation encoding="application/x-tex">\alpha^*</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6887em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0037em;">α</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6887em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">∗</span></span></span></span></span></span></span></span></span></span></span>L resources, where * increases each time)</li>
+<li>Luby: restarts after sL resources were consumed. s is the <a href="http://www.cs.cmu.edu/~mheule/publications/rapid.pdf">Luby sequence</a>.</li>
+</ul>
+
+            </div>
+        </div>
+    </body>
+</html>

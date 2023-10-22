@@ -1,0 +1,36 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Information theory for decision trees</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Information theory for decision trees</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>We can use <a href="./Machine_learning_Classification_Entropy.html">Entropy</a>
+ to find the better split over our dataset and test on the chosen threshold:</p>
+<ol>
+<li>choose the attribute giving the highest IG</li>
+<li>partition the dataset according to the choose attribute</li>
+<li>choose as a class label of each partition the majority</li>
+<li>recursevely repeat the process for each subset untill the minority is non-empty</li>
+</ol>
+<p>In some cases, we cannot find a split that gives us more information. In those cases, we can mark that node as a leaf with labeled as are the majority of the elements in the dataset.</p>
+
+            </div>
+        </div>
+    </body>
+</html>

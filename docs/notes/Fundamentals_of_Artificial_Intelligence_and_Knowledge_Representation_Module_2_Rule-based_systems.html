@@ -1,0 +1,45 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Rule-based systems</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Rule-based systems</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>Rules are cool because they are easy to understand and allow automation of a lot of processes (like <a href="./Fundamentals_of_Artificial_Intelligence_and_Knowledge_Representation_Module_2_Business_Process_Management.html">Business Process Management</a>
+).
+There are two main way to check with rules, given a formula <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>p</mi><mi>n</mi></msub><mo>⇒</mo><msub><mi>c</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>c</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">p_1, \dots, p_n \Rightarrow c_1, \dots, c_m</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⇒</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>, we can use:</p>
+<ul>
+<li><strong>Backward chaining</strong>: start from consequences and look for premises that make the consequence true</li>
+<li><strong>Forward chaining</strong>: start from premises and check the consequences.</li>
+</ul>
+<p>Rules, usually, looks like formulas and the standard reasoning method is Motus Ponens.</p>
+<h2>Dynamic prospective</h2>
+<p>The production rule system allows for a dynamic insertion of new rules. The rule insertion trigger a reasoning process on every rule up to that point until a quiscence state is reached.</p>
+<p>Production rules systems allow to explicitly have side effects in the RHS, both on the external world and on the knowledge base. The effects are the insertions/deletion of facts or the retriggering of rules (as a consequence). We can have several problems due to the
+inconsistency of new facts with existing ones, due to the triggering of more rules, due to side effects or due to deletes a facts.
+<img src="./imgs_Pasted_image_20230217172742.png" alt="Pasted image 20230217172742.png">
+</p>
+<h1>Rete algorithm</h1>
+<p>It is a pattern matching algorithm to implement rule-based system.
+it builds the rule system as a graph with nodes representing correspond with a left end side (premises) of a rule and arcs represent premises to consequences. This kind of representation of the system allows for a more optimized application of the rules since you just need to follow the paths containing you facts.</p>
+<p>An important tool for rule-based system is <strong>Drools</strong></p>
+
+            </div>
+        </div>
+    </body>
+</html>

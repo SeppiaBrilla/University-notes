@@ -1,0 +1,69 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Description logic</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Description logic</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>A kind of <a href="./Fundamentals_of_Artificial_Intelligence_and_Knowledge_Representation_Module_2_Logic.html">Fundamentals of Artificial Intelligence and Knowledge Representation/Module 2/Logic</a>
+ that focus on the description of terms.
+Siymbols we can use:</p>
+<ul>
+<li>punctuation</li>
+<li>positive integers</li>
+<li><strong>ALL, EXISTS, FILL, AND</strong></li>
+<li>connectives (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊂</mo><mo separator="true">,</mo><mo>→</mo><mo separator="true">,</mo><mo>…</mo></mrow><annotation encoding="application/x-tex">\subset, \rightarrow, \dots</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">⊂</span></span><span class="base"><span class="strut" style="height:0.5613em;vertical-align:-0.1944em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span><span class="base"><span class="strut" style="height:0.3174em;vertical-align:-0.1944em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span></span></span></span>)</li>
+<li>Atomic concept (Person, Father, ...)</li>
+<li>Roles (height, age, ...)</li>
+<li>constants</li>
+</ul>
+<p>Complex concepts can be expressed with concatenation of atomic concept:</p>
+<ul>
+<li>[ALL r d] all objects r-related of class d</li>
+<li>[EXISTS n r] objects r-related to at least n other individuals</li>
+<li>[FILL r c] objects r-related to the individual identified as c</li>
+<li>[AND <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>d</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">d_1, \dots, d_n</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>] anything described by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>d</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">d_1, \dots, d_n</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></li>
+</ul>
+<h2>A box</h2>
+<p>Portion of knowledge containing notions about the individuals</p>
+<h3>Reasoning on the A box</h3>
+<p>W.r.t. S, can a constant c satitisfy d? In other words: S ⊨ (c → d)?
+This can be computed using subsumption.</p>
+<h2>T box</h2>
+<p>Portion of knowledge containing the terminology</p>
+<h3>Reasoning on the ABox</h3>
+<ul>
+<li>A concept <em>d</em> is <strong>satisfiable</strong> w.r.t. S if exists an interpreation of S such that I[d] is non-empty</li>
+<li>A concept <em>d</em> is subsumed by a concept d’ w.r.t. S if I[d] ⊆ I[d’] for each interpretation
+of S</li>
+<li>Equivalence: Two concepts d, d’ are equivalent w.r.t. S if I[d]=I[d’]</li>
+<li>Disjointness</li>
+</ul>
+<h1>Extending DL</h1>
+<p>An arbitrary number of operators can be added, e.g.:</p>
+<ul>
+<li>[AT-MOST n r] individuals r-related to at most n individuals</li>
+<li>[ONE-OF <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>c</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">c_1, \dots, c_n</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> ] is a concept satisfied only by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">c_i</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> used in conjunction with ALL</li>
+<li>[EXIST n r d] individuals r-related to at least n individuals instances of d</li>
+</ul>
+<p>If we add this kind of rules / operator, to denote our logic we must simply add the related letter to the name.</p>
+
+            </div>
+        </div>
+    </body>
+</html>

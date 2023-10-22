@@ -1,0 +1,41 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>SAT</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>SAT</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>Any decision (and <a href="./Combinatorial_Decision_Making_and_Optimization_CSP.html">optimization</a>
+) problem can be described as a proposition formula to satisfy. Doing so, allows using logic formuals to find a solution to a given problem. 
+SAT tries to &quot;satisfy&quot; a given logic formula using logic. SAT is an NP-complete problem and, thus, finding a solution to a problem with SAT can be very costly, even tho modern algorithms can find a solution (if it exists) in a very efficient way.</p>
+<h2>Basic SAT solver idea: DPLL</h2>
+<pre><code class="language-python">def DPLL(X):
+    X:= unit_resolve(X)
+    if X is empty():
+        return True # SAT
+    if not bottom() in X:
+        U = Choose_a_random_variable(X)
+        return Max(DPLL(X.append(U)), DPLL(X.append(!U)))
+    return False # Not SAT
+</code></pre>
+<p>Where unit_resolve is a function that, given a formula and a set of predicates, derives new predicates. </p>
+
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Strips</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Strips</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>Strips (Stanford research institute problem solver) is a <a href="./Fundamentals_of_Artificial_Intelligence_and_Knowledge_Representation_Module_1_Planning_Planning.html">Planning</a>
+ algorithm / language. it is a type of <a href="./Fundamentals_of_Artificial_Intelligence_and_Knowledge_Representation_Module_1_Planning_Linear_planning.html">Linear planning</a>
+ that uses both forward and backward strategies to compute the <a href="./Fundamentals_of_Artificial_Intelligence_and_Knowledge_Representation_Module_1_Problem_solving_Search_strategies.html">Search strategies</a>
+.
+The states are represented with fluets true in a given state. 
+Example:
+    on(a, b), clear(b), ...
+A capital letter is a variable:
+    on(X, b) -&gt; on(a, b) or on(c, b) or ...
+The initial state cannot have variable but the goal state yes.
+The actions are represented as a tuple composed by:</p>
+<ul>
+<li>Preconditions: fluets that must be true in order to execute the action</li>
+<li>Delete: the fluets that will not be true after the action execution</li>
+<li>Add: the fluets that becomes true after the axiom execution
+-Sometimes we can have an &quot;effected&quot; list that glue together the add and remove lists (the remove fluets will have a not in front of them)</li>
+</ul>
+<p>!!EVERYTHING NOT IN ADD / REMOVE WILL REMAIN UNCHANGED!!</p>
+<h2>algorithm execution</h2>
+<p>The algorithm uses a stack to push all action needed to reach the final state (one by one) and their respective preconditions. If a precondition is met it will be removed from the stack if not an action will be pushed on the stack to reach that precondition. After al preconditions are met the action will be performed on the current state. This process continues until the current state is equal to the final one.
+Pseudocode:
+<img src="./imgs_Pasted_image_20221208200628.png" alt="Pasted image 20221208200628.png">
+
+if A is an and goal (subgoal1 and subgoal2 and ...) and before applying its transformation we need to be sure that every precondition is met. This cannot be true even though we have previously met every single goal one by one because the satisfaction process of one goal may interact with the current state in a way that alter the satisfaction of the previously met goals.</p>
+<h2>Pitfalls</h2>
+<ol>
+<li>very large space (a lot of possible solutions can emerge and each of them will be explored) -&gt; we may use some sort of <a href="./Fundamentals_of_Artificial_Intelligence_and_Knowledge_Representation_Module_1_Problem_solving_Heuristics.html">Heuristics</a>
+ to select the &quot;best&quot; solution to follow</li>
+<li>interacting goals (as stated before)</li>
+</ol>
+
+            </div>
+        </div>
+    </body>
+</html>

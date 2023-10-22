@@ -1,0 +1,89 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Decision tree</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Decision tree</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>They are among the most used tools for <a href="./Machine_learning_Classification_Classification.html">Classification</a>
+</p>
+<p><pre class="mermaid">
+
+graph TD
+
+A[Start] --> B{X1 <= 5}
+
+B -->|Yes| C{x1 <= 2}
+
+B -->|No| D{x2 <= 8}
+
+C -->|Yes| E[predict A]
+
+C -->|No| F[perdict B]
+
+D -->|Yes| G[predict A]
+
+D -->|No| H[perdict B]
+
+
+</pre></p>
+<h3>Pseudocode</h3>
+<p>(valid, for the sake of simplicity, for binary decision trees)</p>
+<pre><code class="language-python">def DecisionTreeFunction(attributes, node):
+        if node.is_inner_node:
+            subNode = PickNextNode(node, node.Test(attributes))
+            return DecisionTreeFunction(attributes, subNode)
+        if node.is_leaf:
+            return node.prediction
+
+def PickNextNode(node, result):
+    if result == True:
+        return node.trueNode
+    else 
+        return node.falseNode
+</code></pre>
+<h2>Constructing the decision tree</h2>
+<p>Given a set X of elements with a known class grown a decision tree as:</p>
+<ul>
+<li>if X is small or all element of X have a label c, generate a leaf with prediction c</li>
+<li>If X is large, Which attribute we choose for testing? <ul>
+<li>Choose a test based on an attribute with 2 or more outcomes</li>
+<li>make this test the root of a tree with a branch for each possible outcome</li>
+<li>partition X in subsets corresponding to the outcomes and apply recursively the procedure</li>
+</ul>
+</li>
+</ul>
+<h3>Problems:</h3>
+<ul>
+<li>Which attribute we choose for testing? -&gt; <a href="./Machine_learning_Classification_Pattern_finding_and_evaluation.html">Pattern finding and evaluation</a>
+</li>
+<li>Which kind of test? (Binary, ternary, ...)</li>
+<li>What does mean &quot;X small&quot;? -&gt; <a href="./Machine_learning_Classification_Pattern_finding_and_evaluation.html">Pattern finding and evaluation</a>
+</li>
+</ul>
+<p><a href="./Machine_learning_Classification_Complexity_of_Decision_trees_construction.html">Complexity of Decision trees construction</a>
+</p>
+<h2>Error and overfitting</h2>
+<p>After the decision tree has been generated, we can start guessing the labels. First, we compute the labels on our train set; We will get a &quot;small&quot; error <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span>. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> is called <em>lower limit</em> and represents the smaller possible error we will have. Then we will test on our test set. The error associated with the test set will be our <em>upper limit</em> (hopefully). It may happen that the error on the test set is way worse than that on the train set, this is called <a href="./Machine_learning_Classification_Overfitting_with_decision_trees.html">Overfitting with decision trees</a>
+.
+In order to simplify a decision tree and reduce overfitting is by pruning it.</p>
+
+            </div>
+        </div>
+    </body>
+</html>

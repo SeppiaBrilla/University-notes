@@ -1,0 +1,53 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Satisfiability Modulo Theory (SMT)</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Satisfiability Modulo Theory (SMT)</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>SMT concerns the study of the satisfiability of formulas with the respect to some theories (integer arithmetic, strings, array, ...).
+It extends <a href="./Combinatorial_Decision_Making_and_Optimization_SAT.html">SAT</a>
+. 
+There are two main approach to solve an SMT problem.</p>
+<ul>
+<li><a href="./Combinatorial_Decision_Making_and_Optimization_Eager_approach_to_solve_SMT.html">Eager approach</a>
+: translates upfront the SMT formula in an equi-satisfiable SAT formula, and solves it with a SAT solver</li>
+<li><a href="./Combinatorial_Decision_Making_and_Optimization_Lazy_approach_to_solve_SMT.html">Lazy approach</a>
+: uses ad-hoc procedures for the background theory in a “lazy” way</li>
+</ul>
+<p>Some interesting way we can use SMT:</p>
+<ul>
+<li><a href="./Combinatorial_Decision_Making_and_Optimization_EUF_theory.html">EUF theory</a>
+</li>
+<li><a href="./Combinatorial_Decision_Making_and_Optimization_Arithmetic_theory.html">Arithmetic theory</a>
+</li>
+<li>Array theory</li>
+<li>Theory of bit-vectors</li>
+<li>Theory of strings</li>
+<li><a href="./Combinatorial_Decision_Making_and_Optimization_LRA_theory.html">LRA theory</a>
+</li>
+<li><a href="./Combinatorial_Decision_Making_and_Optimization_LIA_theory.html">LIA theory</a>
+</li>
+<li><a href="./Combinatorial_Decision_Making_and_Optimization_Difference_logic_theory.html">Difference logic theory</a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </body>
+</html>

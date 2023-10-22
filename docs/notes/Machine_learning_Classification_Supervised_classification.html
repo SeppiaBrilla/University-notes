@@ -1,0 +1,148 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/functions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.1/mermaid.min.js" integrity="sha512-gAfYc+bjXAmXUHDG1Dm8AiUWDz8PhByz2852OW/ZitnuM4gGZPD8oQhz57KR2WcDcoCvZInSH1HqbZwMpjHdeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Supervised classification</title>
+    </head>
+    <body class="dark-theme-bg">
+        <div id="Content" class="content">
+            <header id="TitleDiv" class="dark-theme-color">
+                <h1>Supervised classification</h1>
+            </header>
+            <nav id="OptionDiv">
+                <a href="../index.html"><i class="fas fa-home icon dark-theme-color"></i></a>
+                <button onclick="BackFn()"><i class="fas fa-arrow-left icon dark-theme-color"></i></button>
+                <button onclick="ThemeFn()"><i class="fas fa-adjust icon dark-theme-color"></i></button>
+            </nav>
+            <div class="main dark-theme-color">
+                <p>A set of <a href="./Machine_learning_Supervised_learning.html">Supervised learning</a>
+ technique for <a href="./Machine_learning_Classification_Classification.html">Classification</a>
+: we have a train set with all the properties and the label and, from there, the algorithm finds correlations and try to guess the unknown labels from them.</p>
+<table>
+<thead>
+<tr>
+<th>label</th>
+<th>p1</th>
+<th>p2</th>
+<th>p3</th>
+<th>p4</th>
+<th>...</th>
+<th>pn</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>x1</td>
+<td>x11</td>
+<td>x12</td>
+<td>x13</td>
+<td>x14</td>
+<td>...</td>
+<td>x1n</td>
+</tr>
+<tr>
+<td>x2</td>
+<td>x21</td>
+<td>x22</td>
+<td>x23</td>
+<td>x24</td>
+<td>...</td>
+<td>x2n</td>
+</tr>
+<tr>
+<td>x3</td>
+<td>x31</td>
+<td>x32</td>
+<td>x33</td>
+<td>x34</td>
+<td>...</td>
+<td>x3n</td>
+</tr>
+<tr>
+<td>x4</td>
+<td>x41</td>
+<td>x42</td>
+<td>x43</td>
+<td>x44</td>
+<td>...</td>
+<td>x4n</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td>xy</td>
+<td>xy1</td>
+<td>xy2</td>
+<td>xy3</td>
+<td>xy4</td>
+<td>...</td>
+<td>xyn</td>
+</tr>
+</tbody></table>
+<h3>Developing a classification model</h3>
+<p>The development of a classification model can be divided in 3 steps:</p>
+<ul>
+<li>choose the learning algorithm</li>
+<li>let the algorithm learn its parametrization</li>
+<li>asset the quality of the model
+Then the model will be used by a classification algorithm with the developed parametrization.</li>
+</ul>
+<p>A classifiation function, given a data element x with an unknown label y(x) makes a prediction as:
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="script">M</mi><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>θ</mi><mo stretchy="false">)</mo><mo>=</mo><mi>y</mi><mo stretchy="false">(</mo><mi>x</mi><msub><mo stretchy="false">)</mo><mtext>prediction</mtext></msub></mrow><annotation encoding="application/x-tex">
+\mathcal{M}(x,\theta) = y(x)_{\text{prediction}}
+</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal">M</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">prediction</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></span>
+where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span></span></span></span> is a set of parameters for the decision function.
+The supervised learning for the algorithm gives to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">M</mi></mrow><annotation encoding="application/x-tex">\mathcal{M}</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal">M</span></span></span></span> a set of x with their corresponding y in order to determine <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html ObsidianMath" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span></span></span></span> by reducing the prediction error as much as possible (<a href="./Statistical_and_Mathematical_Methods_for_Artificial_Intelligence_optimization_Gradient_method.html">Gradient method</a>
+ ndr)
+(<a href="./Machine_learning_Classification_Vapnik-Chervonenkis_Dimension.html">Vapnik-Chervonenkis Dimension</a>
+, <a href="./Statistical_and_Mathematical_Methods_for_Artificial_Intelligence_Statistics_Define_a_model_for_learning_process_in_AI.html">Define a model for learning process in AI</a>
+)
+entropy</p>
+<h2>Workflow</h2>
+<ol>
+<li>Learning the model for a given set of classes: we need a training set with all the labels, the set should be as much representative as possible.</li>
+<li>Estimate the <a href="./Statistical_and_Mathematical_Methods_for_Artificial_Intelligence_Errors_Accuracy.html">Accuracy</a>
+ of the model: with a test set with given labels, we use the model to guess the labels of the test set, and then we check the correctness of the guess.</li>
+<li>Use the model on new individuals</li>
+</ol>
+<h3>Flavors of classificator</h3>
+<p>There are two kinds of classificator:</p>
+<ul>
+<li><strong>Crisp</strong>: the classifier assign a label to each individual, like <a href="./Machine_learning_Classification_Decision_tree.html">Decision tree</a>
+, <a href="./Machine_learning_Classification_Perceptron.html">Perceptron</a>
+, <a href="./Machine_learning_Classification_Neural_networks.html">Neural networks</a>
+, <a href="./Machine_learning_Classification_K_nearest_classifier.html">K nearest classifier</a>
+, <a href="./Machine_learning_Classification_Ensemble_methods.html">Ensemble methods</a>
+.</li>
+<li><strong>Probabilistic</strong>: the classifier assign a probability for each possible label, like <a href="./Machine_learning_Classification_Naive_Bayes_classifier.html">Naive Bayes classifier</a>
+
+We can <a href="./Machine_learning_Classification_Transform_a_probabilistic_classifier_into_a_crisp_classifier.html">Transform a probabilistic classifier into a crisp classifier</a>
+</li>
+</ul>
+<h2>From binary to multiclass classifiers</h2>
+<p>Most of the classifiers works better with two classes (like the <a href="./Machine_learning_Classification_Perceptron.html">Perceptron</a>
+ based ones) and so, we need to find a good way to transform the two-way classification into a multi-way classification. Two main methods:</p>
+<ul>
+<li><a href="./Machine_learning_Classification_One-vs-One_(OVO).html">One-vs-One (OVO)</a>
+</li>
+<li><a href="./Machine_learning_Classification_One-vs-Rest_(OVR).html">One-vs-Rest (OVR)</a>
+</li>
+</ul>
+<p><a href="./Machine_learning_Classification_OVO_vs_OVR.html">OVO vs OVR</a>
+</p>
+
+            </div>
+        </div>
+    </body>
+</html>
