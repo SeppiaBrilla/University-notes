@@ -124,3 +124,30 @@ Regular equivalence of two nodes is the count of neighbors that are themselves s
 ## Homophily and Assortative Mixing
 
 Related to similarity and equivalence, homophily (also called assortative mixing) reports the tendency of nodes in the network to draw ties with other nodes that are similar/equivalent to them.
+
+## The Small-world Effect
+
+A renowned (and measurable) network phenomenon is the small-world effect.
+Informally, we have a small-world effect when we can find shorter-than-expected distances between pairs of nodes.
+
+Matematically, if the shortest path between two nodes is $d_{ij}$, then the mean distance $l_i$ for a node i is: $l_i = \frac{\sum_j d_{ij}}{n}$ and the whole mean distance for the network is: $\frac{\sum_i l_i}{n}$. Simplistically, a family of networks shows small-world effects when $l \propto \log n$ (l is directly proportional to log n multiplied by a constant factor k)
+The main properties of a small-word network are:
+- many highly-clustered groups
+- hubs that serve as mediators to shorten the length between other edges
+- particularly robust to random perturbations.
+
+## Cohesion
+
+The term “cohesion” indicates the likelihood of nodes being connected to each other. Notably, cohesion (the measure) does not indicate social aggregation. The simplest measure of cohesion is density, i.e., the ratio between the number of ties in the network with respect to the total number of possible ties $\frac{n(n-1)}{2}$
+
+### Disconnectedness
+When measuring cohesiveness, it can be useful to consider network subgroups, specifically, to think about cohesion as the number and size of components in a network. The simplest of these is the size of the main component: the bigger the main component (in terms of nodes), the greater the global cohesion of the network. When more than one component exist, we can look at the number of components in the network. If c is the number of components and n that of nodes, we can obtain the component ratio as $\frac{c - 1}{n - 1}$, which has maximum value 1 when every node is isolated and minimum 0 when there is just one component. Unfortunately, the component ratio is too-blunt of a measure as networks that vary in density and average degree may have the same component ratio.
+Connectedness is a more sensitive measure of cohesion defined as the proportion of pairs of nodes that can reach each other by a path of any length. Or, alternatively, the proportion of pairs of nodes that are located in the same component.
+$$
+\text{connectedness } = \frac{\sum_{i \neq j} r_{ij}}{n(n-1)} 
+$$
+Where $r_{ij}$ is 1 when and are in the same component, 0 otherwise. We can also define fragmentation as 1 - connectedness. We can also use __compactness__ which can be measured as connectedness replacing $r_{ij}$ with $d^{-1}_{ij}$ that corresponds to the reciprocal of the geodensic distance from i to j.
+
+## Reciprocity
+
+Measures the extent to which if a ties from A to B exists, also a ties from B to A does. We can do that by counting the number of reciprocate ties and divide it by the number of ties.
