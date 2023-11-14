@@ -13,3 +13,7 @@ It is a type of RNN architecture that deals very well with keeping memory of old
 - The first (from left) sigmoid layer is called "forget gate" and decide what part of memory to preserve, the function it computes is: $f_t = \sigma(W_f*[h_{t-1},x_t] + b_f)$ 
 - The second sigmoid layer is called "input gate" and decide what part of the input to preserve, $i_t =\sigma(W_i*[h_{t-1},x_t]+ b_i)$
 - The tanh layer reates a vector of new candidate values to be added to the state, $\tilde{C}_t =\tanh(W_C*[h_{t-1},x_t] + b_C)$
+
+
+
+_Note: for a more in depth analysis of the topic, see [[Sequence processing with RNN]]_

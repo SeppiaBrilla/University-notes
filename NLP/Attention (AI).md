@@ -1,4 +1,4 @@
-Attention is the ability to focus on different parts of the input, according to the requirements of the problem being solved. Attention mechanisms can be implemented as gating functions. [[Recurrent neural networks|LSTMs]]' forget map and input map are a form of attention.
+Attention is the ability to focus on different parts of the input, according to the requirements of the problem being solved. Attention mechanisms can be implemented as gating functions. [[LSTM Networks]]' forget map and input map are a form of attention.
 
 
 ### SE layers
