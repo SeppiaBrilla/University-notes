@@ -124,7 +124,7 @@ $H_i* = \text{argmin}_{H_i}\sum_{j = 1}^m ||m_j - H_iw_j ||^2\;i=1,\dots,m$, whe
 This additional optimization step corresponds to the minimization of the re-projection error (typically referred to as __geometric error__) measured for each of the 3D corners of the pattern by comparing the pixel coordinates predicted by the estimated homography to the pixel coordinates of the corresponding corner extracted in the image. The error minimized to estimate the initial guess when solving the linear system is instead referred to as __algebraic error__ or distance. Solutions based on minimization of the algebraic error may not be aligned  
 with our intuition, yet there exist a unique solution, which is cheap to compute. Hence, they are a good starting point for a geometric, non-linear minimization, which effectively minimize the distance we care about.
 
-### Get an initial guess for 𝐴 given the homographies $𝐻_𝑖$
+### Get an initial guess for 𝐴 given the homographies $H_i$
 All the images acquired for calibration share the same intrinsic parameters. 
 $$
 \begin{align}
@@ -143,7 +143,7 @@ $$
 By stacking these two constraints for each image, we get a homogeneous system of equations which can be solved again by [[SVD]] if $n \geq 3$ images are collected (with 6 unknown variables)
 
 ### Given A and $H_i$, get an initial guess for $R_i$ and $t_i$
-Once A has been estimated, it is possible to compute $R_i$ and $t_𝒊$ given A and the previously computed homography $H_i$:
+Once A has been estimated, it is possible to compute $R_i$ and $t_i$ given A and the previously computed homography $H_i$:
 $$
 H_i = [h_{i1} \; h_{i2} \; h_{i3}] = [kAr_{i1} \; kAr_{i2} \; kAt_i] \Rightarrow r_{i1} = \frac{1}{k} A^{-1} h_{i1}
 $$

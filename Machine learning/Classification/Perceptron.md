@@ -12,14 +12,14 @@ $$
 ### pseudocode
 ```python
 def learn():
-w = [0 for i in N]
-while(train_set.IsNotTotalyClassified)
-	for(el in train_set):
-		if not classify(el):
-			if el.class == "Positive":
-				w += el.dataVector
-			else 
-				w -= el.dataVector
+	w = [0 for i in N]
+	while(train_set.IsNotTotalyClassified)
+		for(el in train_set):
+			if not classify(el):
+				if el.class == "Positive":
+					w += el.dataVector
+				else 
+					w -= el.dataVector
 ```
 
 The algorithm converges if the dataset is linearly separable, if not, we must assign an upper bound for the iterations.

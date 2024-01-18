@@ -31,7 +31,7 @@ Is an algorithm for solving LP problems. It starts the search in an extreme poin
 
 ### Find a solution
 Given an LP problem P in standard form, a basis of P is a subset of m $\leq$ n variables s.t. columns $A^{i1},\dots,A^{im}$ form an m × m invertible matrix. 
-We can rewrite P by separating basic ($X_B$) from non-basic ($X_N$) variables. By setting $x_N = 0$, P becomes $\max(c_Bx_B)$ s.t. $A_Bx_B = b$ hence $x_B = A^{−1}_Bb\in \mathbb{R}^m$ with objective value $c_BA^{−1}_Bb$.
+We can rewrite P by separating basic ($X_B$) from non-basic ($X_N$) variables. By setting $x_N = 0$, P becomes $\max(c_Bx_B)$ s.t. $A_Bx_B = b$ hence $x_B = A^{-1}_Bb\in \mathbb{R}^m$ with objective value $c_BA^{-1}_Bb$.
 This solution is called a basic solution for B. Each basic feasible solution ($\forall_{i = 1}^m (x_B)_i \geq 0$) is an extreme point of the feasible region. 
 If we have $\forall_{i = 1}^m (x_B)_i \geq 0$ then the solution is non-degenerate, and it represents a unique basis.
 Simplex method iteratively considers BFS $\tilde{x_1}, \tilde{x_2}, \dots \text{ s.t. } c\tilde{x}_k \geq c\tilde{x}_{k-1}$.
