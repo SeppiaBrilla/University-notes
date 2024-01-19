@@ -319,3 +319,53 @@ Dopamine carry reward-prediction-error not the reward itself.
 Experiment: give a monkey a box and measure the dopamine response. If the box has a reward, the dopamine level spikes -> unexpected reward lead to excitment.
 
 After learning about receiving the reward, the animal release dopamine at the CS (box receiving) and not at the US. if the US isn't present, the dopamine stops.
+![[Pasted image 20230416145948.png]]
+
+In another experiment, we saw that, giving a monkey a cup with some juice:
+- If the monkey expected a low amount of juice and received a medium amount, the dopamine spiked 
+- if the monkey expected a high amount of juice and received a medium amount, the dopamine plumbed.
+-> The size of the reward doesn't matter in absolute value but in relative.
+Timing also matter. 
+
+This works also in humans, if we give them 2 decks of card and reward or punish them depending on the drawn card, the dopamine changes accordingly to the reward.
+
+# Slide 6
+
+## Instrumental conditioning
+
+A response is gradually changed across successive trials toward a desired outcome, reinforcing a behavior.
+
+|                  | delivery outcome                    | omission outcome                    |
+| ---------------- | ----------------------------------- | ----------------------------------- |
+| positive outcome | positive reinforcer<br>(+ behavior) | negative punishment<br>(- behavior) |
+| negative outcome | positive punishment<br>(- behavior) | negative reinforcer<br>(+ behavior) |
+
+### Schedule
+- Continuous: faster learning
+- Partial: slower extinction
+#### Partial scheduling ratios
+- Fixed ratio: high steady learning with slower learning after outcome delivery
+- Variable ratio: high and steady learning
+- Fixed interval: slow rate, high response near the interval end
+- Variable interval: slow steady rate
+
+# Slide 7
+
+There are two ways of learning something:
+- Cognitive map: create a mental map of the situation and navigate it to reach a goal
+- Stimulus response: memorize the path to follow to reach the goal 
+
+## gen 0
+
+Toleman's maze experiment: put some rats on a complicate maze and see if they learn to navigate it. The rats are divided in two groups: one receives food reward and the other doesn't. The group which receives a food reward navigates the maze much more efficiently. 
+In further experiments, have been discovered that, if the food reward is given to the groups that has received no reward for the past trials, they rapidly catch up with the other group showing __latent learning__.
+
+## Gen 1
+
+To test if the behavior was goal directed or habitual, they trained a group of rats to get a reward after a particular behavior, then devaluated the reward, and they tested if the behavior would be still perpetrated.
+The dorsomedial striatum is more active during goal directed behavior, while the dorsolateral during the habitual.
+
+## Gen 2
+
+It is the same as Gen 1 but on humans. To gather information on human brains, they used MRI. The results were that, after little training, the behavior was goal directed while it was habitual after intense training. 
+The medial OFC responded more in goal directed behaviors while the DLS responded more in habitual behaviors.
